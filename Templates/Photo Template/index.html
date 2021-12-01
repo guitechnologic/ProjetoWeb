@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<title>Photo Template</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="estilo.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		body,h1 {font-family: "Montserrat", sans-serif}
+		img {margin-bottom: -7px}
+		.row-padding img {margin-bottom: 12px}
+	</style>
+	<body>
+		
+		<!-- Sidebar -->
+		<nav class="sidebar black animate-top xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+			<a href="javascript:void(0)" onclick="w3_close()" class="button black xxlarge padding display-topright" style="padding:6px 24px">
+				<i class="fa fa-remove"></i>
+			</a>
+			<div class="bar-block center">
+				<a href="#" class="bar-item button text-grey hover-black">About</a>
+				<a href="#" class="bar-item button text-grey hover-black">Photos</a>
+				<a href="#" class="bar-item button text-grey hover-black">Shop</a>
+				<a href="#" class="bar-item button text-grey hover-black">Contact</a>
+			</div>
+		</nav>
+		
+		<!-- !PAGE CONTENT! -->
+		<div class="content" style="max-width:1500px">
+			
+			<!-- Header -->
+			<div class="opacity">
+				<span class="button xxlarge white right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+				<div class="clear"></div>
+				<header class="center margin-bottom">
+					<h1><b>PHOTOLIO</b></h1>
+					<p><b>A template made by w3.css for photographers.</b></p>
+					<p class="padding-16"><button class="button black" onclick="myFunction()">Toggle Grid Padding</button></p>
+				</header>
+			</div>
+			
+			<!-- Photo Grid -->
+			<div class="row" id="myGrid" style="margin-bottom:128px">
+				<div class="third">
+					<img src="/w3images/rocks.jpg" style="width:100%">
+					<img src="/w3images/sound.jpg" style="width:100%">
+					<img src="/w3images/woods.jpg" style="width:100%">
+					<img src="/w3images/rock.jpg" style="width:100%">
+					<img src="/w3images/nature.jpg" style="width:100%">
+					<img src="/w3images/mist.jpg" style="width:100%">
+				</div>
+				
+				<div class="third">
+					<img src="/w3images/coffee.jpg" style="width:100%">
+					<img src="/w3images/bridge.jpg" style="width:100%">
+					<img src="/w3images/notebook.jpg" style="width:100%">
+					<img src="/w3images/london.jpg" style="width:100%">
+					<img src="/w3images/rocks.jpg" style="width:100%">
+					<img src="/w3images/avatar_g.jpg" style="width:100%">
+				</div>
+				
+				<div class="third">
+					<img src="/w3images/mist.jpg" style="width:100%">
+					<img src="/w3images/workbench.jpg" style="width:100%">
+					<img src="/w3images/gondol.jpg" style="width:100%">
+					<img src="/w3images/skies.jpg" style="width:100%">
+					<img src="/w3images/lights.jpg" style="width:100%">
+					<img src="/w3images/workshop.jpg" style="width:100%">
+				</div>
+			</div>
+			
+			<!-- End Page Content -->
+		</div>
+		
+		<!-- Footer -->
+		<footer class="container padding-64 light-grey center opacity xlarge" style="margin-top:128px"> 
+			<i class="fa fa-facebook-official hover-opacity"></i>
+			<i class="fa fa-instagram hover-opacity"></i>
+			<i class="fa fa-snapchat hover-opacity"></i>
+			<i class="fa fa-pinterest-p hover-opacity"></i>
+			<i class="fa fa-twitter hover-opacity"></i>
+			<i class="fa fa-linkedin hover-opacity"></i>
+			<p class="medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="hover-text-green">w3.css</a></p>
+		</footer>
+		
+		<script>
+			// Toggle grid padding
+			function myFunction() {
+				var x = document.getElementById("myGrid");
+				if (x.className === "row") {
+					x.className = "row-padding";
+					} else { 
+					x.className = x.className.replace("row-padding", "row");
+				}
+			}
+			
+			// Open and close sidebar
+			function w3_open() {
+				document.getElementById("mySidebar").style.width = "100%";
+				document.getElementById("mySidebar").style.display = "block";
+			}
+			
+			function w3_close() {
+				document.getElementById("mySidebar").style.display = "none";
+			}
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+	<title>Marketing template</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="estilo.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+		.mySlides {display:none}
+		.tag, .fa {cursor:pointer}
+		.tag {height:15px;width:15px;padding:0;margin-top:6px}
+	</style>
+	<body>
+		
+		<!-- Links (sit on top) -->
+		<div class="top">
+			<div class="row large light-grey">
+				<div class="col s3">
+					<a href="#" class="button block">Home</a>
+				</div>
+				<div class="col s3">
+					<a href="#plans" class="button block">Plans</a>
+				</div>
+				<div class="col s3">
+					<a href="#about" class="button block">About</a>
+				</div>
+				<div class="col s3">
+					<a href="#contact" class="button block">Contact</a>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Content -->
+		<div class="content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
+			
+			<div class="panel">
+				<h1><b>MARKETING</b></h1>
+				<p>Template by w3.css</p>
+			</div>
+			
+			<!-- Slideshow -->
+			<div class="container">
+				<div class="display-container mySlides">
+					<img src="/w3images/coffee.jpg" style="width:100%">
+					<div class="display-topleft container padding-32">
+						<span class="white padding-large animate-bottom">Lorem ipsum</span>
+					</div>
+				</div>
+				<div class="display-container mySlides">
+					<img src="/w3images/workbench.jpg" style="width:100%">
+					<div class="display-middle container padding-32">
+						<span class="white padding-large animate-bottom">Klorim tipsum</span>
+					</div>
+				</div>
+				<div class="display-container mySlides">
+					<img src="/w3images/sound.jpg" style="width:100%">
+					<div class="display-topright container padding-32">
+						<span class="white padding-large animate-bottom">Blorum pipsum</span>
+					</div>
+				</div>
+				
+				
+
+				<!-- Slideshow next/previous buttons -->
+				<div class="container dark-grey padding xlarge">
+					<div class="left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left hover-text-teal"></i></div>
+					<div class="right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right hover-text-teal"></i></div>
+					
+					<div class="center">
+						<span class="tag demodots border transparent hover-white" onclick="currentDiv(1)"></span>
+						<span class="tag demodots border transparent hover-white" onclick="currentDiv(2)"></span>
+						<span class="tag demodots border transparent hover-white" onclick="currentDiv(3)"></span>
+					</div>
+				</div>
+			</div>
+
+			<!-- Fim do Slideshow -->
+			
+			<!-- Grid -->
+			<div class="row container">
+				<div class="center padding-64">
+					<span class="xlarge bottombar border-dark-grey padding-16">What We Offer</span>
+				</div>
+				<div class="col l3 m6 light-grey container padding-16">
+					<h3>Design</h3>
+					<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+				</div>
+				
+				<div class="col l3 m6 grey container padding-16">
+					<h3>Branding</h3>
+					<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+				</div>
+				
+				<div class="col l3 m6 dark-grey container padding-16">
+					<h3>Consultation</h3>
+					<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+				</div>
+				
+				<div class="col l3 m6 black container padding-16">
+					<h3>Promises</h3>
+					<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+				</div>
+			</div>
+			
+			<!-- Grid -->
+			<div class="row-padding" id="plans">
+				<div class="center padding-64">
+					<h3>Pricing Plans</h3>
+					<p>Choose a pricing plan that fits your needs.</p>
+				</div>
+				
+				<div class="third margin-bottom">
+					<ul class="ul border center hover-shadow">
+						<li class="black xlarge padding-32">Basic</li>
+						<li class="padding-16"><b>10GB</b> Storage</li>
+						<li class="padding-16"><b>10</b> Emails</li>
+						<li class="padding-16"><b>10</b> Domains</li>
+						<li class="padding-16"><b>Endless</b> Support</li>
+						<li class="padding-16">
+							<h2 class="wide">$ 10</h2>
+							<span class="opacity">per month</span>
+						</li>
+						<li class="light-grey padding-24">
+							<button class="button green padding-large">Sign Up</button>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="third margin-bottom">
+					<ul class="ul border center hover-shadow">
+						<li class="dark-grey xlarge padding-32">Pro</li>
+						<li class="padding-16"><b>25GB</b> Storage</li>
+						<li class="padding-16"><b>25</b> Emails</li>
+						<li class="padding-16"><b>25</b> Domains</li>
+						<li class="padding-16"><b>Endless</b> Support</li>
+						<li class="padding-16">
+							<h2 class="wide">$ 25</h2>
+							<span class="opacity">per month</span>
+						</li>
+						<li class="light-grey padding-24">
+							<button class="button green padding-large">Sign Up</button>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="third margin-bottom">
+					<ul class="ul border center hover-shadow">
+						<li class="black xlarge padding-32">Premium</li>
+						<li class="padding-16"><b>50GB</b> Storage</li>
+						<li class="padding-16"><b>50</b> Emails</li>
+						<li class="padding-16"><b>50</b> Domains</li>
+						<li class="padding-16"><b>Endless</b> Support</li>
+						<li class="padding-16">
+							<h2 class="wide">$ 50</h2>
+							<span class="opacity">per month</span>
+						</li>
+						<li class="light-grey padding-24">
+							<button class="button green padding-large">Sign Up</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<!-- Grid -->
+			<div class="row-padding" id="about">
+				<div class="center padding-64">
+					<span class="xlarge bottombar border-dark-grey padding-16">Who We Are</span>
+				</div>
+				
+				<div class="third margin-bottom">
+					<div class="card-4">
+						<img src="/w3images/team1.jpg" alt="John" style="width:100%">
+						<div class="container">
+							<h3>Jane Doe</h3>
+							<p class="opacity">CEO & Founder</p>
+							<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+							<p><button class="button light-grey block">Contact</button></p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="third margin-bottom">
+					<div class="card-4">
+						<img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
+						<div class="container">
+							<h3>Mike Ross</h3>
+							<p class="opacity">Art Director</p>
+							<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+							<p><button class="button light-grey block">Contact</button></p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="third margin-bottom">
+					<div class="card-4">
+						<img src="/w3images/team3.jpg" alt="Jane" style="width:100%">
+						<div class="container">
+							<h3>John Doe</h3>
+							<p class="opacity">Designer</p>
+							<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+							<p><button class="button light-grey block">Contact</button></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Contact -->
+			<div class="center padding-64" id="contact">
+				<span class="xlarge bottombar border-dark-grey padding-16">Contact Us</span>
+			</div>
+			
+			<form class="container" action="/action_page.php" target="_blank">
+				<div class="section">
+					<label>Name</label>
+					<input class="input border hover-border-black" style="width:100%;" type="text" name="Name" required>
+				</div>
+				<div class="section">
+					<label>Email</label>
+					<input class="input border hover-border-black" style="width:100%;" type="text" name="Email" required>
+				</div>
+				<div class="section">
+					<label>Subject</label>
+					<input class="input border hover-border-black" style="width:100%;" name="Subject" required>
+				</div>
+				<div class="section">
+					<label>Message</label>
+					<input class="input border hover-border-black" style="width:100%;" name="Message" required>
+				</div>
+				<button type="submit" class="button block black">Send</button>
+			</form>
+			
+		</div>
+		
+		<!-- Footer -->
+		
+		<footer class="container padding-32 light-grey center">
+			<h4>Footer</h4>
+			<a href="#" class="button black margin"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
+			<div class="xlarge section">
+				<i class="fa fa-facebook-official hover-opacity"></i>
+				<i class="fa fa-instagram hover-opacity"></i>
+				<i class="fa fa-snapchat hover-opacity"></i>
+				<i class="fa fa-pinterest-p hover-opacity"></i>
+				<i class="fa fa-twitter hover-opacity"></i>
+				<i class="fa fa-linkedin hover-opacity"></i>
+			</div>
+			<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="hover-text-green">w3.css</a></p>
+		</footer>
+		
+		
+		<script>
+			// Slideshow
+			var slideIndex = 1;
+			showDivs(slideIndex);
+			
+			function plusDivs(n) {
+				showDivs(slideIndex += n);
+			}
+			
+			function currentDiv(n) {
+				showDivs(slideIndex = n);
+			}
+			
+			function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("demodots");
+				if (n > x.length) {slideIndex = 1}    
+				if (n < 1) {slideIndex = x.length} ;
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";  
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" white", "");
+				}
+				x[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " white";
+			}
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<title>Weeding Invitation Template</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="estilo.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<style>
+		body,h1,h2{font-family: "Raleway", sans-serif}
+		body, html {height: 100%}
+		p {line-height: 2}
+		.bgimg, .bgimg2 {
+		min-height: 100%;
+		background-position: center;
+		background-size: cover;
+		}
+		.bgimg {background-image: url("/w3images/wedding_couple.jpg")}
+		.bgimg2 {background-image: url("/w3images/flowers.jpg")}
+	</style>
+	<body>
+		
+		<!-- Header / Home-->
+		<header class="display-container wide bgimg grayscale-min" id="home">
+			<div class="display-middle text-white center">
+				<h1 class="jumbo">Jane & John</h1>
+				<h2>Are getting married</h2>
+				<h2><b>17.07.2017</b></h2>
+			</div>
+		</header>
+		
+		<!-- Navbar (sticky bottom) -->
+		<div class="bottom hide-small">
+			<div class="bar white center padding opacity-min hover-opacity-off">
+				<a href="#home" style="width:25%" class="bar-item button">Home</a>
+				<a href="#us" style="width:25%" class="bar-item button">Jane & John</a>
+				<a href="#wedding" style="width:25%" class="bar-item button">Wedding</a>
+				<a href="#rsvp" style="width:25%" class="bar-item button hover-black">RSVP</a>
+			</div>
+		</div>
+		
+		<!-- About / Jane And John -->
+		<div class="container padding-64 pale-red grayscale-min" id="us">
+			<div class="content">
+				<h1 class="center text-grey"><b>Jane & John</b></h1>
+				<img class="round grayscale-min" src="/w3images/wedding_couple2.jpg" style="width:100%;margin:32px 0">
+				<p><i>You all know us. And we all know you. We are getting married lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+					occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+				laboris nisi ut aliquip ex ea commodo consequat.</i>
+				</p><br>
+				<p class="center"><a href="#wedding" class="button black round padding-large large">Wedding Details</a></p>
+			</div>
+		</div>
+		
+		<!-- Background photo -->
+		<div class="display-container bgimg2">
+			<div class="display-middle text-white center">
+				<h1 class="jumbo">You Are Invited</h1><br>
+				<h2>Of course..</h2>
+			</div>
+		</div>
+		
+		<!-- Wedding information -->
+		<div class="container padding-64 pale-red grayscale-min center" id="wedding">
+			<div class="content">
+				<h1 class="text-grey"><b>THE WEDDING</b></h1>
+				<img class="round-large grayscale-min" src="/w3images/wedding_location.jpg" style="width:100%;margin:64px 0">
+				<div class="row">
+					<div class="half">
+						<h2>When</h2>
+						<p>Wedding Ceremony - 2:00pm</p>
+						<p>Reception & Dinner - 5:00pm</p>
+					</div>
+					<div class="half">
+						<h2>Where</h2>
+						<p>Some place, an address</p>
+						<p>Some where, some address</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- RSVP section -->
+		<div class="container padding-64 pale-red center wide" id="rsvp">
+			<h1>HOPE YOU CAN MAKE IT!</h1>
+			<p class="large">Kindly Respond By January, 2017</p>
+			<p class="xlarge">
+				<button onclick="document.getElementById('id01').style.display='block'" class="button round red opacity hover-opacity-off" style="padding:8px 60px">RSVP</button>
+			</p>
+		</div>
+		
+		<!-- RSVP modal -->
+		<div id="id01" class="modal">
+			<div class="modal-content card-4 animate-zoom" style="padding:32px;max-width:600px">
+				<div class="container white center">
+					<h1 class="wide">CAN YOU COME?</h1>
+					<p>We really hope you can make it.</p>
+					<form>
+						<input class="input border" type="text" placeholder="Name(s)" name="name">
+					</form>
+					<p><i>Sincerely, John & Jane</i></p>
+					<div class="row">
+						<div class="half">
+							<button onclick="document.getElementById('id01').style.display='none'" type="button" class="button block green">Going</button>
+						</div>
+						<div class="half">
+							<button onclick="document.getElementById('id01').style.display='none'" type="button" class="button block red">Can't come</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Footer -->
+		<footer class="center black padding-16">
+			<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="hover-text-green">w3.css</a></p>
+		</footer>
+		<div class="hide-small" style="margin-bottom:32px"> </div>
+		
+	</body>
+</html>

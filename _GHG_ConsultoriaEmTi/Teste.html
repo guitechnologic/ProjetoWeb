@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+    <html>
+        <title> GHG Consultoria Em Ti   </title>
+
+            <meta   charset="UTF-8">
+            <meta   name="viewport" content="width=device-width,    initial-scale=1">
+            <meta   http-equiv="X-UA-Compatible"    content="IE-edge">
+            
+            <link   rel="stylesheet"    href="_css/estilo.css">
+            <link   rel="stylesheet"    href="https://fonts.googleapis.com/css?family=Raleway">
+            <link   rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   <!-- Icones Minimalistas -->
+        <style>
+
+            body,h1,h2,h3,h4,h5,h6  {font-family:   "Raleway",  sans-serif}
+
+            body,   html  {
+                height: 100%;
+                line-height:    1.8;
+                }
+
+            /* 01-Primeiro quadrante da pagina */
+            .bgimg-1    {
+                background-position:    center;
+                background-size:    cover;
+                /*background-color:   rgb(0, 0, 0);      url("../_GHG_ConsultoriaEmTi/imagens/map.jpg");*/
+                /*  background: url(imagens/_BannerComLogo2.png);   */
+                min-height: 100%;
+            }
+
+            /* Barra de menu superior e botoes na barra */
+            .bar    .button    {
+                padding:    16px;
+            }
+
+        </style>
+
+    <body>
+
+        <!-- 01 - Barra de navegação com os botoes -->
+        <div    class="top">
+            <div    class="bar  white card" id="myNavbar">
+                <a  href="#home"    class="bar-item button  wide">  GHG </a>    <!-- Inserir logo -->
+
+                <!-- 01.1 - Botoes de navegação -->
+                <div    class="right    hide-small">
+                    <a  href="#about"    class="bar-item button">   <i class="fa fa-home">      </i> HOME       </a>
+                    <a  href="#team"     class="bar-item button">   <i class="fa fa-group">     </i> A GHG      </a>
+                    <a  href="#work"     class="bar-item button">   <i class="fa fa-th">        </i> SERVIÇOS   </a>
+                    <a  href="#carrer"   class="bar-item button">   <i class="fa fa-user">      </i> CARREIRAS  </a>
+                    <a  href="#contact"  class="bar-item button">   <i class="fa fa-envelope">  </i> CONTATO    </a>
+                </div>
+                
+                <!-- 01.2 - Opçoes do menu de navegaçao para mobile, abertura e fechamento -->
+                <a  href="javascript:void(0)"   class="bar-item button  right   hide-large  hide-medium"    onclick="botaoAbre()">
+                <i  class="fa   fa-bars"> </i>
+                </a>
+            </div>
+        </div>
+
+        <!-- 01.3 - Configuração dos icones superiores, presentes na barra de anvegação -->
+        <nav    class="sidebar  bar-block   black   card    animate-left    hide-medium hide-large" style="display:none"    id="mySidebar">
+            <a  href="javascript:void(0)"    onclick="botaoFechar()"    class="bar-item button  large   padding-16">    Close × </a>
+            <a  href="#about"    onclick="botaoFechar()"    class="bar-item button">    HOME        </a>
+            <a  href="#team"     onclick="botaoFechar()"    class="bar-item button">    A GHG       </a>
+            <a  href="#work"     onclick="botaoFechar()"    class="bar-item button">    SERVIÇOS    </a>
+            <a  href="#carrer"   onclick="botaoFechar()"    class="bar-item button">    CARREIRAS   </a>
+            <a  href="#contact"  onclick="botaoFechar()"    class="bar-item button">    CONTATO     </a>
+        </nav>
+
+
+            
+
+
+
+        <!-- 02 - Tela de apresentação -->
+        <header class="bgimg-1  display-container   grayscale-min"  id="home"> 
+
+
+            <!-- 02.1 - Textos da Tela de apresentação -->
+            <div    class="display-left text-white"    style="padding:48px">
+                <span   class="jumbo hide-small">                 Comece algo que importe.  </span> <br>    <!-- Textos da Tela de apresentação quando a tela aumentar  -->
+                <span   class="xxlarge hide-large hide-medium">   Comece algo que importe.  </span> <br>    <!-- Textos da Tela de apresentação quando a tela reduzir   -->
+                <span   class="large">                            Pare de perder seu valioso tempo com projetos que não trazem resultados.  </span>
+
+                    <!-- 02.2 - Botão da Tela de apresentação -->
+                    <p> <a   href="#about"   class="button   white   padding-large   large   margin-top  opacity hover-opacity-on">
+                        Venha conhecer nossas soluções.
+                    </a>    </p>
+            </div>
+            
+            <!-- 02.3 - Botoes de rede social -->
+            <div    class="display-bottomleft   text-grey   large"  style="padding:24px 48px">
+                <i  class="fa fa-facebook-official   hover-opacity">    </i>    
+                <i  class="fa fa-instagram           hover-opacity">    </i>            
+                <i  class="fa fa-snapchat            hover-opacity">    </i>             
+                <i  class="fa fa-pinterest-p         hover-opacity">    </i>          
+                <i  class="fa fa-twitter             hover-opacity">    </i>
+                <i  class="fa fa-linkedin            hover-opacity">    </i>
+            </div>
+
+            <!--    Inicio do carrossel de imagens  -->
+            <div    class="mySlides display-container center">
+                <img    src="imagens/_BannerComLogo3.png"   style="width:100%">
+                <div    class="display-bottommiddle container   text-white  padding-32  hide-small">
+                    <h3>    </h3>
+                    <p><b>  </b></p>   
+                </div>
+            </div>
+
+            <div    class="mySlides display-container   center">
+                <img    src="imagens/_BannerComLogo5.png"   style="width:100%">
+                <div    class="display-bottommiddle container   text-white  padding-32 hide-small">
+                    <h3>    </h3>
+                    <p><b>  </b></p>    
+                </div>
+            </div>
+
+            <!--<div    class="mySlides display-container   center">
+                <img    src=""  style="width:100%">
+                <div    class="display-bottommiddle container   text-white  padding-32  hide-small">
+                    <h3>    </h3>                        <p><b>  </b></p>    
+                </div>
+            </div>-->
+
+            <script>
+                // Automatic Slideshow - change image every 4 seconds
+                var myIndex =   0;
+                carousel();
+                
+                function    carousel()  {
+                    var i;
+                    var x   =   document.getElementsByClassName("mySlides");
+                    for (   i  =   0;   i   <   x.length;   i++ )   {
+                        x[i].style.display  =   "none";
+                    }
+
+                    myIndex++;
+                        if  (   myIndex    >   x.length )   {   myIndex =   1   }   
+                        x   [myIndex-1].style.display   =   "block";
+                        setTimeout(carousel,    4000);    
+                }
+                
+                // Used to toggle the menu on small screens when clicking on the menu button
+                function    myFunction()    {
+                    var x   =   document.getElementById("navDemo");
+                        if  (x.className.indexOf("show")    ==  -1  )   {
+                        x.className +=  "   show";
+                        }   else    { 
+                        x.className =   x.className.replace("   show",  "");
+                    }
+                }
+                
+                // When the user clicks anywhere outside of the modal, close it
+                var modal   =   document.getElementById('ticketModal');
+                window.onclick  =   function(event) {
+                    if  (event.target   ==  modal)  {
+                        modal.style.display =   "none";
+                    }
+                }
+            </script>
+
+            <!-- Fim do Slideshow -->
+
+        </header>
+
+        <!-- 03 - Tela de valores da empresa - RESPONSABILIDADE / REALIDADE / ESTRATEGIA / SUPORTE -->
+        <div    class="container"   style="padding:128px    16px"   id="about">
+            
+            <!-- 03.1 - Titulo da pagina -->
+            <h3 class="center"> GHG Consultoria em Ti   </h3>   
+
+            <!-- 03.2 - SubTitulo da pagina -->
+            <p  class="center   large"> Nós podemos fazer o seu pequeno negócio GIGANTE </p>
+
+            <!-- 03.3 - "quadro" que separa os 4 blocos dentro da div -->
+            <div    class="row-padding  center" style="margin-top:64px">
+
+                <!-- 03.5 - Quadrante do desenho do monitor -->
+                <div class="quarter">
+                    <i class="fa fa-desktop margin-bottom jumbo center"></i>
+                    <p class="large">Service</p>
+                    <p>A GHG oferece os serviços de TI que os clientes precisam para modernizar as operações e impulsionar inovação em toda a sua cadeia de tecnologia.</p>
+                </div>
+
+                <!-- 03.6 - Quadrante do desenho do coracao -->
+                <div class="quarter">
+                    <i class="fa fa-handshake-o margin-bottom jumbo"></i>
+                    <p class="large">Outsourcing</p>
+                    <p>Confie na GHG como o seu parceiro ideal de tecnologia de missão crítica para simplificar e otimizar a TI.</p>
+                </div>
+
+                <!-- 03.7 - Quadrante do desenho do diamanta -->
+                <div class="quarter">
+                    <i class="fa fa-globe margin-bottom jumbo"></i>
+                    <p class="large">Applications</p>
+                    <p>Desenvolvimento e gerenciamento de web-sites para que o seu negócio chegue mais longe, angariando mais clientes e crescendo da maneira que você sempre sonhou.</p>
+                </div>
+
+                <!-- 03.8 - Quadrante do desenho da engrenagem -->
+                <div class="quarter">
+                    <i class="fa fa-cog margin-bottom jumbo"></i>
+                    <p class="large">Suporte</p>
+                    <p>Oferecemos suporte diferenciado para cada tipo de necessidade que o seu negócio necessite para ser grande.</p>
+                </div>
+
+            </div>
+            
+        </div>
+
+
+        <!-- 04 - Tela de introdução aos feitos já realizados, com botao para visualizar  -->
+        <div    class="container    light-grey" style="padding:128px 16px">
+            <div    class="row-padding">
+                <div    class="col  m6">
+                    <h3>    Nossas perspectivas em tecnologia   </h3>
+                    <p> Disponibilizamos serviços críticos de TI, que transformam negócios globais.         <br>
+                        Entregamos excelência aos nossos clientes, colegas e comunidades em todo o mundo.   <br>
+                        Nós somos a GHG
+                    <p> <a  href="#work"    class="button black">   <i  class="fa   fa-th"> </i>    Veja nossos trabalhos   </a>    </p>
+                </div>
+
+                <div    class="col  m6">
+                    <!--    <img    class="image round-large"   src="../_GHG_ConsultoriaEmTi/imagens/phone_buildings.jpg"   alt="Buildings" width="700" height="394">   -->
+                    <img    class="image    round-large"    src="imagens/_BannerComLogo-3.png"   alt="Buildings" width="500" height="300">
+                </div>
+            </div>
+        </div>
+
+        <!-- 05 - Quadro de Nossos colaboradores -->
+        <div    class="container"   style="padding:128px    16px"   id="team">
+            <h3 class="center"> NOSSOS COLABORADORES    </h3>
+                <p  class="center   large"> Aqueles que fazem acontecer </p>
+
+            <!-- 05.1 - Colaborador 1 -->
+            <div    class="row-padding grayscale"  style="margin-top:64px">
+
+                <div    class="col  l3  m6  margin-bottom">
+                    <div    class="card">
+                        <img    src="../_GHG_ConsultoriaEmTi/imagens/Guilherme.jpg" alt="John"  style="width:100%">
+                        <div    class="container">
+                        <h3>    Guilherme Goulart   </h3>               <!-- Nome   -->
+                        <p  class="opacity">    CEO & Fundador  </p>    <!-- Cargo  -->
+                        <p> O futuro é agora.   </p>                    <!-- Resumo -->
+                        <p> <button class="button   light-grey  block"> <i  class="fa   fa-mobile-phone">   </i>    (41) 9 9284-9781    </button>   </p>
+                        <p> <button class="button   light-grey  block"> <i  class="fa   fa-whatsapp">   </i>    (41) 9 9284-9781    </button>   </p>
+                        <p> <button class="button   light-grey  block"> <i  class="fa   fa-envelope">   </i>    gui.technologic@gmail.com   </button>   </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 05.2 - Colaborador 2 -->
+                <div    class="col  l3  m6  margin-bottom">
+                    <div    class="card">
+                        <img    src="../_GHG_ConsultoriaEmTi/imagens/Janni.jpg" alt="John"  style="width:100%">
+                        <div    class="container">
+                            <h3>    Jannifer Forte  </h3>                       <!-- Nome   -->
+                            <p  class="opacity">    Sócia & Secretaria  </p>    <!-- Cargo  -->
+                            <p> Tá fazendo o que parado? Vai trabalhar. </p>    <!-- Resumo -->
+                            <p> <button class="button   light-grey  block"> <i  class="fa   fa-mobile-phone">   </i>    (41) x xxxx-xxxx    </button>   </p>
+                            <p> <button class="button   light-grey  block"> <i  class="fa   fa-whatsapp">   </i>    (41) x xxxx-xxxx    </button>   </p>
+                            <p> <button class="button   light-grey block">  <i class="fa    fa-envelope">   </i>    Contact </button>    </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 05.3 - Colaborador 3 -->
+                <div    class="col  l3  m6  margin-bottom">
+                    <div    class="card">
+                        <img    src="../_GHG_ConsultoriaEmTi/imagens/Lavinia.jpg"   alt="John"    style="width:100%">
+                        <div    class="container">
+                            <h3>    Lavinia Forte Goulart   </h3>             <!-- Nome   -->
+                            <p  class="opacity">    Menor aprendiz   </p>     <!-- Cargo  -->
+                            <p> Aceita um cafézinho? </p>                     <!-- Resumo -->
+                            <p> <button class="button   light-grey  block"> <i  class="fa   fa-mobile-phone">   </i>    (41) x xxxx-xxxx    </button>   </p>
+                            <p> <button class="button   light-grey  block"> <i  class="fa   fa-whatsapp">   </i>    (41) x xxxx-xxxx    </button>   </p>
+                            <p> <button class="button   light-grey block">  <i  class="fa   fa-envelope">   </i>    Contact </button>   </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 05.4 - Colaborador 4 -->
+                <div    class="col  l3  m6  margin-bottom">
+                    <div    class="card">
+                        <img    src="../_GHG_ConsultoriaEmTi/imagens/Beatriz.jpg"   alt="John"  style="width:100%">
+                        <div    class="container">
+                            <h3>    Joana Beatriz   </h3>           <!-- Nome   -->
+                            <p  class="opacity"> Estagiária </p>    <!-- Cargo  -->
+                            <p> Eu sei que manjo de Excel    </p>   <!-- Resumo -->
+                            <p> <button class="button   light-grey  block"> <i  class="fa   fa-mobile-phone">   </i>    (41) x xxxx-xxxx    </button>   </p>
+                            <p> <button class="button   light-grey  block"> <i  class="fa   fa-whatsapp">   </i>    (41) x xxxx-xxxx    </button>   </p>
+                            <p> <button class="button   light-grey  block"> <i  class="fa   fa-envelope">   </i>    Contact </button>   </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- 06 - Numeros de parceiros, projetos, clientes, opinioes, etc. -->
+        <div    class="container    row center  dark-grey   padding-64">
+
+            <div    class="quarter">
+                <span   class="xxlarge">    14+ </span>
+                <br>    Parceiros
+            </div>
+
+            <div    class="quarter">
+                <span   class="xxlarge">    55+ </span>
+                <br>    Projetos Realizados
+            </div>
+
+            <div    class="quarter">
+                <span   class="xxlarge">    89+ </span>
+                <br>    Clientes Satisfeitos
+            </div>
+
+            <div    class="quarter">
+                <span   class="xxlarge">    150+    </span>
+                <br>    Opiniões positivas no Google
+            </div>
+
+        </div>
+
+        <!-- 07 - Apresentação de nossos produtos -->
+        <div    class="container"   style="padding:128px    16px"   id="work">
+            <h2 class="center"> </h2>
+                <p  class="center   large"> Nossas soluções para a sua empresa: </p>
+
+            <!-- 07.1 - Primeira linha de produtos com as 4 imagens de apresentacao -->
+            <div    class="row-padding" style="margin-top:64px">
+
+                <div    class="col  l3  m6">
+                    <img    src="imagens/CentOs.png"        style="width:100%"  onclick="onClick(this)" class="hover-opacity"   alt="A microphone">
+                </div>
+
+                <div    class="col  l3  m6">
+                    <img    src="imagens/Docker.png"        style="width:100%"  onclick="onClick(this)" class="hover-opacity"   alt="A phone">
+                </div>
+
+                <div    class="col  l3  m6">
+                    <img    src="imagens/Rancher.png"       style="width:100%"  onclick="onClick(this)" class="hover-opacity"   alt="A drone">
+                </div>
+
+                <div    class="col l3  m6">
+                    <img    src="imagens/kubernetes.png"    style="width:100%"  onclick="onClick(this)" class="hover-opacity"   alt="Soundbox">
+                </div>
+
+            </div>
+
+            <!-- 07.2 - Segunda linha de produtos com as 4 imagens de apresentacao -->
+            <div    class="row-padding  section">
+
+                <div    class="col  l3  m6">
+                    <img    src="imagens/HtmlCssJs.png"         style="width:100%"  onclick="onClick(this)" class="hover-opacity"   alt="A tablet">
+                </div>
+
+                <div    class="col  l3  m6">
+                    <img    src="imagens/java.jpg"              style="width:100%"  onclick="onClick(this)" class="hover-opacity"   alt="A camera">
+                </div>
+
+                <div    class="col  l3  m6">
+                    <img    src="imagens/OracleDatabase.png"    style="width:100%"  onclick="onClick(this)" class="hover-opacity"   alt="A typewriter">
+                </div>
+                
+                <div    class="col  l3  m6">
+                    <img    src="imagens/DevOps.png"            style="width:100%"  onclick="onClick(this)" class="hover-opacity"   alt="A tableturner">
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- 07.3 -->
+        <div    id="modal01"    class="modal    black"  onclick="this.style.display='none'">
+            <span   class="button   xxlarge black   padding-large   display-topright"   title="Close    Modal   Image"> ×   </span>
+
+            <div    class="modal-content    animate-zoom    center  transparent padding-64">
+                <img id="img01" class="image">
+                <p id="caption" class="opacity large"></p>
+            </div>
+
+        </div>
+
+        <!-- 08 - Nossos feitos e graficos de demonstração -->
+        <div    class="container    light-grey  padding-64">
+            
+            <div    class="row-padding">
+                    <div    class="col  m6">
+                        <h3>    Atuação de nossos colaboradores atualmente alocados:    </h3>
+
+                            <p> Análise de defeitos em ambientes não produtivos baseados em Java.  <br>  <br>
+                            </p>
+                            
+                            <p> Desenvolvimento de páginas para Web como a que vês no momento.  <br>    <br>
+                            </p>
+                            
+                            <p> Planejamento e implantação de cultura DevOps para automatização de serviços.    <br>    <br>
+                            </p>
+                            
+                            <p> Gestão de infraestrutura de microserviços Docker com Kubernetes e Rancher.  <br>
+                            </p>
+                    </div>
+
+                <!-- 08.1 - Graficos horizontais -->
+                <div    class="col  m6">
+                
+                    <p  class="wide">   <i  class="fa   fa-desktop  margin-right">  </i>    Java </p>
+                        <div    class="grey">
+                            <div    class="container    dark-grey   center" style="width:50%">  50% </div>
+                        </div>
+
+                    <p  class="wide">   <i  class="fa   fa-desktop  margin-right">  </i>    Dev FrontEnd  </p>
+                        <div    class="grey">
+                            <div    class="container    dark-grey   center" style="width:85%">  85% </div>
+                        </div>
+
+                    <p  class="wide">   <i  class="fa   fa-desktop  margin-right">  </i>    DevOps  </p>
+                        <div    class="grey">
+                            <div    class="container    dark-grey   center" style="width:75%">  75% </div>
+                        </div>
+
+                    <p  class="wide">   <i  class="fa   fa-desktop  margin-right">  </i>    Gestão de InfraEstrutura    </p>
+                        <div    class="grey">
+                            <div    class="container    dark-grey   center" style="width:100%">  100%    </div>
+                        </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- 09 - Planos de compra -->
+        <div    class="container    center  dark-grey"  style="padding:128px    16px"   id="carrer">
+
+            <h3>    SERVIÇOS    </h3>
+                <p  class="large">  Nossas propostas de serviço para a sua empresa: </p>
+
+            <!-- 09.1 - Plano de compra BASIC-->    
+            <div    class="row-padding" style="margin-top:64px">
+                <div    class="third    section">
+                    <ul class="ul   white   hover-shadow">
+                        <li class="black    xlarge  padding-32">            Desenvolvimento de aplicações   </li>
+                        <li class="padding-16"> <b>HTML, CSS, JavaScript    </b>    </li>
+                        <li class="padding-16"> <b>Java                     </b>    </li>
+                        <li class="padding-16"> <b>Python                   </b>    </li>
+                        <li class="padding-16"> <b> </b>    </li>
+                        <li class="padding-16">
+                        <h2 class="wide"></h2>
+                            <span   class="opacity">    </span>
+                        </li>
+                        <li class="light-grey   padding-24">
+                        <button class="button   black   padding-large"> Sign Up </button>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 09.2 - Plano de compra PRO -->    
+                <div    class="third">
+                    <ul class="ul   white   hover-shadow">
+                        <li class="red  xlarge  padding-48">    Gestão de InfraEstrutura    </li>
+                        <li class="padding-16"> <b> WebLogic    </b>    </li>
+                        <li class="padding-16"> <b> Docker      </b>    </li>
+                        <li class="padding-16"> <b> Kubernetes  </b>    </li>
+                        <li class="padding-16"> <b> Rancher     </b>    </li>
+                        <li class="padding-16">
+                        <h2 class="wide"></h2>
+                        <span class="opacity"></span>
+                        </li>
+                        <li class="light-grey padding-24">
+                        <button class="button black padding-large">Sign Up</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 09.3 - Plano de compra PREMIUM-->    
+                <div    class="third    section">
+                    <ul class="ul   white   hover-shadow">
+                        <li class="black xlarge padding-32">    Alocação De Recursos            </li>
+                        <li class="padding-16"> <b> Analistas de Banco de dados (DBA's) </b>    </li>
+                        <li class="padding-16"> <b> Analistas de S.o Linux              </b>    </li>
+                        <li class="padding-16"> <b> Analistas de InfraEstrutura         </b>    </li>
+                        <li class="padding-16"> <b> Analistas de MicroServiços          </b>    </li>
+                        <li class="padding-16">
+                        <h2 class="wide">   </h2>
+                        <span class="opacity">  </span>
+                        </li>
+                        <li class="light-grey   padding-24">
+                        <button class="button   black   padding-large"> Sign Up </button>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- 10 - Opcoes de contato -->
+        <div    class="container    light-grey" style="padding:128px    16px"   id="contact">
+            <h3 class="center"> CONTATO </h3>
+                <p  class="center   large"> Não espere mais, envie-nos uma mensagem:    </p>
+
+                <div    style="margin-top:48px">
+                    <p> <i  class="fa   fa-map-marker   fa-fw   xxlarge margin-right">  </i> Travessa Lago Salto Caxias 91 - Colombo - PR   </p>
+                    <p> <i  class="fa   fa-phone        fa-fw   xxlarge margin-right">  </i> Phone: +55 41 9 9284-9781                      </p>
+                    <p> <i  class="fa   fa-envelope     fa-fw   xxlarge margin-right">  </i> E-mail: ghgconsultoriaemti@gmail.com           </p>
+                    <br>
+
+                    <!-- 10.1 - Formulario de contato -->
+                    <form   action="/action_page.php"   target="_blank">
+                        <p> <input  class="input border"    type="text" placeholder="Name"      required    name="Name">    </p>
+                        <p> <input  class="input border"    type="text" placeholder="Email"     required    name="Email">   </p>
+                        <p> <input  class="input border"    type="text" placeholder="Subject"   required    name="Subject"> </p>
+                        <p> <input  class="input border"    type="text" placeholder="Message"   required    name="Message"> </p>
+                    <p>
+                        <button class="button   black"  type="submit">
+                            <i  class="fa   fa-paper-plane">    </i>    ENVIAR MENSAGEM
+                        </button>
+                    </p>
+                    </form>
+                    
+                    
+
+                </div>
+        </div>
+
+
+        <!-- 11.0 - Localização -->
+        <div    class="container"   style=""   id="about">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.038152404833!2d-49.16817898498699!3d-25.370037783816063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce9fa6cf03153%3A0x29b11f8c4baa0367!2sGHG%20Consultoria%20em%20TI!5e0!3m2!1spt-BR!2sbr!4v1638303290522!5m2!1spt-BR!2sbr" 
+                width="100%"    height="600"    style="border:  1px"   allowfullscreen=""   loading="lazy"> </iframe>            
+        </div>
+
+
+        <!-- 12 - Rodapé -->
+        <footer class="center   black   padding-64">
+
+            <a  href="#home"    class="button   light-grey">    <i class="fa    fa-arrow-up margin-right">  </i>    Home    </a>
+                
+                <div    class="xlarge   section">
+                    <i  class="fa   fa-facebook-official    hover-opacity"> </i>
+                    <i  class="fa   fa-instagram            hover-opacity"> </i>
+                    <i  class="fa   fa-snapchat             hover-opacity"> </i>
+                    <i  class="fa   fa-pinterest-p          hover-opacity"> </i>
+                    <i  class="fa   fa-twitter              hover-opacity"> </i>
+                    <i  class="fa   fa-linkedin             hover-opacity"> </i>
+                    <i  class="fa   fa-github               hover-opacity"> </i>
+                </div>
+
+            <p> GHG Consultoria em Ti - Travessa Lago Salto Caxias, 91 - Colombo-PR  </a>  </p>
+            
+                    Todos os direitos reservados - 2021 </small>
+        </footer>
+
+    
+        <!-- 13 - JavaScript -->
+        <script>
+
+        // Modal Image Gallery
+            function    onClick(element)    {
+                document.getElementById("img01").src    =   element.src;
+                    document.getElementById("modal01").style.display    =   "block";
+                var captionText =   document.getElementById("caption");
+                    captionText.innerHTML   =   element.alt;
+            }
+
+
+            // 13.1 - Alternancia entre mostrar e ocultar a barra lateral ao clicar no icone de menu
+            var mySidebar   =   document.getElementById(    "mySidebar" );
+
+            function    botaoAbre() {
+                if  (   mySidebar.style.display    ===  'block' )   {
+                    mySidebar.style.display =   'none'  ;
+                }   else    {
+                    mySidebar.style.display =   'block';
+                }
+            }
+
+            // 13.2 - Feche a barra lateral com o botão Fechar
+            function    botaoFechar()   {
+                mySidebar.style.display =   "none"  ;
+            }
+
+        </script>
+        
+    </body>
+
+</html>
