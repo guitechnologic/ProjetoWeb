@@ -509,7 +509,7 @@
                     <br>
 
                     <!-- 10.1 - Formulario de contato -->
-                    <form   action="/action_page.php"   target="_blank">
+                    <form   method="post" action="mailto:gui.technologic@gmail.com"   target="_blank">
                         <p> <input  class="input border"    type="text" placeholder="Name"      required    name="Name">    </p>
                         <p> <input  class="input border"    type="text" placeholder="Email"     required    name="Email">   </p>
                         <p> <input  class="input border"    type="text" placeholder="Subject"   required    name="Subject"> </p>
@@ -521,6 +521,46 @@
                     </p>
                     </form>
                     
+                    <!-- 10.2 - Envio do formulario por e-mail -->
+
+                    <?php
+                    //1 – Definimos Para quem vai ser enviado o email
+                    $para = "gui.technologic@gmail.com";
+
+                    //2 - resgatar o nome digitado no formulário e  grava na variavel $nome
+                    $name = $_POST['name'];
+
+                    // 3 - resgatar o assunto digitado no formulário e  grava na variavel
+                    //$assunto
+                    $Subject = $_POST['Subject'];
+
+                     //4 – Agora definimos a  mensagem que vai ser enviado no e-mail
+                    $mensagem = "<strong>Nome:  </strong>".$nome;
+                    $mensagem .= "<br>  <strong>Mensagem: </strong>"
+                    .$_POST['mensagem'];
+                    
+                    //5 – agora inserimos as codificações corretas e  tudo mais.
+                    $headers =  "Content-Type:text/html; charset=UTF-8\n";
+                    $headers .= "From:  dominio.com.br<sistema@dominio.com.br>\n";
+
+                    //Vai ser //mostrado que  o email partiu deste email e seguido do nome
+                    $headers .= "X-Sender:  <sistema@dominio.com.br>\n";
+
+                    //email do servidor //que enviou
+                    $headers .= "X-Mailer: PHP  v".phpversion()."\n";
+                    $headers .= "X-IP:  ".$_SERVER['REMOTE_ADDR']."\n";
+                    $headers .= "Return-Path:  <sistema@dominio.com.br>\n";
+
+                    //caso a msg //seja respondida vai para  este email.
+                    $headers .= "MIME-Version: 1.0\n";
+                    
+                    mail($para, $assunto, $mensagem, $headers);  //função que faz o envio do email.
+                    ?>
+
+                    <!-- 10.2 - Envio do formulario por e-mail -->
+                    
+                        
+                    
                     
 
                 </div>
@@ -529,7 +569,7 @@
         
         <!-- 11.0 - Localização -->
         <hr>
-        <div    class="container"   style=""   id="about">
+        <div    class="container"   id="about">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.038152404833!2d-49.16817898498699!3d-25.370037783816063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce9fa6cf03153%3A0x29b11f8c4baa0367!2sGHG%20Consultoria%20em%20TI!5e0!3m2!1spt-BR!2sbr!4v1638303290522!5m2!1spt-BR!2sbr" 
                 width="100%"    height="600"    style="border:  1px"   allowfullscreen=""   loading="lazy"> </iframe>            
         </div>
