@@ -1,33 +1,29 @@
 <?php
-                    /*1 – Definimos Para quem vai ser enviado o email*/
-                    $para = "gui.technologic@gmail.com";
 
-                    //2 - resgatar o nome digitado no formulário e  grava na variavel $nome
-                    $name = $_POST['name'];
+if(isset($_POST(['Email']) && !empty($_POST(['Email']))))
 
-                    // 3 - resgatar o assunto digitado no formulário e  grava na variavel
-                    //$Message
-                    $Message = $_POST['Message'];
+$nome = addslashes($_POST(['Name']));
+$Email = addslashes($_POST(['Email']));
+$Subject = addslashes($_POST(['Subject']));
+$Message = addslashes($_POST(['Message']));
 
-                     //4 – Agora definimos a  mensagem que vai ser enviado no e-mail
-                    $mensagem = "<strong>Nome:  </strong>".$nome;
-                    $mensagem .= "<br>  <strong>Mensagem: </strong>"
-                    .$_POST['mensagem'];
-                    
-                    //5 – agora inserimos as codificações corretas e  tudo mais.
-                    $headers =  "Content-Type:text/html; charset=UTF-8\n";
-                    $headers .= "From:  dominio.com.br<sistema@dominio.com.br>\n";
+$to = "gui.technologic@gmail.com";
+$subject = "Contato";
+$body = "Nome: ".$nome."\n"
+        "Email: ".$Email."\n"
+        "Subject: ".$Subject."\n"
+        "Message: ".$Message;
+$header = "From:gui.technologic@gmail.com"."\r\n"
+        ."Reply-to: ".$Email."\e\n"
+        ."X=Mailer:PHP/".phpversion();
 
-                    //Vai ser //mostrado que  o email partiu deste email e seguido do nome
-                    $headers .= "X-Sender:  <sistema@dominio.com.br>\n";
+if(mail($to, $subject, $body, $header)){
+    echo("email enviado com sucesso");
+}else{
+    echo("email nãoenviado com sucesso");
+}
 
-                    //email do servidor //que enviou
-                    $headers .= "X-Mailer: PHP  v".phpversion()."\n";
-                    $headers .= "X-IP:  ".$_SERVER['REMOTE_ADDR']."\n";
-                    $headers .= "Return-Path:  <sistema@dominio.com.br>\n";
 
-                    //caso a msg //seja respondida vai para  este email.
-                    $headers .= "MIME-Version: 1.0\n";
-                    
-                    mail($para, $assunto, $mensagem, $headers);  //função que faz o envio do email.
-                    ?>
+
+?>
+
