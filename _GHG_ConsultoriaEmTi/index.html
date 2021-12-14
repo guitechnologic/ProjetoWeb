@@ -161,12 +161,80 @@
                         e mostrando que o departamento de Ti de uma empresa pode ser mais valioso do que se imagina.
                     <p> <a  href="#work"    class="button black">   <i  class="fa   fa-th"> </i>    Nosso modelo de trabalho   </a>    </p>
                 </div>
-
-                <div    class="col  m6">
-                    <img    class="image    round-large"    src="_imagens/logomarca/_BannerComLogo-3.png"   alt="Buildings" width="300" height="200">
-                </div>
+                <!--<div    class="col  m6">
+                    <img    class="image    round-large"    src=""   alt="" width="300" height="200">
+                </div>-->
             </div>
         </div>
+
+        <!--    Inicio do carrossel de _imagens  
+        <div    class="container    light-grey" style="padding:128px 16px" id="Servicos">
+            <div    class="row-padding">-->
+                    <!--    Inicio do carrossel de _imagens  
+                <div    class="mySlides display-container center">
+                    <img    src="_imagens/certificados/BancoDeDadosOracle.jpg"   style="width:100%">
+                    <div    class="display-bottommiddle container   text-white  padding-32  hide-small">
+                        <h3>    </h3>
+                        <p><b>  </b></p>   
+                    </div>
+                </div>
+
+                <div    class="mySlides display-container   center">
+                    <img    src="_imagens/certificados/DockerDoZero.jpg"   style="width:100%">
+                    <div    class="display-bottommiddle container   text-white  padding-32 hide-small">
+                        <h3>    </h3>
+                        <p><b>  </b></p>    
+                    </div>
+                </div>
+
+                <div    class="mySlides display-container center">
+                    <img    src="_imagens/certificados/DevOpsNinja.jpg"   style="width:100%">
+                    <div    class="display-bottommiddle container   text-white  padding-32  hide-small">
+                        <h3>    </h3>
+                        <p><b>  </b></p>   
+                    </div>
+                </div>
+
+                <script>
+                    // Automatic Slideshow - change image every 4 seconds
+                    var myIndex =   0;
+                    carousel();
+                    
+                    function    carousel()  {
+                        var i;
+                        var x   =   document.getElementsByClassName("mySlides");
+                        for (   i  =   0;   i   <   x.length;   i++ )   {
+                            x[i].style.display  =   "none";
+                        }
+
+                        myIndex++;
+                            if  (   myIndex    >   x.length )   {   myIndex =   1   }   
+                            x   [myIndex-1].style.display   =   "block";
+                            setTimeout(carousel,    4000);    
+                    }
+                    
+                    // Used to toggle the menu on small screens when clicking on the menu button
+                    function    myFunction()    {
+                        var x   =   document.getElementById("navDemo");
+                            if  (x.className.indexOf("show")    ==  -1  )   {
+                            x.className +=  "   show";
+                            }   else    { 
+                            x.className =   x.className.replace("   show",  "");
+                        }
+                    }
+                    
+                    // When the user clicks anywhere outside of the modal, close it
+                    var modal   =   document.getElementById('ticketModal');
+                    window.onclick  =   function(event) {
+                        if  (event.target   ==  modal)  {
+                            modal.style.display =   "none";
+                        }
+                    }
+                </script>
+
+            </div>
+        </div>-->
+        <!-- Fim do Slideshow -->
 
         <!-- 05 - Nosso Modelo de trabalho  -->
         <div>
@@ -174,9 +242,7 @@
             <div    class="container" style="padding:80px 16px"  id="work">
                 <h1 class="center"><b><u>    Nossa maneira de atuação:   </u></b></h1><br>
                 <div    class="row-padding">
-                    <div    class="col  m3">
-                        <img    class="image    round-large"    src="_imagens/metodoDeTrabalho/AnaliseDeEstrutura.jpg"   alt="Buildings" width="300" height="200">
-                    </div>
+                    
                     <div    class="col  m8">
                         <h1>    Analisamos suas necessidades   </h1>
                         <h3> -  Mapeamento das necessidades</h3>
@@ -185,7 +251,9 @@
                             da atual situação do cliente, identificando o quanto cada necessidade
                             pode ser melhorada.
                     </div>
-                    
+                    <div    class="col  m3">
+                        <img    class="image    round-large"    src="_imagens/metodoDeTrabalho/AnaliseDeEstrutura.jpg"   alt="Buildings" width="300" height="200">
+                    </div>
                 </div>
             </div>
 
@@ -209,9 +277,7 @@
             <!-- 05.3 - Nosso Modelo de trabalho  -->
             <div    class="container" style="padding:80px 16px"  >
                 <div    class="row-padding">
-                    <div    class="col  m3">
-                        <img    class="image    round-large"    src="_imagens/metodoDeTrabalho/exec.webp"   alt="Buildings" width="300" height="200">
-                    </div>
+                    
                     <div    class="col  m8">
                         <h1>    Execução da proposta   </h1>
                         <h3> -  Execução, Acompanhamento e Monitoração</h3>
@@ -220,7 +286,9 @@
                             com as principais técnicas de execução de projetos, controlando e apresentando 
                             métricas e resultados de cada etapa.
                     </div>
-                    
+                    <div    class="col  m3">
+                        <img    class="image    round-large"    src="_imagens/metodoDeTrabalho/exec.webp"   alt="Buildings" width="300" height="200">
+                    </div>
                 </div>
             </div>
 
@@ -230,22 +298,19 @@
         <div    class="container light-gray" style="padding:80px 16px"  id="work">
             <h1 class="center"><b><u>       </u></b></h1><br>
             <div    class="row-padding">
-                <div    class="col  m6">
+                <div    class="col  m8">
                     <h1>    Desenvolvimento de WebSites   </h1>
                     <h3>—   Conheça as 16 vantagens de se obter um WebSite para a sua empresa ...</h3>
                     <p> 
-                    <p> <a  href="CriacaoDeWebSite.html"    class="button black">   <i  class="fa   fa-money"> </i>    16 Vantagens de um WebSite</a>    </p>
+                    <p> <a  href="porqueTerUmWebSite.html"    class="button black">   <i  class="fa   fa-money"> </i>    16 Vantagens de um WebSite</a>    </p>
                     <h3>   ... e depois crie seu WebSite conosco</h3>
                 </div>
                 
-                <div    class="col  m6">
+                <div    class="col  m3">
                     <img    class="image    round-large"    src="_imagens/produtos/empresa-na-internet.png"   alt="Buildings" width="300" height="200">
                 </div>
             </div>
         </div>
-
-        
-        
 
         <!-- 07 - Nossos parceiros -->
         <div    id="modal01"    class="modal    black"  onclick="this.style.display='none'">
@@ -261,9 +326,6 @@
         <div    class="container "   style="padding:128px    16px"   >
             <h1 class="center"> </h1>
                 <h1  class="center   large"> Nossos Parceiros: </h1>
-                
-
-                
 
             <!-- 07.2- Nossos parceiros -->
             <div    class="row-padding" style="margin-top:64px">
@@ -274,8 +336,6 @@
                 </a>
                 </div>
             </div>
-
-            
 
         </div>
 
@@ -290,9 +350,7 @@
 
         </div>
 
-        
-
-            </div>
+        </div>
 
         </div>
 
@@ -350,6 +408,7 @@
             <p> GHG Consultoria em Ti - Travessa Lago Salto Caxias, 91 - Colombo-PR  </a>  </p>
             
                     Todos os direitos reservados - 2021 </small>
+                    <p>Powered by <a href="http://ghgconsultoriaemti.com/" target="_blank">GHG Consultoria em Ti</a></p>
         </footer>
 
     
