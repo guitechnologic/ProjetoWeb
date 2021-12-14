@@ -20,7 +20,7 @@ $header = "From:gui.technologic@gmail.com"."\r\n"
 if(mail($to, $subject, $body, $header)){
     echo("email enviado com sucesso");
 }else{
-    echo("email nãoenviado com sucesso");
+    echo("email não enviado com sucesso");
 }
 
 
