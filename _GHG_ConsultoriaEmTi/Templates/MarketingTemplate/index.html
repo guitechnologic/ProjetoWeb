@@ -1,243 +1,247 @@
 <!DOCTYPE html>
 <html>
-	<title>Marketing template</title>
+	<title>Parallax Template</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="estilo.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style>
-		html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
-		.mySlides {display:none}
-		.tag, .fa {cursor:pointer}
-		.tag {height:15px;width:15px;padding:0;margin-top:6px}
+		body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+		body, html {
+		height: 100%;
+		color: #777;
+		line-height: 1.8;
+		}
+		
+		/* Create a Parallax Effect */
+		.bgimg-1, .bgimg-2, .bgimg-3 {
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		}
+		
+		/* First image (Logo. Full height) */
+		.bgimg-1 {
+		background-image: url('Imagens/parallax1.jpg');
+		min-height: 100%;
+		}
+		
+		/* Second image (Portfolio) */
+		.bgimg-2 {
+		background-image: url("Imagens/parallax2.jpg");
+		min-height: 400px;
+		}
+		
+		/* Third image (Contact) */
+		.bgimg-3 {
+		background-image: url("Imagens/parallax3.jpg");
+		min-height: 400px;
+		}
+		
+		.wide {letter-spacing: 10px;}
+		.hover-opacity {cursor: pointer;}
+		
+		/* Turn off parallax scrolling for tablets and phones */
+		@media only screen and (max-device-width: 1600px) {
+		.bgimg-1, .bgimg-2, .bgimg-3 {
+		background-attachment: scroll;
+		min-height: 400px;
+		}
+		}
 	</style>
 	<body>
 		
-		<!-- Links (sit on top) -->
+		<!-- Navbar (sit on top) -->
 		<div class="top">
-			<div class="row large light-grey">
-				<div class="col s3">
-					<a href="#" class="button block">Home</a>
-				</div>
-				<div class="col s3">
-					<a href="#plans" class="button block">Plans</a>
-				</div>
-				<div class="col s3">
-					<a href="#about" class="button block">About</a>
-				</div>
-				<div class="col s3">
-					<a href="#contact" class="button block">Contact</a>
-				</div>
+			<div class="bar" id="myNavbar">
+				<a class="bar-item button hover-black hide-medium hide-large right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+					<i class="fa fa-bars"></i>
+				</a>
+				<a href="#home" class="bar-item button">HOME</a>
+				<a href="#about" class="bar-item button hide-small"><i class="fa fa-user"></i> ABOUT</a>
+				<a href="#portfolio" class="bar-item button hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+				<a href="#contact" class="bar-item button hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+				<a href="#" class="bar-item button hide-small right hover-red">
+					<i class="fa fa-search"></i>
+				</a>
+			</div>
+			
+			<!-- Navbar on small screens -->
+			<div id="navDemo" class="bar-block white hide hide-large hide-medium">
+				<a href="#about" class="bar-item button" onclick="toggleFunction()">ABOUT</a>
+				<a href="#portfolio" class="bar-item button" onclick="toggleFunction()">PORTFOLIO</a>
+				<a href="#contact" class="bar-item button" onclick="toggleFunction()">CONTACT</a>
+				<a href="#" class="bar-item button">SEARCH</a>
 			</div>
 		</div>
 		
-		<!-- Content -->
-		<div class="content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
-			
-			<div class="panel">
-				<h1><b>MARKETING</b></h1>
-				<p>Template by w3.css</p>
+		<!-- First Parallax Image with Logo Text -->
+		<div class="bgimg-1 display-container opacity-min" id="home">
+			<div class="display-middle" style="white-space:nowrap;">
+				<span class="center padding-large black xlarge wide animate-opacity">MY <span class="hide-small">WEBSITE</span> LOGO</span>
 			</div>
-			
-			<!-- Slideshow -->
-			<div class="container">
-				<div class="display-container mySlides">
-					<img src="Imagens/coffee.jpg" style="width:100%">
-					<div class="display-topleft container padding-32">
-						<span class="white padding-large animate-bottom">Lorem ipsum</span>
-					</div>
-				</div>
-				<div class="display-container mySlides">
-					<img src="Imagens/workbench.jpg" style="width:100%">
-					<div class="display-middle container padding-32">
-						<span class="white padding-large animate-bottom">Klorim tipsum</span>
-					</div>
-				</div>
-				<div class="display-container mySlides">
-					<img src="Imagens/sound.jpg" style="width:100%">
-					<div class="display-topright container padding-32">
-						<span class="white padding-large animate-bottom">Blorum pipsum</span>
-					</div>
+		</div>
+		
+		<!-- Container (About Section) -->
+		<div class="content container padding-64" id="about">
+			<h3 class="center">ABOUT ME</h3>
+			<p class="center"><em>I love photography</em></p>
+			<p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+			qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<div class="row">
+				<div class="col m6 center padding-large">
+					<p><b><i class="fa fa-user margin-right"></i>My Name</b></p><br>
+					<img src="Imagens/avatar_hat.jpg" class="round image opacity hover-opacity-off" alt="Photo of Me" width="500" height="333">
 				</div>
 				
-				
-
-				<!-- Slideshow next/previous buttons -->
-				<div class="container dark-grey padding xlarge">
-					<div class="left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left hover-text-teal"></i></div>
-					<div class="right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right hover-text-teal"></i></div>
-					
-					<div class="center">
-						<span class="tag demodots border transparent hover-white" onclick="currentDiv(1)"></span>
-						<span class="tag demodots border transparent hover-white" onclick="currentDiv(2)"></span>
-						<span class="tag demodots border transparent hover-white" onclick="currentDiv(3)"></span>
-					</div>
+				<!-- Hide this text on small devices -->
+				<div class="col m6 hide-small padding-large">
+					<p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+						dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				</div>
 			</div>
-
-			<!-- Fim do Slideshow -->
-			
-			<!-- Grid -->
-			<div class="row container">
-				<div class="center padding-64">
-					<span class="xlarge bottombar border-dark-grey padding-16">What We Offer</span>
-				</div>
-				<div class="col l3 m6 light-grey container padding-16">
-					<h3>Design</h3>
-					<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-				</div>
-				
-				<div class="col l3 m6 grey container padding-16">
-					<h3>Branding</h3>
-					<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-				</div>
-				
-				<div class="col l3 m6 dark-grey container padding-16">
-					<h3>Consultation</h3>
-					<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-				</div>
-				
-				<div class="col l3 m6 black container padding-16">
-					<h3>Promises</h3>
-					<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-				</div>
+			<p class="large center padding-16">Im really good at:</p>
+			<p class="wide"><i class="fa fa-camera"></i>Photography</p>
+			<div class="light-grey">
+				<div class="container padding-small dark-grey center" style="width:90%">90%</div>
 			</div>
+			<p class="wide"><i class="fa fa-laptop"></i>Web Design</p>
+			<div class="light-grey">
+				<div class="container padding-small dark-grey center" style="width:85%">85%</div>
+			</div>
+			<p class="wide"><i class="fa fa-photo"></i>Photoshop</p>
+			<div class="light-grey">
+				<div class="container padding-small dark-grey center" style="width:75%">75%</div>
+			</div>
+		</div>
+		
+		<div class="row center dark-grey padding-16">
+			<div class="quarter section">
+				<span class="xlarge">14+</span><br>
+				Partners
+			</div>
+			<div class="quarter section">
+				<span class="xlarge">55+</span><br>
+				Projects Done
+			</div>
+			<div class="quarter section">
+				<span class="xlarge">89+</span><br>
+				Happy Clients
+			</div>
+			<div class="quarter section">
+				<span class="xlarge">150+</span><br>
+				Meetings
+			</div>
+		</div>
+		
+		<!-- Second Parallax Image with Portfolio Text -->
+		<div class="bgimg-2 display-container opacity-min">
+			<div class="display-middle">
+				<span class="xxlarge text-white wide">PORTFOLIO</span>
+			</div>
+		</div>
+		
+		<!-- Container (Portfolio Section) -->
+		<div class="content container padding-64" id="portfolio">
+			<h3 class="center">MY WORK</h3>
+			<p class="center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
 			
-			<!-- Grid -->
-			<div class="row-padding" id="plans">
-				<div class="center padding-64">
-					<h3>Pricing Plans</h3>
-					<p>Choose a pricing plan that fits your needs.</p>
+			<!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+			<div class="row-padding center">
+				<div class="col m3">
+					<img src="Imagens/p1.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist over the mountains">
 				</div>
 				
-				<div class="third margin-bottom">
-					<ul class="ul border center hover-shadow">
-						<li class="black xlarge padding-32">Basic</li>
-						<li class="padding-16"><b>10GB</b> Storage</li>
-						<li class="padding-16"><b>10</b> Emails</li>
-						<li class="padding-16"><b>10</b> Domains</li>
-						<li class="padding-16"><b>Endless</b> Support</li>
-						<li class="padding-16">
-							<h2 class="wide">$ 10</h2>
-							<span class="opacity">per month</span>
-						</li>
-						<li class="light-grey padding-24">
-							<button class="button green padding-large">Sign Up</button>
-						</li>
-					</ul>
+				<div class="col m3">
+					<img src="Imagens/p2.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Coffee beans">
 				</div>
 				
-				<div class="third margin-bottom">
-					<ul class="ul border center hover-shadow">
-						<li class="dark-grey xlarge padding-32">Pro</li>
-						<li class="padding-16"><b>25GB</b> Storage</li>
-						<li class="padding-16"><b>25</b> Emails</li>
-						<li class="padding-16"><b>25</b> Domains</li>
-						<li class="padding-16"><b>Endless</b> Support</li>
-						<li class="padding-16">
-							<h2 class="wide">$ 25</h2>
-							<span class="opacity">per month</span>
-						</li>
-						<li class="light-grey padding-24">
-							<button class="button green padding-large">Sign Up</button>
-						</li>
-					</ul>
+				<div class="col m3">
+					<img src="Imagens/p3.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Bear closeup">
 				</div>
 				
-				<div class="third margin-bottom">
-					<ul class="ul border center hover-shadow">
-						<li class="black xlarge padding-32">Premium</li>
-						<li class="padding-16"><b>50GB</b> Storage</li>
-						<li class="padding-16"><b>50</b> Emails</li>
-						<li class="padding-16"><b>50</b> Domains</li>
-						<li class="padding-16"><b>Endless</b> Support</li>
-						<li class="padding-16">
-							<h2 class="wide">$ 50</h2>
-							<span class="opacity">per month</span>
-						</li>
-						<li class="light-grey padding-24">
-							<button class="button green padding-large">Sign Up</button>
-						</li>
-					</ul>
+				<div class="col m3">
+					<img src="Imagens/p4.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Quiet ocean">
 				</div>
 			</div>
 			
-			<!-- Grid -->
-			<div class="row-padding" id="about">
-				<div class="center padding-64">
-					<span class="xlarge bottombar border-dark-grey padding-16">Who We Are</span>
+			<div class="row-padding center section">
+				<div class="col m3">
+					<img src="Imagens/p5.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="The mist">
 				</div>
 				
-				<div class="third margin-bottom">
-					<div class="card-4">
-						<img src="Imagens/team1.jpg" alt="John" style="width:100%">
-						<div class="container">
-							<h3>Jane Doe</h3>
-							<p class="opacity">CEO & Founder</p>
-							<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-							<p><button class="button light-grey block">Contact</button></p>
+				<div class="col m3">
+					<img src="Imagens/p6.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="My beloved typewriter">
+				</div>
+				
+				<div class="col m3">
+					<img src="Imagens/p7.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Empty ghost train">
+				</div>
+				
+				<div class="col m3">
+					<img src="Imagens/p8.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sailing">
+				</div>
+				<button class="button padding-large light-grey" style="margin-top:64px">LOAD MORE</button>
+			</div>
+		</div>
+		
+		<!-- Modal for full size images on click-->
+		<div id="modal01" class="modal black" onclick="this.style.display='none'">
+			<span class="button large black display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+			<div class="modal-content animate-zoom center transparent padding-64">
+				<img id="img01" class="image">
+				<p id="caption" class="opacity large"></p>
+			</div>
+		</div>
+		
+		<!-- Third Parallax Image with Portfolio Text -->
+		<div class="bgimg-3 display-container opacity-min">
+			<div class="display-middle">
+				<span class="xxlarge text-white wide">CONTACT</span>
+			</div>
+		</div>
+		
+		<!-- Container (Contact Section) -->
+		<div class="content container padding-64" id="contact">
+			<h3 class="center">WHERE I WORK</h3>
+			<p class="center"><em>I'd love your feedback!</em></p>
+			
+			<div class="row padding-32 section">
+				<div class="col m4 container">
+					<img src="Imagens/map.jpg" class="image round" style="width:100%">
+				</div>
+				<div class="col m8 panel">
+					<div class="large margin-bottom">
+						<i class="fa fa-map-marker fa-fw hover-text-black xlarge margin-right"></i> Chicago, US<br>
+						<i class="fa fa-phone fa-fw hover-text-black xlarge margin-right"></i> Phone: +00 151515<br>
+						<i class="fa fa-envelope fa-fw hover-text-black xlarge margin-right"></i> Email: mail@mail.com<br>
+					</div>
+					<p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+					<form action="/action_page.php" target="_blank">
+						<div class="row-padding" style="margin:0 -16px 8px -16px">
+							<div class="half">
+								<input class="input border" type="text" placeholder="Name" required name="Name">
+							</div>
+							<div class="half">
+								<input class="input border" type="text" placeholder="Email" required name="Email">
+							</div>
 						</div>
-					</div>
-				</div>
-				
-				<div class="third margin-bottom">
-					<div class="card-4">
-						<img src="Imagens/team2.jpg" alt="Mike" style="width:100%">
-						<div class="container">
-							<h3>Mike Ross</h3>
-							<p class="opacity">Art Director</p>
-							<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-							<p><button class="button light-grey block">Contact</button></p>
-						</div>
-					</div>
-				</div>
-				
-				<div class="third margin-bottom">
-					<div class="card-4">
-						<img src="Imagens/team3.jpg" alt="Jane" style="width:100%">
-						<div class="container">
-							<h3>John Doe</h3>
-							<p class="opacity">Designer</p>
-							<p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-							<p><button class="button light-grey block">Contact</button></p>
-						</div>
-					</div>
+						<input class="input border" type="text" placeholder="Message" required name="Message">
+						<button class="button black right section" type="submit">
+							<i class="fa fa-paper-plane"></i> SEND MESSAGE
+						</button>
+					</form>
 				</div>
 			</div>
-			
-			<!-- Contact -->
-			<div class="center padding-64" id="contact">
-				<span class="xlarge bottombar border-dark-grey padding-16">Contact Us</span>
-			</div>
-			
-			<form class="container" action="/action_page.php" target="_blank">
-				<div class="section">
-					<label>Name</label>
-					<input class="input border hover-border-black" style="width:100%;" type="text" name="Name" required>
-				</div>
-				<div class="section">
-					<label>Email</label>
-					<input class="input border hover-border-black" style="width:100%;" type="text" name="Email" required>
-				</div>
-				<div class="section">
-					<label>Subject</label>
-					<input class="input border hover-border-black" style="width:100%;" name="Subject" required>
-				</div>
-				<div class="section">
-					<label>Message</label>
-					<input class="input border hover-border-black" style="width:100%;" name="Message" required>
-				</div>
-				<button type="submit" class="button block black">Send</button>
-			</form>
-			
 		</div>
 		
 		<!-- Footer -->
-		
-		<footer class="container padding-32 light-grey center">
-			<h4>Footer</h4>
-			<a href="#" class="button black margin"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
+		<footer class="center black padding-64 opacity hover-opacity-off">
+			<a href="#home" class="button light-grey"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
 			<div class="xlarge section">
 				<i class="fa fa-facebook-official hover-opacity"></i>
 				<i class="fa fa-instagram hover-opacity"></i>
@@ -249,34 +253,34 @@
 			<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="hover-text-green">w3.css</a></p>
 		</footer>
 		
-		
 		<script>
-			// Slideshow
-			var slideIndex = 1;
-			showDivs(slideIndex);
-			
-			function plusDivs(n) {
-				showDivs(slideIndex += n);
+			// Modal Image Gallery
+			function onClick(element) {
+				document.getElementById("img01").src = element.src;
+				document.getElementById("modal01").style.display = "block";
+				var captionText = document.getElementById("caption");
+				captionText.innerHTML = element.alt;
 			}
 			
-			function currentDiv(n) {
-				showDivs(slideIndex = n);
+			// Change style of navbar on scroll
+			window.onscroll = function() {myFunction()};
+			function myFunction() {
+				var navbar = document.getElementById("myNavbar");
+				if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+					navbar.className = "bar" + " card" + " animate-top" + " white";
+					} else {
+					navbar.className = navbar.className.replace(" card animate-top white", "");
+				}
 			}
 			
-			function showDivs(n) {
-				var i;
-				var x = document.getElementsByClassName("mySlides");
-				var dots = document.getElementsByClassName("demodots");
-				if (n > x.length) {slideIndex = 1}    
-				if (n < 1) {slideIndex = x.length} ;
-				for (i = 0; i < x.length; i++) {
-					x[i].style.display = "none";  
+			// Used to toggle the menu on small screens when clicking on the menu button
+			function toggleFunction() {
+				var x = document.getElementById("navDemo");
+				if (x.className.indexOf("show") == -1) {
+					x.className += " show";
+					} else {
+					x.className = x.className.replace(" show", "");
 				}
-				for (i = 0; i < dots.length; i++) {
-					dots[i].className = dots[i].className.replace(" white", "");
-				}
-				x[slideIndex-1].style.display = "block";  
-				dots[slideIndex-1].className += " white";
 			}
 		</script>
 		
