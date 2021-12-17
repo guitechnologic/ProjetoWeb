@@ -1,12 +1,12 @@
 <?php require_once("funcoes.php"); ?>
-   
+
 <?php
     if ( isset($_POST['enviar']) ) {
         if ( enviarMensagem($_POST) ) {
             $mensagem = "Mensagem enviada com sucesso.";
         } else {
-            $mensagem = "Erro no envio.";
-            }
+            $mensagem = "Erro no envio";
+        }
     }
 ?>
 
@@ -21,7 +21,7 @@
             <meta name="geo.placement"  content="Colombo">
             <meta name="geo.position"   content="-25.36997746782584, -49.16598553283551">
             <meta name="ICBM"           content="-25.36997746782584, -49.16598553283551">
-
+            <link rel="icon" href="_imagens/logovetorizadaghg/GHG - Consultoria em TI 2.png" sizes="16x16" type="image/png">
             <link   rel="stylesheet"    href="_css/estilo.css">
             <link   rel="stylesheet"    href="https://fonts.googleapis.com/css?family=Raleway">
             <link   rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   <!-- Icones Minimalistas -->
@@ -54,6 +54,7 @@
     <body>
 
         <!-- 01 - Barra de navegação com os botoes -->
+        <!--Warning: mail(): "sendmail_from" not set in php.ini or custom "From:" header missing in C:\xampp\htdocs\ProjetoWeb\_GHG_ConsultoriaEmTi\funcoes.php on line 21-->
         <div    class="top">
             <div    class="bar  white card" id="myNavbar">
                 <a  href="#Home"    class="bar-item button  wide">  GHG </a>    <!-- Inserir logo -->
@@ -76,7 +77,7 @@
 
         <!-- 01.3 - Configuração dos icones superiores, presentes na barra de navegação mobile -->
         <nav    class="sidebar  bar-block   black   card    animate-left    hide-medium hide-large" style="display:none"    id="mySidebar">
-            <a  href="javascript:void(0)"   onclick="botaoFechar()"    class="bar-item button  large   padding-16">    Close × </a>
+            <a  href="javascript:void(0)"   onclick="botaoFechar()"    class="bar-item button  large   padding-16">    Close X </a>
 
             <a  href="#Home"            onclick="botaoFechar()"    class="bar-item button">    HOME     </a>
             <a  href="#Consultoria"     onclick="botaoFechar()"    class="bar-item button">    A GHG    </a>
@@ -104,16 +105,10 @@
             
             <!-- 02.3 - Botoes de rede social -->
             <div    class="display-bottomleft   text-grey   large"  style="padding:24px 48px">
-                <!--<a  href=""    target="_blank">    <i  class="fa   fa-facebook-official    hover-opacity"> </i>    </a>
-                <a  href=""    target="_blank">    <i  class="fa   fa-instagram            hover-opacity"> </i>    </a>
-                <a  href=""    target="_blank">    <i  class="fa   fa-snapchat             hover-opacity"> </i>    </a>
-                <a  href=""    target="_blank">    <i  class="fa   fa-pinterest-p          hover-opacity"> </i>    </a>
-                <a  href=""    target="_blank">    <i  class="fa   fa-twitter              hover-opacity"> </i>    </a>-->
+                
                 <a  href="https://www.linkedin.com/in/guilherme-goulart-539a90b1/"  target="_blank">    <i  class="fa   fa-linkedin hover-opacity"> </i>    </a>
                 <a  href="https://github.com/guitechnologic"    target="_blank">    <i  class="fa   fa-github   hover-opacity"> </i>    </a>
             </div>
-
-            
 
         </header>
 
@@ -161,7 +156,6 @@
             
         </div>
 
-
         <!-- 04 - Tela de introdução "Um pouco sobre nós"  -->
         <div    class="container    light-grey" style="padding:128px 16px" id="Servicos">
             <div    class="row-padding">
@@ -176,8 +170,6 @@
                 </div>
             </div>
         </div>
-
-        
 
         <!-- 05 - Nosso Modelo de trabalho  -->
         <div>
@@ -295,10 +287,6 @@
 
         </div>
 
-        </div>
-
-        </div>
-
         <!-- 10 - Opcoes de contato -->
         <div    class="container    black" style="padding:50px    16px"   id="Contato">
             <h2 class="center"> CONTATO </h2>
@@ -310,17 +298,20 @@
                     <p> <i  class="fa   fa-envelope     fa-fw   xxlarge margin-right">  </i> E-mail: contato@ghgconsultoriaemti.com         </p>
                     <br>
 
-                    <!-- 10.1 - Formulario de contato -->
+
+                    
+                    <!-- 10.1 - Formulario de contato <a href="obrigado/index.html">-->
                     <form   action="index.php"  method="POST">
-                        <p> <input  class="input border"    type="text" placeholder="Name"      required    name="Name">    </p>
-                        <p> <input  class="input border"    type="text" placeholder="Email"     required    name="Email">   </p>
-                        <p> <input  class="input border"    type="text" placeholder="Subject"   required    name="Subject"> </p>
-                        <p> <input  class="input border"    type="text" placeholder="Message"   required    name="Message"> </p>
+                        <p> <input  class="input border"    type="text" placeholder="Name"      required    name="nome">    </p>
+                        <p> <input  class="input border"    type="text" placeholder="Email"     required    name="email">   </p>
+                        <p> <input  class="input border"    type="text" placeholder="Subject"   required    name="assunto"> </p>
+                        <p> <input  class="input border"    type="text" placeholder="Message"   required    name="mensagem"> </p>
                         <p>
-                            <button class="button   black"  type="submit" name="submit" value="submit">
-                                <i  class="fa   fa-paper-plane">    <a href="obrigado/index.html">   </i>    ENVIAR MENSAGEM </a>
+                            <button class="button   black"  type="submit" name="enviar" value="submit">
+                                <i  class="fa   fa-paper-plane">       </i>    ENVIAR MENSAGEM </a>
                             </button>
                         </p>
+
                         <?php
                             if( isset($mensagem) ) {
                                 echo "<p>" . $mensagem . "</p>";

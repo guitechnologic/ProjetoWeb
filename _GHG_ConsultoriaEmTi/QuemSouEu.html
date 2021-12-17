@@ -27,8 +27,7 @@
             .bgimg-1    {
                 background-position:    center;
                 background-size:    cover;
-                background-color:   rgb(0, 0, 0);      /*url("../_GHG_ConsultoriaEmTi/_imagens/map.jpg");*/
-                /*  background: url(_imagens/_BannerComLogo2.png);   */
+                background-color:   rgb(0, 0, 0);
                 min-height: 100%;
             }
 
@@ -48,9 +47,10 @@
 
                 <!-- 01.1 - Botoes de navegação -->
                 <div    class="center    hide-small">
-                    <a  href="index.php"   class="bar-item button">    <i class="fa fa-home">       </i> HOME          </a>
-                    <a  href="#Home"        class="bar-item button">    <i class="fa fa-user">       </i> QUEM SOU EU?  </a>
-                    <a  href="#Contato"     class="bar-item button">    <i class="fa fa-envelope">   </i> CONTATO       </a>
+                    <a  href="index.php"    class="bar-item button">    <i class="fa fa-home">          </i> HOME          </a>
+                    <a  href="#Home"        class="bar-item button">    <i class="fa fa-user">          </i> QUEM SOU EU?  </a>
+                    <a  href="Curriculo/index.html" class="bar-item button">    <i class="fa fa-star">  </i> CURRICULO  </a>
+                    <a  href="#Contato"     class="bar-item button">    <i class="fa fa-envelope">      </i> CONTATO       </a>
                 </div>
                 
                 <!-- 01.2 - Opçoes do menu de navegaçao para mobile, abertura e fechamento -->
@@ -62,47 +62,36 @@
 
         <!-- 01.3 - Configuração dos icones superiores, presentes na barra de anvegação -->
         <nav    class="sidebar  bar-block   black   card    animate-left    hide-medium hide-large" style="display:none"    id="mySidebar">
-            <a  href="javascript:void(0)"   onclick="botaoFechar()"    class="bar-item button  large   padding-16">    Close × </a>
+            <a  href="javascript:void(0)"   onclick="botaoFechar()"    class="bar-item button  large   padding-16">    Close X </a>
 
-            <a  href="index.php"   onclick="botaoFechar()"    class="bar-item button">    HOME         </a>
-            <a  href="#Home"        onclick="botaoFechar()"    class="bar-item button">    QUEM SOU EU? </a>
-            <a  href="#Contato"     onclick="botaoFechar()"    class="bar-item button">    CONTATO      </a>
+            <a  href="index.php"            onclick="botaoFechar()"    class="bar-item button">    HOME         </a>
+            <a  href="#Home"                onclick="botaoFechar()"    class="bar-item button">    QUEM SOU EU? </a>
+            <a  href="Curriculo/index.html" onclick="botaoFechar()"    class="bar-item button">    CURRICULO    </a>
+            <a  href="#Contato"             onclick="botaoFechar()"    class="bar-item button">    CONTATO      </a>
         </nav>
 
 
         <!-- 02 - Tela de apresentação -->
         <header class="bgimg-1  display-container   grayscale-min"  id="Home"> 
 
-
             <!-- 02.1 - Textos da Tela de apresentação -->
             <div    class="display-left text-white"    style="padding:48px">
                 <span   class="jumbo hide-small">                 Saiba um pouco mais ...  </span> <br>    <!-- Textos da Tela de apresentação quando a tela aumentar  -->
                 <span   class="xxlarge hide-large hide-medium">   Saiba um pouco mais ...  </span> <br>    <!-- Textos da Tela de apresentação quando a tela reduzir   -->
                 <span   class="large">                              </span>
-
-                    
             </div>
             
             <!-- 02.3 - Botoes de rede social -->
             <div    class="display-bottomleft   text-grey   large"  style="padding:24px 48px">
-                <!--<a  href=""    target="_blank">    <i  class="fa   fa-facebook-official    hover-opacity"> </i>    </a>
-                <a  href=""    target="_blank">    <i  class="fa   fa-instagram            hover-opacity"> </i>    </a>
-                <a  href=""    target="_blank">    <i  class="fa   fa-snapchat             hover-opacity"> </i>    </a>
-                <a  href=""    target="_blank">    <i  class="fa   fa-pinterest-p          hover-opacity"> </i>    </a>
-                <a  href=""    target="_blank">    <i  class="fa   fa-twitter              hover-opacity"> </i>    </a>-->
                 <a  href="https://www.linkedin.com/in/guilherme-goulart-539a90b1/"  target="_blank">    <i  class="fa   fa-linkedin hover-opacity"> </i>    </a>
                 <a  href="https://github.com/guitechnologic"    target="_blank">    <i  class="fa   fa-github   hover-opacity"> </i>    </a>
             </div>
 
-            
-
         </header>
 
-        
-
-        <!-- 05 - Nosso Modelo de trabalho  -->
+        <!-- 03 - QUEM SOU EU  -->
         <div>
-            <!-- 05.1 - Nosso Modelo de trabalho  -->
+            <!-- 03.1 - Docker  -->
             <div    class="container black" style="padding:80px 16px"  id="work">
                 <h1 class="center"><b><u>       </u></b></h1><br>
                 <div    class="row-padding">
@@ -124,14 +113,12 @@
                 </div>
             </div>
 
-            <!-- 05.2 - Nosso Modelo de trabalho  -->
+            <!-- 03.2 - DevOps  -->
             <div    class="container  black"   style="padding:80px 16px"  >
                 <div    class="row-padding">
-                    
                     <div    class="col  m4">
                         <img    class="image    round-large"    src="_imagens/produtos/DevOps.png"   alt="DevOps" width="300" height="200">
                     </div>
-
                     <div    class="col  m6">
                         <h1>    DevOps  </h1>
                         <h3>                            </h3>
@@ -143,11 +130,10 @@
                             produção para que o produto esteja com o cliente no menor tempo possível
                             é o que separa as empresas do futuro das empresas que ficarão na memoria apenas.
                     </div>
-
                 </div>
             </div>
 
-            <!-- 05.3 - Nosso Modelo de trabalho  -->
+            <!-- 03.3 - YellowBelt  -->
             <div    class="container black" style="padding:80px 16px"  >
                 <div    class="row-padding">
                     <div    class="col  m4">
@@ -160,47 +146,42 @@
                             Profissional certificado para gerenciar projetos, alocação de recursos, 
                             resolução de problemas, brainstorm e o que mais o seu projeto de t.i 
                             precisar para que a sua empresa cresça.
-
                     </div>
-                    
                 </div>
             </div>
 
         </div>
 
-            <!-- 05.1 - Nosso Modelo de trabalho  -->
-            <div    class="container black" style="padding:80px 16px"  id="work">
-                <h1 class="center"><b><u>                   </u></b></h1><br>
-                    <div    class="row-padding">
-                        <div    class="col  m4">
-                            <img    class="image    round-large"    src="_imagens/metodoDeTrabalho/devFrontEnd.jpg"   alt="devFrontEnd" width="300" height="200">
-                        </div>
-                        <div    class="col  m6">
-                            <h1>    Desenvolvedor Front-End </h1>
-                            <h3>                            </h3>
-                            <p> Experiência em desenvolvimento de WebSites para divulgação da sua empresa
-                                para que a sua empresa seja vista pelo Google e tenha todo o planeta
-                                como clientes em potêncial. Para se ter um negócio grande é necessário 
-                                se pensar grande.
-                        </div>
-                    </div>
-                </div>
+        <!-- 03.4 - Dev FrontEnd  -->
+        <div    class="container black" style="padding:80px 16px"  id="work">
+            <h1 class="center"><b><u>                   </u></b></h1><br>
+                
+            <div    class="row-padding">
+            <div    class="col  m4">
+                <img    class="image    round-large"    src="_imagens/metodoDeTrabalho/devFrontEnd.jpg"   alt="devFrontEnd" width="300" height="200">
+            </div>
 
+            <div    class="col  m6">
+                <h1>    Desenvolvedor Front-End </h1>
+                <h3>                            </h3>
+                <p> Experiência em desenvolvimento de WebSites para divulgação da sua empresa
+                    para que a sua empresa seja vista pelo Google e tenha todo o planeta
+                    como clientes em potêncial. Para se ter um negócio grande é necessário 
+                    se pensar grande.
+            </div>
+        </div>
 
-
-
-        <!-- 05 - Cursos e certificaçoes -->
+        <!-- 04 - Cursos e certificaçoes -->
         <div    class="container    black"   style="padding:90px    16px"   id="Vagas">
             <h3 class="center"> CURSOS E CERTIFICAÇÕES    </h3>
                 <p  class="center   large"> - </p>
 
-            
             <div    class="row-padding grayscale"  style="margin-top:64px">
 
-                
                 <div    class="col  l3  m6  margin-bottom">
                     <div    class="card">
-                        <img    src="_imagens/certificados/BancoDeDadosOracle.jpg" alt="BancoDeDadosOracle"  style="width:100%" class="hover-opacity"   onclick="onClick(this)">
+                        <img    src="_imagens/certificados/BancoDeDadosOracle.jpg" alt="Curso Completo de Banco de Dados Oracle PL/SQL"
+                            style="width:100%" class="hover-opacity"   onclick="onClick(this)">
                         <div    class="container">
                             </div>
                     </div>
@@ -208,7 +189,8 @@
 
                 <div    class="col  l3  m6  margin-bottom">
                     <div    class="card">
-                        <img    src="_imagens/certificados/DevOpsNinja.jpg" alt="DevOpsNinja"  style="width:100%"   class="hover-opacity"   onclick="onClick(this)">
+                        <img    src="_imagens/certificados/DevOpsNinja.jpg" alt="DevOps Ninja: Docker, Kubernetes e Rancher"
+                            style="width:100%"   class="hover-opacity"   onclick="onClick(this)">
                         <div    class="container">
                             </div>
                     </div>
@@ -216,7 +198,8 @@
 
                 <div    class="col  l3  m6  margin-bottom">
                     <div    class="card">
-                        <img    src="_imagens/certificados/DockerDoZero.jpg" alt="DockerDoZero"  style="width:100%" class="hover-opacity"   onclick="onClick(this)">
+                        <img    src="_imagens/certificados/DockerDoZero.jpg" alt="Docker do Sero - Introdução a Administração de Containers"
+                            style="width:100%" class="hover-opacity"   onclick="onClick(this)">
                         <div    class="container">
                             </div>
                     </div>
@@ -224,7 +207,8 @@
 
                 <div    class="col  l3  m6  margin-bottom">
                     <div    class="card">
-                        <img    src="_imagens/certificados/OracleSoaSuite.jpg" alt="OracleSoaSuite"  style="width:100%" class="hover-opacity"   onclick="onClick(this)">
+                        <img    src="_imagens/certificados/OracleSoaSuite.jpg" alt="Oracle SOA Suite 12C"
+                            style="width:100%" class="hover-opacity"   onclick="onClick(this)">
                         <div    class="container">
                             </div>
                     </div>
@@ -232,7 +216,8 @@
 
                 <div    class="col  l3  m6  margin-bottom">
                     <div    class="card">
-                        <img    src="_imagens/certificados/RedHatLinux.jpg" alt="RedHatLinux"  style="width:100%"   class="hover-opacity"   onclick="onClick(this)">
+                        <img    src="_imagens/certificados/RedHatLinux.jpg" alt="Curso Preparatório para Certificação RHCSA RedHat Linux"
+                            style="width:100%"   class="hover-opacity"   onclick="onClick(this)">
                         <div    class="container">
                             </div>
                     </div>
@@ -240,7 +225,8 @@
 
                 <div    class="col  l3  m6  margin-bottom">
                     <div    class="card">
-                        <img    src="_imagens/certificados/DevOpsEssentials.jpg" alt="DevOpsEssentials"  style="width:100%" class="hover-opacity"   onclick="onClick(this)">
+                        <img    src="_imagens/certificados/DevOpsEssentials.jpg" alt="DevOps Essentials Professional Certificate (DEPC)"
+                            style="width:100%" class="hover-opacity"   onclick="onClick(this)">
                         <div    class="container">
                             </div>
                     </div>
@@ -248,7 +234,8 @@
 
                 <div    class="col  l3  m6  margin-bottom">
                     <div    class="card">
-                        <img    src="_imagens/certificados/ScrumProfessionalCertificate.jpg" alt="ScrumProfessionalCertificate"  style="width:100%" class="hover-opacity"   onclick="onClick(this)">
+                        <img    src="_imagens/certificados/ScrumProfessionalCertificate.jpg" alt="Scrum Foundation Professional Certificate (SFPC)"
+                            style="width:100%" class="hover-opacity"   onclick="onClick(this)">
                         <div    class="container">
                             </div>
                     </div>
@@ -256,7 +243,8 @@
 
                 <div    class="col  l3  m6  margin-bottom">
                     <div    class="card">
-                        <img    src="_imagens/certificados/YellowBelt.jpg" alt="YellowBelt"  style="width:100%" class="hover-opacity"   onclick="onClick(this)">
+                        <img    src="_imagens/certificados/YellowBelt.jpg" alt="YellowBelt"
+                            style="width:100%" class="hover-opacity"   onclick="onClick(this)">
                         <div    class="container">
                             </div>
                     </div>
@@ -264,7 +252,8 @@
 
                 <div    class="col  l3  m6  margin-bottom">
                     <div    class="card">
-                        <img    src="_imagens/certificados/CienciaDeDados.JPG" alt="CienciaDeDados"  style="width:100%" class="hover-opacity"   onclick="onClick(this)">
+                        <img    src="_imagens/certificados/CienciaDeDados.JPG" alt="Introdução à Ciência de Dados"
+                            style="width:100%" class="hover-opacity"   onclick="onClick(this)">
                         <div    class="container">
                             </div>
                     </div>
@@ -272,7 +261,8 @@
 
                 <div    class="col  l3  m6  margin-bottom">
                     <div    class="card">
-                        <img    src="_imagens/certificados/FundamentosDaGestaoDeTi.jpg" alt="FundamentosDaGestaoDeTi"  style="width:100%"   class="hover-opacity"   onclick="onClick(this)">
+                        <img    src="_imagens/certificados/FundamentosDaGestaoDeTi.jpg" alt="Fundamentos de Gestão de TI"
+                            style="width:100%"   class="hover-opacity"   onclick="onClick(this)">
                         <div    class="container">
                             </div>
                     </div>
@@ -280,7 +270,8 @@
 
                 <div    class="col  l3  m6  margin-bottom">
                     <div    class="card">
-                        <img    src="_imagens/certificados/GestãoAndLiderança.jpg" alt="GestãoAndLiderança"  style="width:100%" class="hover-opacity"   onclick="onClick(this)">
+                        <img    src="_imagens/certificados/GestãoAndLiderança.jpg" alt="Gestão e Liderança: Conceitos Básicos da Função Gerencial"
+                            style="width:100%" class="hover-opacity"   onclick="onClick(this)">
                         <div    class="container">
                             </div>
                     </div>
@@ -288,7 +279,8 @@
 
                 <div    class="col  l3  m6  margin-bottom">
                     <div    class="card">
-                        <img    src="_imagens/certificados/ImpactoDaTiNosNegocios.jpg" alt="ImpactoDaTiNosNegocios"  style="width:100%" class="hover-opacity"   onclick="onClick(this)">
+                        <img    src="_imagens/certificados/ImpactoDaTiNosNegocios.jpg" alt="Impacto da TI nos Negócios"
+                            style="width:100%" class="hover-opacity"   onclick="onClick(this)">
                         <div    class="container">
                             </div>
                     </div>
@@ -296,7 +288,8 @@
 
                 <div    class="col  l3  m6  margin-bottom">
                     <div    class="card">
-                        <img    src="_imagens/certificados/IntroducaoOKR.jpg" alt="IntroducaoOKR"  style="width:100%"   class="hover-opacity"   onclick="onClick(this)">
+                        <img    src="_imagens/certificados/IntroducaoOKR.jpg" alt="Introdução à OKR's"
+                            style="width:100%"   class="hover-opacity"   onclick="onClick(this)">
                         <div    class="container">
                             </div>
                     </div>
@@ -304,7 +297,8 @@
 
                 <div    class="col  l3  m6  margin-bottom">
                     <div    class="card">
-                        <img    src="_imagens/certificados/LGPD.jpg" alt="LGPD"  style="width:100%" class="hover-opacity"   onclick="onClick(this)">
+                        <img    src="_imagens/certificados/LGPD.jpg" alt="Lei Geral de Proteção de Dados (LGPD)"
+                            style="width:100%" class="hover-opacity"   onclick="onClick(this)">
                         <div    class="container">
                             </div>
                     </div>
@@ -312,7 +306,8 @@
 
                 <div    class="col  l3  m6  margin-bottom">
                     <div    class="card">
-                        <img    src="_imagens/certificados/LiderancaCapacidadeResiliencia.jpg" alt="LiderancaCapacidadeResiliencia"  style="width:100%" class="hover-opacity"   onclick="onClick(this)">
+                        <img    src="_imagens/certificados/LiderancaCapacidadeResiliencia.jpg" alt="Certificação em Liderança, Capacidade de Aprender e Resiliência"
+                            style="width:100%" class="hover-opacity"   onclick="onClick(this)">
                         <div    class="container">
                             </div>
                     </div>
@@ -320,7 +315,8 @@
 
                 <div    class="col  l3  m6  margin-bottom">
                     <div    class="card">
-                        <img    src="_imagens/certificados/AGILE_PROJECT_MANAGEMENT.jpg" alt="AGILE_PROJECT_MANAGEMENT"  style="width:100%" class="hover-opacity"   onclick="onClick(this)">
+                        <img    src="_imagens/certificados/AGILE_PROJECT_MANAGEMENT.jpg" alt="Agile Project Management: Um Novo Modelo de Gestão Nas Organizações"
+                            style="width:100%" class="hover-opacity"   onclick="onClick(this)">
                         <div    class="container">
                             </div>
                     </div>
@@ -328,7 +324,8 @@
 
                 <div    class="col  l3  m6  margin-bottom">
                     <div    class="card">
-                        <img    src="_imagens/certificados/EstrategiaEmpresarial.jpg" alt="EstrategiaEmpresarial"  style="width:100%"   class="hover-opacity"   onclick="onClick(this)">
+                        <img    src="_imagens/certificados/EstrategiaEmpresarial.jpg" alt="Estratégia Empresarial"
+                            style="width:100%"   class="hover-opacity"   onclick="onClick(this)">
                         <div    class="container">
                             </div>
                     </div>
@@ -336,7 +333,8 @@
 
                 <div    class="col  l3  m6  margin-bottom">
                     <div    class="card">
-                        <img    src="_imagens/certificados/EstrategiaCorporativaGestaoDeProjetos.jpg" alt="EstrategiaCorporativaGestaoDeProjetos"  style="width:100%"   onclick="onClick(this)">
+                        <img    src="_imagens/certificados/EstrategiaCorporativaGestaoDeProjetos.jpg" alt="Estratégia Corporativa e Gestão de Projetos"
+                            style="width:100%"   onclick="onClick(this)">
                         <div    class="container">
                             </div>
                     </div>
@@ -344,7 +342,8 @@
 
                 <div    class="col  l3  m6  margin-bottom">
                     <div    class="card">
-                        <img    src="_imagens/certificados/InovacaoNaEraDigital.jpg" alt="InovacaoNaEraDigital"  style="width:100%" class="hover-opacity"   onclick="onClick(this)">
+                        <img    src="_imagens/certificados/InovacaoNaEraDigital.jpg" alt="Inovação Na Era Digital"
+                            style="width:100%" class="hover-opacity"   onclick="onClick(this)">
                         <div    class="container">
                             </div>
                     </div>
@@ -352,117 +351,75 @@
 
                 <div    class="col  l3  m6  margin-bottom">
                     <div    class="card">
-                        <img    src="_imagens/certificados/GEstaoDeEquipesRemotas.jpg" alt="GEstaoDeEquipesRemotas"  style="width:100%" class="hover-opacity"   onclick="onClick(this)">
+                        <img    src="_imagens/certificados/GEstaoDeEquipesRemotas.jpg" alt="Gestão de Equipes Remotas"
+                            style="width:100%" class="hover-opacity"   onclick="onClick(this)">
                         <div    class="container">
                             </div>
                     </div>
                 </div>
 
+            </div>
+
+            <!-- 04.1 -->
+            <div    id="modal01"    class="modal    black"  onclick="this.style.display='none'">
+                <span   class="button   xxlarge black   padding-large   display-topright"   title="Close    Modal   Image"> X   </span>
+
+                <div    class="modal-content    animate-zoom    center  transparent padding-64">
+                    <img id="img01" class="image">
+                    <p  id="caption" class="opacity large"></p>
+                </div>
             </div>
 
         </div>
         
-
-        <!-- 07 - Nossos parceiros -->
-        <div    id="modal01"    class="modal    black"  onclick="this.style.display='none'">
-            <span   class="button   xxlarge black   padding-large   display-topright"   title="Close    Modal   Image"> ×   </span>
-
-            <div    class="modal-content    animate-zoom    center  transparent padding-64">
-                <img id="img01" class="image">
-                <p id="caption" class="opacity large"></p>
-            </div>
-
         </div>
-        <!-- 07.1 - Nossos parceiros -->
-        <div    class="container black"   style="padding:128px    16px"   >
+
+        <!-- 05 - titulo Nossos parceiros -->
+        <div    class="container black" style="padding:128px    16px"   >
             <h1 class="center"> </h1>
-                <h1  class="center   large"> Nossos Parceiros: </h1>
-                
+                <h1 class="center   large"> Nossos Parceiros:   </h1>
 
-                
-
-            <!-- 07.2- Nossos parceiros -->
+            <!-- 05.1- Nossos parceiros -->
             <div    class="row-padding" style="margin-top:64px">
 
                 <div    class="col  l3  m6">
-                    <a href="http://www.itshare.com.br/" target="_blank">
-                    <img    src="_imagens/parceiros/ITShare102.png"        style="width:100%"  class="hover-opacity"   alt="ITShare">
-                </a>
+                    <a  href="http://www.itshare.com.br/"   target="_blank">
+                        <img    src="_imagens/parceiros/ITShare102.png" style="width:100%"  class="hover-opacity"   alt="ITShare">
+                    </a>
                 </div>
-
-                
-
             </div>
-
-            
-
-        </div>
-
-        <!-- 07.3 -->
-        <div    id="modal01"    class="modal    black"  onclick="this.style.display='none'">
-            <span   class="button   xxlarge black   padding-large   display-topright"   title="Close    Modal   Image"> ×   </span>
-
-            <div    class="modal-content    animate-zoom    center  transparent padding-64">
-                <img id="img01" class="image">
-                <p id="caption" class="opacity large"></p>
-            </div>
-
         </div>
 
         
 
-            </div>
-
-        </div>
-
-        <!-- 10 - Opcoes de contato -->
+        <!-- 06 - Opcoes de contato -->
         <div    class="container    black" style="padding:50px    16px"   id="Contato">
             <h3 class="center"> CONTATO </h3>
                 <p  class="center   large"> Não espere mais, envie-nos uma mensagem:    </p>
 
                 <div    style="margin-top:48px">
                     <p> <i  class="fa   fa-map-marker   fa-fw   xxlarge margin-right">  </i> Travessa Lago Salto Caxias 91 - Colombo - PR   </p>
-                    <p> <i  class="fa   fa-whatsapp        fa-fw   xxlarge margin-right">  </i> Phone: +55 41 9 9284-9781                   </p>
+                    <p> <i  class="fa   fa-whatsapp     fa-fw   xxlarge margin-right">  </i> Phone: +55 41 9 9284-9781                   </p>
                     <p> <i  class="fa   fa-envelope     fa-fw   xxlarge margin-right">  </i> E-mail: contato@ghgconsultoriaemti.com         </p>
                     <br>
-
-                    <!-- 10.1 - Formulario de contato -->
-                    <!--<form   method="POST" action="enviaEmail.php"   name="form">
-                        <p> <input  class="input border"    type="text" placeholder="Name"      required    name="Name">    </p>
-                        <p> <input  class="input border"    type="text" placeholder="Email"     required    name="Email">   </p>
-                        <p> <input  class="input border"    type="text" placeholder="Subject"   required    name="Subject"> </p>
-                        <p> <input  class="input border"    type="text" placeholder="Message"   required    name="Message"> </p>
-                    <p>
-                        <button class="button   black"  type="submit" name="submit" value="submit">
-                            <i  class="fa   fa-paper-plane">    <a href="obrigado.html">   </i>    ENVIAR MENSAGEM </a>
-                        </button>
-                    </p>
-                    </form>-->
-                    
                 </div>
         </div>
 
         
-        <!-- 11.0 - Localização -->
-        
+        <!-- 07 - Localização -->
         <div    class="container black"   >
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.038152404833!2d-49.16817898498699!3d-25.370037783816063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce9fa6cf03153%3A0x29b11f8c4baa0367!2sGHG%20Consultoria%20em%20TI!5e0!3m2!1spt-BR!2sbr!4v1638303290522!5m2!1spt-BR!2sbr" 
                 width="100%"    height="600"    style="border:  1px"   allowfullscreen=""   loading="lazy"> </iframe>            
         </div>
         
 
-        <!-- 12 - Rodapé -->
+        <!-- 08 - Rodapé -->
         <footer class="center   black   padding-64">
 
             <a  href="index.php"    class="button   light-grey">    <i class="fa    fa-arrow-up margin-right">  </i>    Home    </a>
             <a  href="Curriculo/index.html"    class="button   light-grey">    <i class="fa    fa-arrow-up margin-right">  </i>    Currículo    </a>
                 
                 <div    class="xlarge   section">
-                    <!--<a  href=""    target="_blank">    <i  class="fa   fa-facebook-official    hover-opacity"> </i>    </a>
-                    <a  href=""    target="_blank">    <i  class="fa   fa-instagram            hover-opacity"> </i>    </a>
-                    <a  href=""    target="_blank">    <i  class="fa   fa-snapchat             hover-opacity"> </i>    </a>
-                    <a  href=""    target="_blank">    <i  class="fa   fa-pinterest-p          hover-opacity"> </i>    </a>
-                    <a  href=""    target="_blank">    <i  class="fa   fa-twitter              hover-opacity"> </i>    </a>-->
                     <a  href="https://www.linkedin.com/in/guilherme-goulart-539a90b1/"  target="_blank">    <i  class="fa   fa-linkedin hover-opacity"> </i>    </a>
                     <a  href="https://github.com/guitechnologic"    target="_blank">    <i  class="fa   fa-github   hover-opacity"> </i>    </a>
                 </div>
@@ -474,7 +431,7 @@
         </footer>
 
     
-        <!-- 13 - JavaScript -->
+        <!-- 09 - JavaScript -->
         <script>
 
         // Modal Image Gallery
@@ -486,7 +443,7 @@
             }
 
 
-            // 13.1 - Alternancia entre mostrar e ocultar a barra lateral ao clicar no icone de menu
+            // 09.1 - Alternancia entre mostrar e ocultar a barra lateral ao clicar no icone de menu
             var mySidebar   =   document.getElementById(    "mySidebar" );
 
             function    botaoAbre() {
@@ -497,7 +454,7 @@
                 }
             }
 
-            // 13.2 - Feche a barra lateral com o botão Fechar
+            // 09.2 - Feche a barra lateral com o botão Fechar
             function    botaoFechar()   {
                 mySidebar.style.display =   "none"  ;
             }
