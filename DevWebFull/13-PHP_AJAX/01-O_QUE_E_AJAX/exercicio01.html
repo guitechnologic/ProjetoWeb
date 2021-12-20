@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Solicitacao</title>
+
+        <script>
+            var ajax = new XMLHttpRequest();
+            ajax.open('GET','dados.txt',true);
+            ajax.send();
+            
+            ajax.onreadystatechange = function(){
+                if (ajax.status ==200){
+
+                if (ajax.readyState ==3){
+                    console.log("Carregando")
+                }
+
+                if (ajax.readyState ==4 ){
+                console.log(ajax.responseText);
+            }
+        } else {
+            console.log("Erro na operação")
+        }
+    }
+
+        </script>
+    </head>
+
+    <body>
+        <h1></h1>
+    </body>
+</html>

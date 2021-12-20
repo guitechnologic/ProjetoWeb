@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+    <html>
+        <title> GHG Consultoria Em Ti   </title>
+
+            <meta   charset="UTF-8">
+            <meta   name="viewport" content="width=device-width,    initial-scale=1">
+            <meta   http-equiv="X-UA-Compatible"    content="IE-edge">
+            <meta name="geo.region"     content="BR-PR">
+            <meta name="geo.placement"  content="Colombo">
+            <meta name="geo.position"   content="-25.36997746782584, -49.16598553283551">
+            <meta name="ICBM"           content="-25.36997746782584, -49.16598553283551">
+
+            <link   rel="stylesheet"    href="_css/estilo.css">
+            <link   rel="stylesheet"    href="https://fonts.googleapis.com/css?family=Raleway">
+            <link   rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   <!-- Icones Minimalistas -->
+
+        <style>
+
+            body,h1,h2,h3,h4,h5,h6  {font-family:   "Raleway",  sans-serif}
+
+            body,   html  {
+                height: 100%;
+                line-height:    1.8;
+                }
+
+            /* 01-Primeiro quadrante da pagina */
+            .bgimg-1    {
+                background-position:    center;
+                background-size:    cover;
+                background-color:   rgb(0, 0, 0);
+                min-height: 100%;
+            }
+
+            /* Barra de menu superior e botoes na barra */
+            .bar    .button    {
+                padding:    16px;
+            }
+
+        </style>
+
+    <body>
+
+        <!-- 01 - Barra de navegação com os botoes -->
+        <div    class="top">
+            <div    class="bar  white card" id="myNavbar">
+                <a  href="#Home"    class="bar-item button  wide">  GHG </a>    <!-- Inserir logo -->
+
+                <!-- 01.1 - Botoes de navegação -->
+                <div    class="center    hide-small">
+                    <a  href="index.php"    class="bar-item button">    <i class="fa fa-home">          </i> HOME          </a>
+                    <a  href="#Home"        class="bar-item button">    <i class="fa fa-user">          </i> QUEM SOU EU?  </a>
+                    <a  href="Curriculo/index.html" class="bar-item button">    <i class="fa fa-star">  </i> CURRICULO  </a>
+                    <a  href="#Contato"     class="bar-item button">    <i class="fa fa-envelope">      </i> CONTATO       </a>
+                </div>
+                
+                <!-- 01.2 - Opçoes do menu de navegaçao para mobile, abertura e fechamento -->
+                <a  href="javascript:void(0)"   class="bar-item button  center   hide-large  hide-medium"    onclick="botaoAbre()">
+                <i  class="fa   fa-bars"> </i>
+                </a>
+            </div>
+        </div>
+
+        <!-- 01.3 - Configuração dos icones superiores, presentes na barra de anvegação -->
+        <nav    class="sidebar  bar-block   black   card    animate-left    hide-medium hide-large" style="display:none"    id="mySidebar">
+            <a  href="javascript:void(0)"   onclick="botaoFechar()"    class="bar-item button  large   padding-16">    Close X </a>
+
+            <a  href="index.php"            onclick="botaoFechar()"    class="bar-item button">    HOME         </a>
+            <a  href="#Home"                onclick="botaoFechar()"    class="bar-item button">    QUEM SOU EU? </a>
+            <a  href="Curriculo/index.html" onclick="botaoFechar()"    class="bar-item button">    CURRICULO    </a>
+            <a  href="#Contato"             onclick="botaoFechar()"    class="bar-item button">    CONTATO      </a>
+        </nav>
+
+
+        <!-- 02 - Tela de apresentação -->
+        <header class="bgimg-1  display-container   grayscale-min"  id="Home"> 
+
+            <!-- 02.1 - Textos da Tela de apresentação -->
+            <div    class="display-left text-white"    style="padding:48px">
+                <span   class="jumbo hide-small">                 Saiba um pouco mais ...  </span> <br>    <!-- Textos da Tela de apresentação quando a tela aumentar  -->
+                <span   class="xxlarge hide-large hide-medium">   Saiba um pouco mais ...  </span> <br>    <!-- Textos da Tela de apresentação quando a tela reduzir   -->
+                <span   class="large">                              </span>
+            </div>
+            
+            <!-- 02.3 - Botoes de rede social -->
+            <div    class="display-bottomleft   text-grey   large"  style="padding:24px 48px">
+                <a  href="https://www.linkedin.com/in/guilherme-goulart-539a90b1/"  target="_blank">    <i  class="fa   fa-linkedin hover-opacity"> </i>    </a>
+                <a  href="https://github.com/guitechnologic"    target="_blank">    <i  class="fa   fa-github   hover-opacity"> </i>    </a>
+            </div>
+
+        </header>
+
+        <!-- 03 - QUEM SOU EU  -->
+        <div>
+            <!-- 03.1 - Docker  -->
+            <div    class="container black" style="padding:80px 16px"  id="work">
+                <h1 class="center"><b><u>       </u></b></h1><br>
+                <div    class="row-padding">
+                    <div    class="col  m4">
+                        <img    class="image    round-large"    src="_imagens/produtos/Docker.png"   alt="Docker" width="300" height="200">
+                    </div>
+                    <div    class="col  m6">
+                        <h1>    Docker   </h1>
+                        <h3>            </h3>
+                        <p> Experiência com implantação, migração e treinamentos da tecnologia Docker.
+                            Docker é o futuro da infraestrutura de T.i, pois nao podemos mais ficar gerando 
+                            energia para manter servidores ligados com recursos nao utilizados. Sendo assim, Docker
+                            ou tecnologia de containers veio para suprir esse problema. Sua aplicação se torna
+                            containerizada, consumindo somente o necessário para funcionar e apenas nos momentos 
+                            em que se faz necessária estar em funcionamento, poupando recursos que podem ser alocados 
+                            para outras necessidades.
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- 03.2 - DevOps  -->
+            <div    class="container  black"   style="padding:80px 16px"  >
+                <div    class="row-padding">
+                    <div    class="col  m4">
+                        <img    class="image    round-large"    src="_imagens/produtos/DevOps.png"   alt="DevOps" width="300" height="200">
+                    </div>
+                    <div    class="col  m6">
+                        <h1>    DevOps  </h1>
+                        <h3>                            </h3>
+                        <p> Entusiasta e atuante sobre o assunto há mais de três anos.
+                            DevOps é a cultura que vem transformando as empresas, tornando-as mais 
+                            produtivas, sincronizadas e unidas. DevOps não é uma ferramenta, ou algo
+                            padronizado, mas sim uma forma de pensar em como ser melhor produtivo 
+                            de maneira mais ágil. A união do time de desenvolvimento com o time de
+                            produção para que o produto esteja com o cliente no menor tempo possível
+                            é o que separa as empresas do futuro das empresas que ficarão na memoria apenas.
+                    </div>
+                </div>
+            </div>
+
+            <!-- 03.3 - YellowBelt  -->
+            <div    class="container black" style="padding:80px 16px"  >
+                <div    class="row-padding">
+                    <div    class="col  m4">
+                        <img    class="image    round-large"    src="_imagens/produtos/YellowBelt.jpg"   alt="YellowBelt" width="300" height="200">
+                    </div>
+                    <div    class="col  m6">
+                        <h1>    Gestão de Recursos e Projetos   </h1>
+                        <h3>                                    </h3>
+                        <p> Certificação Yellow Belt para gestão de projetos de pequeno porte.
+                            Profissional certificado para gerenciar projetos, alocação de recursos, 
+                            resolução de problemas, brainstorm e o que mais o seu projeto de t.i 
+                            precisar para que a sua empresa cresça.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 03.4 - Dev FrontEnd  -->
+        <div    class="container black" style="padding:80px 16px"  id="work">
+            <h1 class="center"><b><u>                   </u></b></h1><br>
+                
+            <div    class="row-padding">
+            <div    class="col  m4">
+                <img    class="image    round-large"    src="_imagens/metodoDeTrabalho/devFrontEnd.jpg"   alt="devFrontEnd" width="300" height="200">
+            </div>
+
+            <div    class="col  m6">
+                <h1>    Desenvolvedor Front-End </h1>
+                <h3>                            </h3>
+                <p> Experiência em desenvolvimento de WebSites para divulgação da sua empresa
+                    para que a sua empresa seja vista pelo Google e tenha todo o planeta
+                    como clientes em potêncial. Para se ter um negócio grande é necessário 
+                    se pensar grande.
+            </div>
+        </div>
+
+        <!-- 04 - Cursos e certificaçoes -->
+        <div    class="container    black"   style="padding:90px    16px"   id="Vagas">
+            <h3 class="center"> CURSOS E CERTIFICAÇÕES    </h3>
+                <p  class="center   large"> - </p>
+
+            <div    class="row-padding grayscale"  style="margin-top:64px">
+
+                <div    class="col  l3  m6  margin-bottom">
+                    <div    class="card">
+                        <img    src="_imagens/certificados/BancoDeDadosOracle.jpg" alt="Curso Completo de Banco de Dados Oracle PL/SQL"
+                            style="width:100%" class="hover-opacity"   onclick="onClick(this)">
+                        <div    class="container">
+                            </div>
+                    </div>
+                </div>
+
+                <div    class="col  l3  m6  margin-bottom">
+                    <div    class="card">
+                        <img    src="_imagens/certificados/DevOpsNinja.jpg" alt="DevOps Ninja: Docker, Kubernetes e Rancher"
+                            style="width:100%"   class="hover-opacity"   onclick="onClick(this)">
+                        <div    class="container">
+                            </div>
+                    </div>
+                </div>
+
+                <div    class="col  l3  m6  margin-bottom">
+                    <div    class="card">
+                        <img    src="_imagens/certificados/DockerDoZero.jpg" alt="Docker do Sero - Introdução a Administração de Containers"
+                            style="width:100%" class="hover-opacity"   onclick="onClick(this)">
+                        <div    class="container">
+                            </div>
+                    </div>
+                </div>
+
+                <div    class="col  l3  m6  margin-bottom">
+                    <div    class="card">
+                        <img    src="_imagens/certificados/OracleSoaSuite.jpg" alt="Oracle SOA Suite 12C"
+                            style="width:100%" class="hover-opacity"   onclick="onClick(this)">
+                        <div    class="container">
+                            </div>
+                    </div>
+                </div>
+
+                <div    class="col  l3  m6  margin-bottom">
+                    <div    class="card">
+                        <img    src="_imagens/certificados/RedHatLinux.jpg" alt="Curso Preparatório para Certificação RHCSA RedHat Linux"
+                            style="width:100%"   class="hover-opacity"   onclick="onClick(this)">
+                        <div    class="container">
+                            </div>
+                    </div>
+                </div>
+
+                <div    class="col  l3  m6  margin-bottom">
+                    <div    class="card">
+                        <img    src="_imagens/certificados/DevOpsEssentials.jpg" alt="DevOps Essentials Professional Certificate (DEPC)"
+                            style="width:100%" class="hover-opacity"   onclick="onClick(this)">
+                        <div    class="container">
+                            </div>
+                    </div>
+                </div>
+
+                <div    class="col  l3  m6  margin-bottom">
+                    <div    class="card">
+                        <img    src="_imagens/certificados/ScrumProfessionalCertificate.jpg" alt="Scrum Foundation Professional Certificate (SFPC)"
+                            style="width:100%" class="hover-opacity"   onclick="onClick(this)">
+                        <div    class="container">
+                            </div>
+                    </div>
+                </div>
+
+                <div    class="col  l3  m6  margin-bottom">
+                    <div    class="card">
+                        <img    src="_imagens/certificados/YellowBelt.jpg" alt="YellowBelt"
+                            style="width:100%" class="hover-opacity"   onclick="onClick(this)">
+                        <div    class="container">
+                            </div>
+                    </div>
+                </div>
+
+                <div    class="col  l3  m6  margin-bottom">
+                    <div    class="card">
+                        <img    src="_imagens/certificados/CienciaDeDados.JPG" alt="Introdução à Ciência de Dados"
+                            style="width:100%" class="hover-opacity"   onclick="onClick(this)">
+                        <div    class="container">
+                            </div>
+                    </div>
+                </div>
+
+                <div    class="col  l3  m6  margin-bottom">
+                    <div    class="card">
+                        <img    src="_imagens/certificados/FundamentosDaGestaoDeTi.jpg" alt="Fundamentos de Gestão de TI"
+                            style="width:100%"   class="hover-opacity"   onclick="onClick(this)">
+                        <div    class="container">
+                            </div>
+                    </div>
+                </div>
+
+                <div    class="col  l3  m6  margin-bottom">
+                    <div    class="card">
+                        <img    src="_imagens/certificados/GestãoAndLiderança.jpg" alt="Gestão e Liderança: Conceitos Básicos da Função Gerencial"
+                            style="width:100%" class="hover-opacity"   onclick="onClick(this)">
+                        <div    class="container">
+                            </div>
+                    </div>
+                </div>
+
+                <div    class="col  l3  m6  margin-bottom">
+                    <div    class="card">
+                        <img    src="_imagens/certificados/ImpactoDaTiNosNegocios.jpg" alt="Impacto da TI nos Negócios"
+                            style="width:100%" class="hover-opacity"   onclick="onClick(this)">
+                        <div    class="container">
+                            </div>
+                    </div>
+                </div>
+
+                <div    class="col  l3  m6  margin-bottom">
+                    <div    class="card">
+                        <img    src="_imagens/certificados/IntroducaoOKR.jpg" alt="Introdução à OKR's"
+                            style="width:100%"   class="hover-opacity"   onclick="onClick(this)">
+                        <div    class="container">
+                            </div>
+                    </div>
+                </div>
+
+                <div    class="col  l3  m6  margin-bottom">
+                    <div    class="card">
+                        <img    src="_imagens/certificados/LGPD.jpg" alt="Lei Geral de Proteção de Dados (LGPD)"
+                            style="width:100%" class="hover-opacity"   onclick="onClick(this)">
+                        <div    class="container">
+                            </div>
+                    </div>
+                </div>
+
+                <div    class="col  l3  m6  margin-bottom">
+                    <div    class="card">
+                        <img    src="_imagens/certificados/LiderancaCapacidadeResiliencia.jpg" alt="Certificação em Liderança, Capacidade de Aprender e Resiliência"
+                            style="width:100%" class="hover-opacity"   onclick="onClick(this)">
+                        <div    class="container">
+                            </div>
+                    </div>
+                </div>
+
+                <div    class="col  l3  m6  margin-bottom">
+                    <div    class="card">
+                        <img    src="_imagens/certificados/AGILE_PROJECT_MANAGEMENT.jpg" alt="Agile Project Management: Um Novo Modelo de Gestão Nas Organizações"
+                            style="width:100%" class="hover-opacity"   onclick="onClick(this)">
+                        <div    class="container">
+                            </div>
+                    </div>
+                </div>
+
+                <div    class="col  l3  m6  margin-bottom">
+                    <div    class="card">
+                        <img    src="_imagens/certificados/EstrategiaEmpresarial.jpg" alt="Estratégia Empresarial"
+                            style="width:100%"   class="hover-opacity"   onclick="onClick(this)">
+                        <div    class="container">
+                            </div>
+                    </div>
+                </div>
+
+                <div    class="col  l3  m6  margin-bottom">
+                    <div    class="card">
+                        <img    src="_imagens/certificados/EstrategiaCorporativaGestaoDeProjetos.jpg" alt="Estratégia Corporativa e Gestão de Projetos"
+                            style="width:100%"   onclick="onClick(this)">
+                        <div    class="container">
+                            </div>
+                    </div>
+                </div>
+
+                <div    class="col  l3  m6  margin-bottom">
+                    <div    class="card">
+                        <img    src="_imagens/certificados/InovacaoNaEraDigital.jpg" alt="Inovação Na Era Digital"
+                            style="width:100%" class="hover-opacity"   onclick="onClick(this)">
+                        <div    class="container">
+                            </div>
+                    </div>
+                </div>
+
+                <div    class="col  l3  m6  margin-bottom">
+                    <div    class="card">
+                        <img    src="_imagens/certificados/GEstaoDeEquipesRemotas.jpg" alt="Gestão de Equipes Remotas"
+                            style="width:100%" class="hover-opacity"   onclick="onClick(this)">
+                        <div    class="container">
+                            </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 04.1 -->
+            <div    id="modal01"    class="modal    black"  onclick="this.style.display='none'">
+                <span   class="button   xxlarge black   padding-large   display-topright"   title="Close    Modal   Image"> X   </span>
+
+                <div    class="modal-content    animate-zoom    center  transparent padding-64">
+                    <img id="img01" class="image">
+                    <p  id="caption" class="opacity large"></p>
+                </div>
+            </div>
+
+        </div>
+        
+        </div>
+
+        <!-- 05 - titulo Nossos parceiros -->
+        <div    class="container black" style="padding:128px    16px"   >
+            <h1 class="center"> </h1>
+                <h1 class="center   large"> Nossos Parceiros:   </h1>
+
+            <!-- 05.1- Nossos parceiros -->
+            <div    class="row-padding" style="margin-top:64px">
+
+                <div    class="col  l3  m6">
+                    <a  href="http://www.itshare.com.br/"   target="_blank">
+                        <img    src="_imagens/parceiros/ITShare102.png" style="width:100%"  class="hover-opacity"   alt="ITShare">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!-- 06 - Opcoes de contato -->
+        <div    class="container    black" style="padding:50px    16px"   id="Contato">
+            <h3 class="center"> CONTATO </h3>
+                <p  class="center   large"> Não espere mais, envie-nos uma mensagem:    </p>
+
+                <div    style="margin-top:48px">
+                    <p> <i  class="fa   fa-map-marker   fa-fw   xxlarge margin-right">  </i> Travessa Lago Salto Caxias 91 - Colombo - PR   </p>
+                    <p> <i  class="fa   fa-whatsapp     fa-fw   xxlarge margin-right">  </i> Phone: +55 41 9 9284-9781                   </p>
+                    <p> <i  class="fa   fa-envelope     fa-fw   xxlarge margin-right">  </i> E-mail: contato@ghgconsultoriaemti.com         </p>
+                    <br>
+                </div>
+        </div>
+
+        
+        <!-- 07 - Localização -->
+        <div    class="container black"   >
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.038152404833!2d-49.16817898498699!3d-25.370037783816063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce9fa6cf03153%3A0x29b11f8c4baa0367!2sGHG%20Consultoria%20em%20TI!5e0!3m2!1spt-BR!2sbr!4v1638303290522!5m2!1spt-BR!2sbr" 
+                width="100%"    height="600"    style="border:  1px"   allowfullscreen=""   loading="lazy"> </iframe>            
+        </div>
+        
+
+        <!-- 08 - Rodapé -->
+        <footer class="center   black   padding-64">
+
+            <a  href="index.php"    class="button   light-grey">    <i class="fa    fa-arrow-up margin-right">  </i>    Home    </a>
+            <a  href="Curriculo/index.html"    class="button   light-grey">    <i class="fa    fa-arrow-up margin-right">  </i>    Currículo    </a>
+                
+                <div    class="xlarge   section">
+                    <a  href="https://www.linkedin.com/in/guilherme-goulart-539a90b1/"  target="_blank">    <i  class="fa   fa-linkedin hover-opacity"> </i>    </a>
+                    <a  href="https://github.com/guitechnologic"    target="_blank">    <i  class="fa   fa-github   hover-opacity"> </i>    </a>
+                </div>
+
+            <p> GHG Consultoria em Ti - Travessa Lago Salto Caxias, 91 - Colombo-PR  </a>  </p>
+            
+                    Todos os direitos reservados - 2021 </small>
+                    <p>Powered by <a href="http://ghgconsultoriaemti.com/" target="_blank">GHG Consultoria em Ti</a></p>
+        </footer>
+
+    
+        <!-- 09 - JavaScript -->
+        <script>
+
+        // Modal Image Gallery
+            function    onClick(element)    {
+                document.getElementById("img01").src    =   element.src;
+                    document.getElementById("modal01").style.display    =   "block";
+                var captionText =   document.getElementById("caption");
+                    captionText.innerHTML   =   element.alt;
+            }
+
+
+            // 09.1 - Alternancia entre mostrar e ocultar a barra lateral ao clicar no icone de menu
+            var mySidebar   =   document.getElementById(    "mySidebar" );
+
+            function    botaoAbre() {
+                if  (   mySidebar.style.display    ===  'block' )   {
+                    mySidebar.style.display =   'none'  ;
+                }   else    {
+                    mySidebar.style.display =   'block';
+                }
+            }
+
+            // 09.2 - Feche a barra lateral com o botão Fechar
+            function    botaoFechar()   {
+                mySidebar.style.display =   "none"  ;
+            }
+
+        </script>
+        
+    </body>
+
+</html>
