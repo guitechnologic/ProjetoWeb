@@ -25,7 +25,7 @@
                     $.each(data, function(i, valor) {
                         elemento += "<li class='nome'>" + valor.nomeproduto + "</li>"; 
                         elemento += "<li class='preco'>" + valor.precounitario + "</li>"; 
-                        elemento += "<li class='imagem'>" + valor.imagempequena + "</li>"; 
+                        elemento += "<li class='imagem'><img src=" + valor.imagempequena + "></li>"; 
                     });
                     elemento += "</ul>";
 
