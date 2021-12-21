@@ -7,7 +7,7 @@
         $mensagem_usuario   = $dados['mensagem'];
         
         // Criar variaveis de envio
-        $destino            = "www.ghgconsultoriaemti.com";
+        $destino            = "suporte@ghgconsultoriaemti.com";
         $remetente          = "contato@ghgconsultoriaemti.com";
         $assunto            = "Mensagem do site";
         

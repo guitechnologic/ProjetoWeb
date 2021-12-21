@@ -294,32 +294,19 @@
 
                 <div    style="margin-top:48px">
                     <p> <i  class="fa   fa-map-marker   fa-fw   xxlarge margin-right">  </i> Travessa Lago Salto Caxias 91 - Colombo - PR   </p>
-                    <p> <i  class="fa   fa-whatsapp     fa-fw   xxlarge margin-right">  </i> Phone: +55 41 9 9284-9781                      </p>
+                    <p> <i  class="fa   fa-whatsapp     fa-fw   xxlarge margin-right">  <a href="https://wa.me/5541992849781"> </i> WhatsApp (41) 9 9284-9781 </i></a></p>
                     <p> <i  class="fa   fa-envelope     fa-fw   xxlarge margin-right">  </i> E-mail: contato@ghgconsultoriaemti.com         </p>
+                    
                     <br>
 
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+                    <a href="https://wa.me/5541992849781?text=A%20GHG%20Consultoria%20em%20TI%20agradece%20o%20seu%20contato.%20O%20que%20podemos%20fazer%20por%20você%20hoje%20?" 
+                        style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+                            z-index:1000;" 
+                        target="_blank">
+                    <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+                    </a>
 
-                    
-                    <!-- 10.1 - Formulario de contato <a href="obrigado/index.html">-->
-                    <form   action="index.php"  method="POST">
-                        <p> <input  class="input border"    type="text" placeholder="Name"      required    name="nome">    </p>
-                        <p> <input  class="input border"    type="text" placeholder="Email"     required    name="email">   </p>
-                        <p> <input  class="input border"    type="text" placeholder="Subject"   required    name="assunto"> </p>
-                        <p> <input  class="input border"    type="text" placeholder="Message"   required    name="mensagem"> </p>
-                        <p>
-                            <button class="button   black"  type="submit" name="enviar" value="submit">
-                                <i  class="fa   fa-paper-plane">       </i>    ENVIAR MENSAGEM </a>
-                            </button>
-                        </p>
-
-                        <?php
-                            if( isset($mensagem) ) {
-                                echo "<p>" . $mensagem . "</p>";
-                            }
-                        ?>
-                    </form>
-
-                    
                 </div>
         </div>
         <!-- 10 - Opcoes de contato -->
