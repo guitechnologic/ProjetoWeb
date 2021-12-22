@@ -1,5 +1,5 @@
   <?php
-    $conecta = mysqli_connect("localhost","root","","andes");
+    $conecta = mysqli_connect("localhost","root","1234","andes");
     if ( mysqli_connect_errno()  ) {
         die("Conexao falhou: " . mysqli_connect_errno());
     }
@@ -13,6 +13,17 @@
         $inserir    = "INSERT INTO transportadoras ";
         $inserir    .= "(nometransportadora,endereco,cidade,estadoID) ";
         $inserir    .= "VALUES ";
-        $inserir    .= "('$nome','$endereco','$cidade', $estado)";        
+        $inserir    .= "('$nome','$endereco','$cidade', $estado)";   
+        
+        $operacao_insercao = mysqli_query($conecta,$inserir);
+        if($operacao_insercao){
+            $retorno["sucesso"] = true;
+            $retorno["sucesso"] = "transportadora inserida com sucesso";
+        }else{
+            $retorno["sucesso"] = false;
+            $retorno["falha"] = "falha na inserção";
+        }
+
+        echo json_encode($retorno);
     }
 ?>

@@ -1,6 +1,6 @@
 <?php
     // Criar objeto de conexao
-    $conecta = mysqli_connect("localhost","root","","andes");
+    $conecta = mysqli_connect("localhost","root","1234","andes");
     if ( mysqli_connect_errno()  ) {
         die("Conexao falhou: " . mysqli_connect_errno());
     }
@@ -61,6 +61,38 @@
         
         <script src="jquery.js"></script>
         <script>
+            $('#formulario_transportadora').submit(function(e){
+                e.preventDefault();
+                var formulario = $(this);
+                var retorno = inserirFormulario(formulario)
+            });
+
+            function inserirFormulario(dados){
+                $.ajax({
+                    type:"POST",
+                    data:dados.serialize(),
+                    url:"inserir_transportadora.php",
+                    async:false
+                }).then(sucesso,falha);
+
+                function sucesso(data){
+                    $sucesso = $.parseJSON(data)["sucesso"];
+                    $sucesso = $.parseJSON(data)["mensagem"];
+                    $('mensagem').show();
+                    
+                    if($sucesso) {
+                        $('mensagem').html();
+                    } else {
+                        $('mensagem').html($.parseJSON(data)["mensagem"]);
+                    }
+                }
+
+                function falha() {
+                    console.log("erro");
+                }
+
+            }
+
         </script>
     </body>
 </html>
