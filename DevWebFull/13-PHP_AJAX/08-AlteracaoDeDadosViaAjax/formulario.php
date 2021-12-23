@@ -1,6 +1,6 @@
 <?php
     // Criar objeto de conexao
-    $conecta = mysqli_connect("localhost","root","","andes");
+    $conecta = mysqli_connect("localhost","root","1234","andes");
     if ( mysqli_connect_errno()  ) {
         die("Conexao falhou: " . mysqli_connect_errno());
     }
@@ -96,7 +96,25 @@
             });
             
             function alterarFormulario(dados) {
+                $.ajax({
+                    type:"POST",
+                    data:dados.serialize(),
+                    url:"alterar_transportadora.php",
+                    async:false
+                }).done(function(data){
+                    $sucesso = $.parseJSON(data)["sucesso"];
+                    $mensagem = $.parseJSON(data)["mensagem"];
 
+                    if($sucesso){
+                        $('mensagem p').html($mensagem);
+                    }else{
+                        $('mensagem p').html($mensagem);
+                    }
+                }).fail(function(){
+                    $('mensagem p').html("Erro no sistema");
+                }).always(function(){
+                    $('mensagem').show();
+                });
             }
         </script>
     </body>

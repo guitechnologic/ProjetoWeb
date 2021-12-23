@@ -1,6 +1,6 @@
   <?php
   	// Criar conexao
-    $conecta = mysqli_connect("localhost","root","","andes");
+    $conecta = mysqli_connect("localhost","root","1234","andes");
     if ( mysqli_connect_errno()  ) {
         die("Conexao falhou: " . mysqli_connect_errno());
     }
