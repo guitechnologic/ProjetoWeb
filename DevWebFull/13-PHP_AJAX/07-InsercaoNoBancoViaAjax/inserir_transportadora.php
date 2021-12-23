@@ -15,13 +15,14 @@
         $inserir    .= "VALUES ";
         $inserir    .= "('$nome','$endereco','$cidade', $estado)";   
         
+        $retorno = array();
         $operacao_insercao = mysqli_query($conecta,$inserir);
         if($operacao_insercao){
             $retorno["sucesso"] = true;
             $retorno["sucesso"] = "transportadora inserida com sucesso";
         }else{
             $retorno["sucesso"] = false;
-            $retorno["falha"] = "falha na inserção";
+            $retorno["mensagem"] = "falha na inserção";
         }
 
         echo json_encode($retorno);

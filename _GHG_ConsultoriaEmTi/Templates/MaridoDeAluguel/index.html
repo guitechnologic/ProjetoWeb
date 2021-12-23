@@ -4,8 +4,8 @@
 	<meta	charset="UTF-8">
 	<meta	name="viewport"	content="width=device-width,	initial-scale=1">
 	<meta   http-equiv="X-UA-Compatible"	content="IE-edge">
-	<meta	name="geo.region"		content="BR-PR">
-	<meta	name="geo.placement"	content="Colombo">
+	<meta	name="geo.region"		content="BR-SC">
+	<meta	name="geo.placement"	content="Itajaí">
 	<meta	name="geo.position"		content="-25.36997746782584,	-49.16598553283551">
 	<meta	name="ICBM"				content="-25.36997746782584,	-49.16598553283551">
 	<link	rel="stylesheet"	href="estilo.css">
@@ -29,23 +29,41 @@
 		
 		.bar .button {
 		padding: 16px;
+		border-radius: 12px;
 		}
 	</style>
 	<body>
 		
 		<!-- Navbar (sit on top) -->
 		<div class="top">
-			<div class="bar white card" id="myNavbar">
+			<div class="bar black card center" id="myNavbar">
 				<a href="#home" class="bar-item button wide"></a>
 				<!-- Right-sided navbar links -->
 				<div class="center hide-small">
-					<a href="#about"		class="bar-item button">									 HOME		</a>
-					<a href="#eletrica"		class="bar-item button">	<i class="fa fa-bolt">		</i> ELETRICA	</a>
-					<a href="#hidraulica"	class="bar-item button">	<i class="fa fa-shower">	</i> HIDRÁULICA	</a>
-					<a href="#predial"		class="bar-item button">	<i class="fa fa-building">	</i> MANUTENÇÃO PREDIAL	</a>
-					<a href="#diversos"		class="bar-item button">	<i class="fa fa-wrench">	</i> DIVERSOS	</a>
-					<a href="#contact"		class="bar-item button">	<i class="fa fa-envelope">	</i> CONTATO	</a>
+					
+					
+					<a href="#eletrica"		onclick="document.getElementById('eletrica')	.style.display='block'"
+						class="button	black	fal	fa-screwdriver"		class="bar-item button">	</i>	ELÉTRICA		</a>
+
+					<a href="#eletrica"		onclick="document.getElementById('eletrica')	.style.display='block'"
+						class="button	black	fa	fa-bolt"		class="bar-item button">	</i>	ELÉTRICA		</a>
+
+					<a	href="#hidraulica"	onclick="document.getElementById('hidraulica')	.style.display='block'"
+						class="button	black	fa	fa-shower"		class="bar-item button">	</i>	HIDRÁULICA		</a>
+
+					<a	href="#predial"		onclick="document.getElementById('pintura')		.style.display='block'"
+						class="button	black	fa	fa-paint-brush"	class="bar-item button">	</i>	PINTURAS		</a>
+
+					<a	href="#diversos"	onclick="document.getElementById('manutencao')	.style.display='block'"
+						class="button	black	fa	fa-wrench"		class="bar-item button">	</i>	MANUTENÇÃO		</a>
+
+					<a	href="#civil"		onclick="document.getElementById('civil')		.style.display='block'"
+						class="button	black	fa	fa-gears"		class="bar-item button">	</i> ENGENHARIA CIVIL	</a>
+
+					<a  href="#contact"	onclick="botaoFechar()"	class="button fa fa-mobile-phone">	CONTATO  </a>
 				</div>
+
+				
 				<!-- Hide right-floated links on small screens and replace them with a menu icon -->
 				
 				<a href="javascript:void(0)" class="bar-item button right hide-large hide-medium" onclick="_open()">
@@ -58,135 +76,216 @@
 		<nav class="sidebar bar-block left black card animate-left hide-medium hide-large" style="display:none" id="mySidebar">
 			<a href="javascript:void(0)" onclick="_close()" class="bar-item button large padding-16">Close X</a>
 			<a href="#about"		onclick="_close()" class="bar-item button">	HOME		</a>
-			<a href="#eletrica"		onclick="_close()" class="bar-item button">	ELETRICA	</a>
-			<a href="#hidraulica"	onclick="_close()" class="bar-item button">	HIDRÁULICA	</a>
-			<a href="#predial"		onclick="_close()" class="bar-item button">	MANUTENÇÃO PREDIAL		</a>
-			<a href="#diversos"		onclick="_close()" class="bar-item button">	DIVERSOS	</a>
-			<a href="#contact"		onclick="_close()" class="bar-item button">	CONTATO		</a>
+			<a href="#eletrica"		onclick="document.getElementById('eletrica')	.style.display='block'"	class="bar-item button">	ELETRICA	</a>
+			<a href="#hidraulica"	onclick="document.getElementById('hidraulica')	.style.display='block'" class="bar-item button">	HIDRÁULICA	</a>
+			<a href="#pintura"		onclick="document.getElementById('pintura')		.style.display='block'"	class="bar-item button">	PINTURAS	</a>
+			<a href="#manutencao"	onclick="document.getElementById('manutencao')	.style.display='block'"	class="bar-item button">	MANUTENÇÃO	</a>
+			<a href="#civil"		onclick="document.getElementById('civil')		.style.display='block'"	class="bar-item button">	ENGENHARIA CIVIL	</a>
+			<a href="#contact"		onclick="_close()" class="bar-item button"	class="bar-item button">	CONTATO	</a>
 		</nav>
 		
 		<!-- Header with full-height image -->
 		<header class="bgimg-1 display-container grayscale-min" id="home">
 			<div class="display-left text-white" style="padding:48px">
-				<span class="jumbo hide-small">SE A SUA CASA TEM UM PROBLEMA</span><br>
-				<span class="xxlarge hide-large hide-medium">SE A SUA CASA TEM UM PROBLEMA</span><br>
-				<span class="large">NÓS TEMOS A SOLUÇÃO</span><br>
+				<span class="jumbo hide-small ">BOB CONSTRUTOR REFORMAS E CONSTRUÇÕES</span><br>
+				<span class="xxlarge hide-large hide-medium">BOB CONSTRUTOR REFORMAS E CONSTRUÇÕES</span><br>
 				<span class="large"></span><br>
-				<span class="large">ELROND CONTRUÇÃO CIVIL E MANUTENÇÕES</span><br>
-				<span class="large">A sua solução para problemas com encanamento, instalações elétricas,<br>
-					instalação de eletrodomésticos, troca de chuveiros e muito mais.
+				<span class="large"></span><br>
+				<span class="large">CONTRUÇÃO CIVIL E MANUTENÇÕES</span><br>
+				<span class="large">( 43 ) 9 xxxx - xxxx <br>
+				<span class="large">( 41 ) 9 xxxx - xxxx
 				</span>
-				
-				
+
 			</div> 
 
 		</header>
 		
-		<!-- About Section -->
-		<div class="container light-gray" style="padding:128px 16px" id="about">
-			<h3 class="center">NOSSOS SERVIÇOS A PRONTA ENTREGA</h3>
-			<p class="center large">NÓS TEMOS O PROFISSIONAL IDEAL PARA LHE ATENDER</p>
-			<div class="row-padding center" style="margin-top:64px">
-				<div class="quarter">
-					<i class="fa fa-bolt margin-bottom jumbo center"></i>
-					<p class="large">ELETRICA</p>
-					<p></p>
+		<!-- Menu Elétrica -->
+		<div id="eletrica" class="modal">
+			<div class="modal-content animate-zoom">
+				<div class="container black display-container">
+					<span onclick="document.getElementById('eletrica').style.display='none'" class="button display-topright large">X</span>
+
+					<h1>Serviços Rápidos (Atendimento 24h) <i class="fa fa-clock-o"></i></h1>
 				</div>
-				<div class="quarter">
-					<i class="fa fa-shower margin-bottom jumbo"></i>
-					<p class="large">HIDRÁULICA</p>
-					<p></p>
+				<div class="container">
+					<h5>Troca de interruptores			<b></b></h5>
+					<h5>Troca de lâmpadas 				<b></b></h5>
+					<h5>Conserto de tomadas elétricas	<b></b></h5>
+					<h5>Troca de disjuntores			<b></b></h5>
+					<h5>Timer de iluminação				<b></b></h5>
 				</div>
-				<div class="quarter">
-					<i class="fa fa-building margin-bottom jumbo"></i>
-					<p class="large">MANUTENÇÃO PREDIAL</p>
-					<p></p>
+
+				<div class="container black">
+					<h1>Instalações<i class="f7d9"></i></h1>
 				</div>
-				<div class="quarter">
-					<i class="fa fa-wrench margin-bottom jumbo"></i>
-					<p class="large">INSTALAÇÕES DIVERSAS</p>
-					<p></p>
+				<div class="container">
+					<h5>Instalação de tomadas 					<b>	$8.50	</b></h5>
+					<h5>Instalação de interruptores 			<b>	$5.50	</b></h5>
+					<h5>Instalação de lustres, lampadas e afins	<b>	$4.00	</b></h5>
+					<h5>Instalação de torneira elétrica 		<b>	$6.50	</b></h5>
+				</div>
+				
+				<div class="container black">
+					<h1>Obras</h1>
+				</div>
+				<div class="container">
+					<h5>Instalação de rede elétrica residencial	<b></b></h5>
+					<h5>Instalação de rede elétrica industrial	<b></b></h5>
+					<h5>Instalação de iluminação industrial		<b></b></h5>
+					<h5>Instalação de painéis elétricos 		<b></b></h5>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Menu Hidraulica -->
+		<div id="hidraulica" class="modal">
+			<div class="modal-content animate-zoom">
+				<div class="container black display-container">
+					<span onclick="document.getElementById('hidraulica').style.display='none'" class="button display-topright large">X</span>
+
+					<h1>Serviços Rápidos (Atendimento 24h)	<i class="fa fa-clock-o"></i></h1>
+				</div>
+				<div class="container">
+					<h5>Manutenção em torneiras				<b>	$2.50	</b></h5>
+					<h5>Manutenção em registros				<b>	$2.50	</b></h5>
+					<h5>Manutenção em vazamentos			<b>	$2.50	</b></h5>
+					<h5>Manutenção em vasos sanitários		<b>	$2.50	</b></h5>
+					<h5>Manutenção em vazamentos			<b>	$2.50	</b></h5>
+					<h5>Troca de chuveiros					<b>	$3.50	</b></h5>
+					<h5>Limpeza de ralos 					<b>	$1.00	</b></h5>
+				</div>
+
+				<div class="container black">
+					<h1>Instalações</h1>
+				</div>
+				<div class="container">
+					<h5>Instalação de pias				<b>	$8.50	</b></h5>
+					<h5>Instalação de vasos sanitários	<b>	$8.50	</b></h5>
+					<h5>Instalação de lavadoras			<b>	$8.50	</b></h5>
+					<h5>Instalação de caixas d'água		<b>	$8.50	</b></h5>
+					<h5>Limpeza de caixas d'água		<b>	$8.50	</b></h5>
+					<h5>Instalação de Hydra				<b>	$8.50	</b></h5>
+				</div>
+
+				<div class="container black">
+					<h1>Obras</h1>
+				</div>
+				<div class="container">
+					<h5>Instalação de rede de encanamento	<b>	$2.50	</b></h5>
+					<h5>Manutenção de sisternas				<b>	$2.00	</b></h5>
+					<h5>Construção de redes de esgoto		<b>	$4.00	</b></h5>
+					<h5>Reformas em banheiros				<b>	$5.50	</b></h5>
+					<h5>Reformas em cozinhas				<b>	$5.50	</b></h5>
+					<h5>Reformas em lavanderias				<b>	$5.50	</b></h5>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Menu Pintura -->
+		<div id="pintura" class="modal">
+			<div class="modal-content animate-zoom">
+				<div class="container black display-container">
+					<span onclick="document.getElementById('pintura').style.display='none'" class="button display-topright large">X</span>
+					<h1>Serviços Rápidos (Atendimento 24h) <i class="fa fa-clock-o"></i></h1>
+				</div>
+				<div class="container">
+					<h5>Retoques em paredes					<b>	$2.50	</b></h5>
+					<h5>Reparos em rachaduras				<b>	$3.50	</b></h5>
+					<h5>Reparos em pequenas infiltrações	<b>	$1.00	</b></h5>
+					<h5>Reparos em grafiatto 				<b>	$1.00	</b></h5>
+					<h5>Reparos em texturas 				<b>	$1.00	</b></h5>
+					<h5>Reparos em pisos de Epoxi 			<b>	$1.00	</b></h5>
+				</div>
+				
+				<div class="container black">
+					<h1>Obras</h1>
+				</div>
+				<div class="container">
+					<h5>Pintura de fachadas							<b>	$2.50	</b></h5>
+					<h5>Pinturas em ambientes externos e internos	<b>	$2.00	</b></h5>
+					<h5>Pintura de pisos em Epoxi					<b>	$4.00	</b></h5>
+					
 				</div>
 			</div>
 		</div>
+
+		<!-- Menu Manutenção -->
+		<div id="manutencao" class="modal">
+			<div class="modal-content animate-zoom">
+				<div class="container black display-container">
+					<span onclick="document.getElementById('manutencao').style.display='none'" class="button display-topright large">X</span>
+
+					<h1>Serviços Rápidos (Atendimento 24h) <i class="fa fa-clock-o"></i></h1>
+				</div>
+				<div class="container">
+					<h5>Troca de fechaduras							<b>	R$2.50	</b></h5>
+					<h5>Reparos em deck's							<b>	R$.50	</b></h5>
+					<h5>Ajuste de portas de móveis					<b>	R$1.00	</b></h5>
+					<h5>Nivelamento de portas						<b>	R$.00	</b></h5>
+					<h5>Ajuste de janelas							<b>	R$.00	</b></h5>
+					<h5>Troca de peças de ceramica e porcelanato	<b>	R$.00	</b></h5>
+					<h5>Reparos em telhados							<b>	R$.00	</b></h5>
+				</div>
+
+				<div class="container black">
+					<h1>Instalações</h1>
+				</div>
+				<div class="container">
+					<h5>Instalação de portas e janelas<b>$8.50</b></h5>
+					<h5>Colocação de cerâmica e porcelanato<b>$5.50</b></h5>
+					<h5>Instalação de mantas termicas em telhados	<b>$4.00</b></h5>
+					<h5>Instalação de churrasqueiras pré-moldadas<b>$4.00</b></h5>
+				</div>
+
+				<div class="container black">
+					<h1>Obras</h1>
+				</div>
+				<div class="container">
+					<h5>Construção de telhados<b>$2.50</b></h5>
+					<h5>Reformas de pisos e azulejos<b>$2.00</b></h5>
+					<h5>Reformas de ambientes<b>$4.00</b></h5>
+					
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Menu civil -->
+		<div id="civil" class="modal">
+			<div class="modal-content animate-zoom">
+				<div class="container black display-container">
+					<span onclick="document.getElementById('civil').style.display='none'" class="button display-topright large">X</span>
+					<h1>Residencial</h1>
+				</div>
+				<div class="container">
+					<h5>Fundação e limpeza de terrenos		<b>	$2.50	</b></h5>
+					<h5>Construção de piscinas				<b>	$2.50	</b></h5>
+					<h5>Ampliação de ambientes				<b>	$2.50	</b></h5>
+					<h5>Construção de coberturas e garagens	<b>	$5.50	</b></h5>
+				</div>
+
+				<div class="container black">
+					<h1>Industrial</h1>
+				</div>
+				<div class="container">
+					<h5>Construção de barracões industriais				<b>	$8.50	</b></h5>
+					<h5>Montagem de drywall								<b>	$8.50	</b></h5>
+					<h5>Instalação de redes eletricas industriais		<b>	$8.50	</b></h5>
+					<h5>Instalação de tubulação de água quente			<b>	$8.50	</b></h5>
+					<h5>Instalação de compressores						<b>	$8.50	</b></h5>
+					<h5>Pisos em Epoxi									<b>	$8.50	</b></h5>
+					<h5>Construção de armações para telhados de zinco	<b>	$8.50	</b></h5>
+				</div>
+			</div>
+		</div>
+
 		
-		<!-- Promo Section - "We know design" -->
-		<div class="container" style="padding:128px 16px" id="eletrica">
-			<div class="row-padding">
-				<div class="col m6">
-					<img class="image round-large" src="Imagens/eletrica.png" alt="Buildings" width="50%" height="394">
-				</div>
-				<div class="col m6">
-					<h1>SERVIÇOS ELÉTRICOS</h1>
-					<h3>Tomadas</h3>
-					<h3>Interruptores</h3>
-					<h3>Luminárias</h3>
-					<h3>Troca de resistência</h3>
-					<h3>Disjuntores</h3>
-					<h3>Spots</h3>
-					<h3>Fotocélula</h3>
-				</div>
-			</div>
-		</div>
-
-		<div class="container light-gray" style="padding:128px 16px" id="hidraulica">
-			<div class="row-padding">
-				<div class="col m6">
-					<img class="image round-large" src="Imagens/hidraulica.png" alt="Buildings" width="50%" height="394">
-				</div>
-				<div class="col m6">
-					<h1>SERVIÇOS HIDRÁULICOS</h1>
-					<h3>Torneiras</h3>
-					<h3>Chuveiros</h3>
-					<h3>Purificadores</h3>
-					<h3>Bebedouros</h3>
-					<h3>Instalação de caixa d'água</h3>
-					<h3>Troca de registro</h3>
-					<h3>Troca de sifão</h3>
-				</div>
-			</div>
-		</div>
-
-		<div class="container" style="padding:128px 16px" id="predial">
-			<div class="row-padding">
-				<div class="col m6">
-					<img class="image round-large" src="Imagens/predial.png" alt="Buildings" width="50%" height="394">
-				</div>
-				<div class="col m6">
-					<h1>MANUTENÇÃO PREDIAL</h1>
-					<h3>Pintura</h3>
-					<h3>Grafiato & Textura</h3>
-					<h3>Conserto de Telhados</h3>
-					<h3>Manutenção de pisos e azulejos</h3>
-					<h3>Instalação de caixa d'água</h3>
-					<h3>Troca de registro</h3>
-					<h3>Limpeza de fachadas</h3>
-				</div>
-			</div>
-		</div>
-
-		<div class="container light-gray" style="padding:128px 16px" id="diversos">
-			<div class="row-padding">
-				<div class="col m6">
-					<img class="image round-large" src="Imagens/manutenção.png" alt="Buildings" width="50%" height="394">
-				</div>
-				<div class="col m6">
-					<h1>INSTALAÇÕES DIVERSAS</h1>
-					<h3>Suportes de TV</h3>
-					<h3>Varão de cortina</h3>
-					<h3>Persianas</h3>
-					<h3>Prateleiras</h3>
-					<h3>Acessórios de banheiro</h3>
-					<h3>Coifas</h3>
-					<h3>Depuradores</h3>
-					<h3>Espelhos</h3>
-					<h3>Quadros</h3>
-				</div>
-			</div>
-		</div>
 		
 		<!-- Promo Section "Statistics" -->
-		<div class="container row center black padding-64">
+		<div class="container row center blue padding-64">
 			<div class="quarter">
 				<span class="xxlarge">+20</span>
 				<br>Anos de experiência
@@ -204,43 +303,7 @@
 				<br>Requisitados profissionais da região
 			</div>
 		</div>
-		
-		<!-- Work Section 
-		<div class="container" style="padding:128px 16px" id="work">
-			<h3 class="center">TRABALHOS REALIZADOS</h3>
-			<p class="center large">Garantia de qualidade é o nosso objetivo</p>
-			
-			<div class="row-padding" style="margin-top:64px">
-				<div class="col l3 m6">
-					<img src="Imagens/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="A microphone">
-				</div>
-				<div class="col l3 m6">
-					<img src="Imagens/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="A phone">
-				</div>
-				<div class="col l3 m6">
-					<img src="Imagens/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="A drone">
-				</div>
-				<div class="col l3 m6">
-					<img src="Imagens/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Soundbox">
-				</div>
-			</div>
-			
-			<div class="row-padding section">
-				<div class="col l3 m6">
-					<img src="Imagens/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="A tablet">
-				</div>
-				<div class="col l3 m6">
-					<img src="Imagens/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="A camera">
-				</div>
-				<div class="col l3 m6">
-					<img src="Imagens/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="A typewriter">
-				</div>
-				<div class="col l3 m6">
-					<img src="Imagens/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="A tableturner">
-				</div>
-			</div>
-		</div>-->
-		
+
 		<!-- Modal for full size images on click-->
 		<div id="modal01" class="modal black" onclick="this.style.display='none'">
 			<span class="button xxlarge black padding-large display-topright" title="Close Modal Image">×</span>
@@ -249,66 +312,9 @@
 				<p id="caption" class="opacity large"></p>
 			</div>
 		</div>
-		
-		<!-- Pricing Section -->
-		<div class="container center dark-grey" style="padding:128px 16px" id="pricing">
-			<h3>PLANOS DE MANUTENÇÃO MENSAL</h3>
-			<p class="large">Escolha o melhor plano para atender à sua empresa ou condomínio</p>
-			<div class="row-padding" style="margin-top:64px">
-				<div class="third section">
-					<ul class="ul white hover-shadow">
-						<li class="black xlarge padding-32">Básico</li>
-						<li class="padding-16"><b>1</b> Visitas quinzenal</li>
-						<li class="padding-16"><b> Até 5 </b> serviços realizados</li>
-						<li class="padding-16"><b>Visitas </b> Agendadas</li>
-						<li class="padding-16"><b>4 horas</b> por visita</li>
-						<li class="padding-16">
-							<h2 class="wide">R$ 500</h2>
-							<span class="opacity">por mês</span>
-						</li>
-						<li class="light-grey padding-24">
-							<button class="button black padding-large"><a href="#contact">Contato</a></button>
-						</li>
-					</ul>
-				</div>
-				<div class="third">
-					<ul class="ul white hover-shadow">
-						<li class="red xlarge padding-32">Pró</li>
-						<li class="padding-16"><b>1</b> Visita semanal</li>
-						<li class="padding-16"><b> Até 10 </b> serviços realizados</li>
-						<li class="padding-16"><b>Visitas </b> Agendadas</li>
-						<li class="padding-16"><b>4 horas</b> por visita</li>
-						<li class="padding-16">
-							<h2 class="wide">R$ 1000</h2>
-							<span class="opacity">por mês</span>
-						</li>
-						<li class="light-grey padding-24">
-							<button class="button black padding-large"><a href="#contact">Contato</a></button>
-						</li>
-					</ul>
-				</div>
-				<div class="third section">
-					<ul class="ul white hover-shadow">
-						<li class="black xlarge padding-32">Premium</li>
-						<li class="padding-16"><b>2</b> Visitas semanais</li>
-						<li class="padding-16"><b> Até 10 </b> serviços realizados</li>
-						<li class="padding-16"><b>Visitas </b> Agendadas</li>
-						<li class="padding-16"><b>6 horas</b> por visita</li>
-						<li class="padding-16">
-							<h2 class="wide">R$ 1500</h2>
-							<span class="opacity">por mês</span>
-						</li>
-						<li class="light-grey padding-24">
-							<button class="button black padding-large"><a href="#contact">Contato</a></button>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-
 
 		<!-- 07.1 - Nossos clientes -->
-        <div    class="container "   style="padding:128px    16px"   >
+        <div    class="container black"   style="padding:128px    16px"   >
             <h1 class="center"> </h1>
                 <h1  class="center   large"> Nossos Clientes: </h1>
 
@@ -317,7 +323,7 @@
 
                 <div    class="col  l3  m6">
                     <a href="https://www.grupoglobo.com.br/" target="_blank">
-                    <img    src="Imagens/globo.jpg"        style="width:100%"  class="hover-opacity"   alt="ITShare">
+                    <img    src="Imagens/renault.png"        style="width:100%"  class="hover-opacity"   alt="ITShare">
                 </a>
                 </div>
             </div>
@@ -325,7 +331,7 @@
         </div>
 
 		<!-- 07.1 - Nossos parceiros -->
-        <div    class="container light-grey"   style="padding:128px    16px"   >
+        <div    class="container black"   style="padding:128px    16px"   >
             <h1 class="center"> </h1>
                 <h1  class="center   large"> Nossos Parceiros: </h1>
 
@@ -334,20 +340,20 @@
 
                 <div    class="col  l3  m6">
                     <a href="https://www.votorantimcimentos.com.br/" target="_blank">
-                    <img    src="Imagens/votoran.jpg"        style="width:100%"  class="hover-opacity"   alt="votoran">
+                    <img    src="Imagens/votoran.png"        style="width:100%"  class="hover-opacity"   alt="votoran">
                 </a>
                 </div>
             </div>
 
         </div>
 		
-		<!-- Contact Section -->
+		<!-- Contato -->
 		<div class="container black" style="padding:128px 16px" id="contact">
 			<h3 class="center">CONTATO</h3>
 			<p class="center large">Com apenas um clique, envie-nos uma mensagem:</p>
 			<div style="margin-top:48px">
 				<p><i class="fa fa-map-marker fa-fw xxlarge margin-right"></i> Itajaí - SC</p>
-				<p> <i  class="fa   fa-whatsapp     fa-fw   xxlarge margin-right">  <a href="https://wa.me/55xx9xxxxxxxx"> </i> WhatsApp (xx) 9 xxxx xxxx </i></a></p>
+				<p> <i  class="fa   fa-whatsapp     fa-fw   xxlarge margin-right">  <a href="https://wa.me/55xx9xxxxxxxx" target="_blank"> </i> WhatsApp (xx) 9 xxxx xxxx </i></a></p>
 				<p><i class="fa fa-envelope fa-fw xxlarge margin-right"> </i> Email: mail@mail.com</p>
 				<br>
 

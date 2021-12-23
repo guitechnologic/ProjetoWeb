@@ -64,7 +64,7 @@
             $('#formulario_transportadora').submit(function(e){
                 e.preventDefault();
                 var formulario = $(this);
-                var retorno = inserirFormulario(formulario)
+                var retorno = inserirFormulario(formulario);
             });
 
             function inserirFormulario(dados){
@@ -75,15 +75,15 @@
                     async:false
                 }).then(sucesso,falha);
 
-                function sucesso(data){
+                function sucesso(data) {
                     $sucesso = $.parseJSON(data)["sucesso"];
-                    $sucesso = $.parseJSON(data)["mensagem"];
-                    $('mensagem').show();
-                    
+                    $mensagem = $.parseJSON(data)["mensagem"];
+                    $('#mensagem').show();
+
                     if($sucesso) {
-                        $('mensagem').html();
+                        $('mensagem p').html($mensagem);
                     } else {
-                        $('mensagem').html($.parseJSON(data)["mensagem"]);
+                        $('mensagem p').html($mensagem);
                     }
                 }
 
