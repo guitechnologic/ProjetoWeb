@@ -50,8 +50,14 @@
 				
 				var geoloc = nav.geolocation;
 				if ( geoloc != null ) {
-					geoloc.getCurrentPosition(retornarPosicao, retornarFalha);	
+					geoloc.getCurrentPosition(retornarPosicao, retornarFalha, configuracoesExtras);	
 				}
+			}
+
+			function configuracoesExtras(){
+				enableHighAccuracy:true;
+				timeout:1000;
+				maximumAge:0;
 			}
 			
 			function retornarPosicao( posicao ) {
