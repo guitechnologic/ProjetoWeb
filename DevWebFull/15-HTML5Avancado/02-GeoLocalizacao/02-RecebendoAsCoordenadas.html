@@ -47,9 +47,10 @@
                     geoloc.getCurrentPosition( retornarPosicao, retornarFalha );
                 }
                 
-                function retornarPosicao() {
-                    var mensagem = "Sucesso! Foi possível identificar sua posição"; 
-                    document.getElementById("status").innerHTML = mensagem;
+                function retornarPosicao( posicao ) {
+                    var latitude 	= posicao.coords.latitude; 
+					var longitude 	= posicao.coords.longitude;
+                    document.getElementById("status").innerHTML = "	Latitude: " + latitude + "	Longitude " + longitude; 
                 }
                 
                 function retornarFalha() {
