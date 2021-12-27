@@ -26,11 +26,16 @@
                 text-align:center;
             }
         </style>
+        <include src="includes/videosub.js"></include>
 	</head>
 
     <body>
     	<section id="video">
-
+            <video poster="sintel.jpg" controls width="483" height="272" >
+                <source src="../video/sintel.mp4" type="video/mp4">
+                <source src="../video/sintel.avi" type="video/avi">
+                <track src="sintel_pt.srt" srclang="pt-BR" kind="subtitles" label="Português">
+            </video>
     	</section>
         
         <footer>
