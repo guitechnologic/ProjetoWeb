@@ -37,6 +37,23 @@
         
 			function pegarPosicao() {
 				document.getElementById("status").innerHTML = "aguarde..."; 
+				if ( nav == null ) {
+					nav = window.navigator;
+				}
+				
+				var geoloc = nav.geolocation;
+				if ( geoloc != null ){
+					geoloc.getCurrentPosition( retornarPosicao, retornarFalha);
+				}
+				function retornarPosicao(){
+					var mensagem = "Sabemos a sua localização";
+					document.getElementById("status").innerHTML = mensagem; 
+				}
+
+				function retornarFalha(){
+					var mensagem = "nao foi possivel identificar sua posicao"
+					document.getElementById("status").innerHTML = mensagem; 
+				}
 			}
 	
         </script>
