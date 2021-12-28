@@ -9,6 +9,8 @@
             <meta   name="geo.placement"            content="Colombo">
             <meta   name="geo.position"             content="-25.36997746782584, -49.16598553283551">
             <meta   name="ICBM"                     content="-25.36997746782584, -49.16598553283551">
+            <meta   name='viewport'                 content='width=device-width, initial-scale=1'>
+	        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
             <link   rel="stylesheet"                href="../_css/estilo.css">
             <link   rel="stylesheet"                href="https://fonts.googleapis.com/css?family=Raleway">
             <link   rel="stylesheet"                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   <!-- Icones Minimalistas -->
@@ -26,7 +28,7 @@
             .bgimg-1    {
                 background-position:    center;
                 background-size:        cover;
-                background-color:      #1E90FF;
+                background-color:      #82ffff;
                 min-height:             100%;
             }
 
@@ -38,6 +40,11 @@
 
             div#box1    {
                 border-radius: 16px;
+            }
+
+            div#servico {
+                background-color: #245876;
+                color: white;
             }
 
         </style>
@@ -53,9 +60,9 @@
 
                 <!-- 01.1 - Botoes de navegação -->
                 <div    class="left hide-small">
-                    <a  href="index.php"    class="bar-item button">    <i class="fa fa-home">      </i> HOME               </a>
-                    <a  href="#modelos"     class="bar-item button">    <i class="fa fa-globe">     </i> ESPECIALIDADES     </a>
-                    <a  href="#Contato"     class="bar-item button">    <i class="fa fa-envelope">  </i> CONTATO            </a>
+                    <a  href="../index.html"    class="bar-item button">    <i class="fa fa-home">      </i> HOME               </a>
+                    <a  href="#modelos"         class="bar-item button">    <i class="fa fa-globe">     </i> ESPECIALIDADES     </a>
+                    <a  href="#Contato"         class="bar-item button">    <i class="fa fa-envelope">  </i> CONTATO            </a>
                 </div>
                 
                 <!-- 01.2 - Opçoes do menu de navegaçao para mobile, abertura e fechamento -->
@@ -69,9 +76,9 @@
         <nav    class="sidebar  bar-block   blue   card    animate-left    hide-medium hide-large" style="display:none"    id="mySidebar">
             <a  href="javascript:void(0)"   onclick="botaoFechar()"    class="bar-item button  large   padding-16">    Close X </a>
 
-            <a  href="index.php"    onclick="botaoFechar()"    class="bar-item button">    HOME                     </a>
-            <a  href="#modelos"     onclick="botaoFechar()"    class="bar-item button">    ESPECIALIDADES          </a>
-            <a  href="#Contato"     onclick="botaoFechar()"    class="bar-item button">    CONTATO                  </a>
+            <a  href="index.html"   onclick="botaoFechar()"    class="bar-item button">    HOME             </a>
+            <a  href="#modelos"     onclick="botaoFechar()"    class="bar-item button">    ESPECIALIDADES   </a>
+            <a  href="#Contato"     onclick="botaoFechar()"    class="bar-item button">    CONTATO          </a>
         </nav>
 
 
@@ -84,9 +91,12 @@
                 <span   class="xxlarge hide-large hide-medium">   Cansado de ter <br>problemas com sua TI?  </span> <br>    <!-- Textos da Tela de apresentação quando a tela reduzir   -->
                 <span   class="large">  Adquira o Outsourcing de TI da GHG Consultoria <br>
                                         para reduzir os seus custos e aumentar a eficiência da operação.  </span>
-                <p> <a  href="#Contato" class="button   white   padding-large   large   margin-top  opacity hover-opacity-on">
+                <div id="box1">
+                    <p> <a  href="#Contato" class="button" color="blue">Adquira já</a></p>
+                </div>
+                <!--<p> <a  href="#Contato" class="button   white   padding-large   large   margin-top  opacity hover-opacity-on">
                     Adquira já
-                </a>    </p>
+                </a>    </p>-->
             </div>
 
         </header>
@@ -97,12 +107,12 @@
             <div    class="row-padding">
                 <div    class="col  m6">
                     
-                    <h1>    NOSSAS ESPECIALIDADES   </h1>
-                    <h3>Analista de suporte técnico             </h3>
-                    <h3>Analista de Help Desk                   </h3>
-                    <h3>Analista de testes                      </h3>
-                    <h3>Analista de tecnologia da informação    </h3>
-                    <h3>Analista de suporte técnico </h3>
+                    <h1>    <u> NOSSAS ESPECIALIDADES:  </u>                                    </h1>
+                    <h2>    <i class="fa fa-check"> </i> Analista de suporte técnico            </h2>
+                    <h2>    <i class="fa fa-check"> </i> Analista de Help Desk                  </h2>
+                    <h2>    <i class="fa fa-check"> </i> Analista de testes                     </h2>
+                    <h2>    <i class="fa fa-check"> </i> Analista de tecnologia da informação   </h2>
+                    <h2>    <i class="fa fa-check"> </i> Analista de suporte técnico            </h2>
 
                 </div>
             </div>
@@ -111,16 +121,17 @@
         
 
 
-        <div    class="container "   style="padding:90px    16px">
+        <div    id="servico"  class="container"   style="padding:90px    16px">
             <h3 class="center">O QUE TORNA A GHG ESSENCIAL PARA O SEU NEGÓCIO:</h3>
                 <div    class="row-padding grayscale"  style="margin-top:64px">
 
                     
-                    <div    class="col  l3  m6  margin-bottom">
-                        <div    id="box1"    class="card">
-                            <a href="Templates/AdvogadoTemplate/index.html" target="_blank">
-                            <img    src="DevOps.png" alt="Advogado" class="hover-opacity" style="width:100%"></a>
+                    <div    class="col  l3  m6  margin-bottom" id="img">
+                        <div    id="box1"   class="card">
+                            <a href="Templates/ArchitectTemplate/index.html" target="_blank">
+                                <img    src="DevOps.png" alt="Advogado" class="hover-opacity" style="width:100%"></a>
                             <div    class="container">
+                                <div class="icon_wrapper"><i class="fas fa-headset"></i></div>
                                 <h3>SUPORTE 24/7/365</h3>           
                                 <p> </p>
                                 <br>
@@ -178,7 +189,7 @@
                 <p  class="center   large"> Não espere mais, faça uma cotação sem compromisso:    </p>
 
                 <div    style="margin-top:48px">
-                    <p> <i  class="fa   fa-map-marker   fa-fw   xxlarge margin-right">  </i> Travessa Lago Salto Caxias 91 - Colombo - PR   </p>
+                    <p> <i  class="fa   fa-map-marker   fa-fw   xxlarge margin-right">  </i>    Colombo -   PR  </p>
                     <p> <i  class="fa   fa-whatsapp     fa-fw   xxlarge margin-right">  <a href="https://wa.me/5541992849781" target="_blank"> </i> WhatsApp (41) 9 9284-9781 </i></a></p>
                     <p> <i  class="fa   fa-envelope     fa-fw   xxlarge margin-right">  </i> E-mail: contato@ghgconsultoriaemti.com         </p>
                     
@@ -206,14 +217,14 @@
         <!-- 12 - Rodapé -->
         <footer class="center   black   padding-64">
 
-            <a  href="index.php"    class="button   light-grey">    <i class="fa    fa-arrow-up margin-right">  </i>    Voltar    </a>
+            <a  href="../index.html"    class="button   light-grey">    <i class="fa    fa-arrow-up margin-right">  </i>    Voltar    </a>
                 
                 <div    class="xlarge   section">
                     <a  href="https://www.linkedin.com/in/guilherme-goulart-539a90b1/"  target="_blank">    <i  class="fa   fa-linkedin hover-opacity"> </i>    </a>
-                    <a  href="https://github.com/guitechnologic"    target="_blank">    <i  class="fa   fa-github   hover-opacity"> </i>    </a>
+                    
                 </div>
 
-            <p> GHG Consultoria em Ti - Travessa Lago Salto Caxias, 91 - Colombo-PR  </a>  </p>
+            <p><a href="https://www.ghgconsultoriaemti.com/" target="_blank">   GHG Consultoria em Ti   </a>    -   Colombo -   PR  </a>    </p>
             
                     Todos os direitos reservados - 2021 </small>
                     <p>Powered by <a href="https://www.ghgconsultoriaemti.com/" target="_blank">GHG Consultoria em Ti</a></p>

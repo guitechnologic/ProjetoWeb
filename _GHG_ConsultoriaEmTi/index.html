@@ -1,15 +1,3 @@
-<?php require_once("funcoes.php"); ?>
-
-<?php
-    if ( isset($_POST['enviar']) ) {
-        if ( enviarMensagem($_POST) ) {
-            $mensagem = "Mensagem enviada com sucesso.";
-        } else {
-            $mensagem = "Erro no envio";
-        }
-    }
-?>
-
 <!DOCTYPE html>
     <html>
         <title> GHG Consultoria Em Ti   </title>
@@ -39,7 +27,7 @@
             .bgimg-1    {
                 background-position:    center;
                 background-size:        cover;
-                background-color:       rgb(0, 0, 0);      /*url("../_GHG_ConsultoriaEmTi/_imagens/map.jpg");*/
+                background-color:      #82ffff;
                 /*  background: url(_imagens/_BannerComLogo2.png);   */
                 min-height: 100%;
             }
@@ -90,7 +78,7 @@
         <header class="bgimg-1  display-container   grayscale-min"  id="Home"> 
 
             <!-- 02.1 - Textos da Tela de apresentação -->
-            <div    class="display-left text-white"    style="padding:48px">
+            <div    class="display-left text-black"    style="padding:48px">
                 <span   class="jumbo hide-small">                 GHG CONSULTORIA EM TI  </span> <br>    <!-- Textos da Tela de apresentação quando a tela aumentar  -->
                 <span   class="xxlarge hide-large hide-medium">   GHG CONSULTORIA EM TI  </span> <br>    <!-- Textos da Tela de apresentação quando a tela reduzir   -->
                 <span   class="large">                            Soluções customizadas para sua empresa.  </span>
@@ -101,7 +89,7 @@
         <!-- 05 - Nosso Modelo de trabalho  -->
         <div>
             <!-- 05.1 - Nosso Modelo de trabalho  -->
-            <div    class="container black" style="padding:80px 16px"  id="Solucoes">
+            <div    class="container" style="padding:80px 16px"  id="Solucoes">
                 <h1 class="center"><b>  ALOCAÇÃO E TERCEIRIZAÇÃO DE RECURSOS    </b></h1><br>
                 <div    class="row-padding">
                     
@@ -113,7 +101,7 @@
                             trabalhistas.</h3>
                     </div>
                     <div    class="col  m3">
-                        <a href="porqueTerUmWebSite.html" target="_blank">
+                        <a href="outsourcingDeTi/index.html" target="_blank">
                             <img    class="hover-opacity"   src="_imagens/metodoDeTrabalho/AnaliseDeEstrutura.jpg" alt="outsourcing"    width="300" height="200">
                         </a>
                     </div>
@@ -122,7 +110,7 @@
 
         </div>
 
-        <div    class="container black" style="padding:80px 16px"  id="Solucoes">
+        <div    class="container" style="padding:80px 16px"  id="Solucoes">
             <h1 class="center"><b>  CRIAÇÃO E DESENVOLVIMENTO DE WEBSITES   </b></h1><br>
             <div    class="row-padding">
                 
@@ -136,7 +124,7 @@
                 </div>
 
                 <div    class="col  m3">
-                    <a href="outsourcingDeTi.html" target="_blank">
+                    <a href="porqueTerUmWebSite/index.html" target="_blank">
                         <img    class="hover-opacity"   src="_imagens/produtos/empresaNaInternet.png" alt="porqueTerUmWebSite"    width="300" height="200">
                     </a>
                 </div>
@@ -146,7 +134,7 @@
         
 
         <!-- 07 - Nossos parceiros -->
-        <div    id="modal01"    class="modal    black"  onclick="this.style.display='none'">
+        <div    id="modal01"    class="modal"  onclick="this.style.display='none'">
             <span   class="button   xxlarge black   padding-large   display-topright"   title="Close    Modal   Image"> X   </span>
 
             <div    class="modal-content    animate-zoom    center  transparent padding-64">
@@ -157,7 +145,7 @@
         </div>
 
         <!-- 07.1 - Nossos parceiros -->
-        <div    class="container black"   style="padding:128px    16px"   >
+        <div    class="container "   style="padding:128px    16px"   >
             <h1 class="center"> </h1>
                 <h1  class="center   large"> Nossos Parceiros: </h1>
 
@@ -219,22 +207,17 @@
         <!-- 12 - Rodapé -->
         <footer class="center   black   padding-64">
 
-            <a  href="#Home"    class="button   light-grey">    <i class="fa    fa-arrow-up margin-right">  </i>    Home    </a>
+            <a  href="#Home"    class="button   light-grey">    <i class="fa    fa-arrow-up margin-right">  </i>    Voltar    </a>
                 
                 <div    class="xlarge   section">
-                    <!--<a  href=""    target="_blank">    <i  class="fa   fa-facebook-official    hover-opacity"> </i>    </a>
-                    <a  href=""    target="_blank">    <i  class="fa   fa-instagram            hover-opacity"> </i>    </a>
-                    <a  href=""    target="_blank">    <i  class="fa   fa-snapchat             hover-opacity"> </i>    </a>
-                    <a  href=""    target="_blank">    <i  class="fa   fa-pinterest-p          hover-opacity"> </i>    </a>
-                    <a  href=""    target="_blank">    <i  class="fa   fa-twitter              hover-opacity"> </i>    </a>-->
                     <a  href="https://www.linkedin.com/in/guilherme-goulart-539a90b1/"  target="_blank">    <i  class="fa   fa-linkedin hover-opacity"> </i>    </a>
-                    <a  href="https://github.com/guitechnologic"    target="_blank">    <i  class="fa   fa-github   hover-opacity"> </i>    </a>
+                    
                 </div>
 
-            <p> GHG Consultoria em Ti - Travessa Lago Salto Caxias, 91 - Colombo-PR  </a>  </p>
+            <p><a href="https://www.ghgconsultoriaemti.com/" target="_blank">   GHG Consultoria em Ti   </a>    -   Colombo -   PR  </a>    </p>
             
                     Todos os direitos reservados - 2021 </small>
-                    <p>Powered by <a href="http://ghgconsultoriaemti.com/" target="_blank">GHG Consultoria em Ti</a></p>
+                    <p>Powered by <a href="https://www.ghgconsultoriaemti.com/" target="_blank">GHG Consultoria em Ti</a></p>
         </footer>
 
     
