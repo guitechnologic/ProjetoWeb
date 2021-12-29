@@ -14,7 +14,7 @@
             <link   rel="stylesheet"                href="../_css/estilo.css">
             <link   rel="stylesheet"                href="https://fonts.googleapis.com/css?family=Raleway">
             <link   rel="stylesheet"                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   <!-- Icones Minimalistas -->
-
+            
         <style>
 
             body,h1,h2,h3,h4,h5,h6  {font-family:   "Raleway",  sans-serif}
@@ -28,8 +28,9 @@
             .bgimg-1    {
                 background-position:    center;
                 background-size:        cover;
-                background-color:      #82ffff;
+                background-image: url(../_imagens/datacenter.jpg);
                 min-height:             100%;
+                color: white;
             }
 
             /* Barra de menu superior e botoes na barra */
@@ -38,14 +39,17 @@
                 border-radius: 16px;
             }
 
-            div#box1    {
-                border-radius: 16px;
-            }
-
             div#servico {
-                background-color: #245876;
+                background-color: rgb(1, 157, 172);
                 color: white;
             }
+
+
+
+            .box1 {
+                border-radius: 16px;
+            }
+            
 
         </style>
 
@@ -81,8 +85,6 @@
             <a  href="#Contato"     onclick="botaoFechar()"    class="bar-item button">    CONTATO          </a>
         </nav>
 
-
-        
         <header class="bgimg-1  display-container   grayscale-min"  id="Home"> 
 
             <!-- 02.1 - Textos da Tela de apresentação -->
@@ -90,16 +92,84 @@
                 <span   class="jumbo hide-small">                 Cansado de ter <br>problemas com sua TI?  </span> <br>    <!-- Textos da Tela de apresentação quando a tela aumentar  -->
                 <span   class="xxlarge hide-large hide-medium">   Cansado de ter <br>problemas com sua TI?  </span> <br>    <!-- Textos da Tela de apresentação quando a tela reduzir   -->
                 <span   class="large">  Adquira o Outsourcing de TI da GHG Consultoria <br>
-                                        para reduzir os seus custos e aumentar a eficiência da operação.  </span>
-                <div id="box1">
-                    <p> <a  href="#Contato" class="button" color="blue">Adquira já</a></p>
-                </div>
-                <!--<p> <a  href="#Contato" class="button   white   padding-large   large   margin-top  opacity hover-opacity-on">
+                                        para reduzir os seus custos e aumentar a eficiência da operação.  </span><br>
+                <a  href="#Contato" class="button   padding-large   large   margin-top border">
                     Adquira já
-                </a>    </p>-->
+                </a>
             </div>
 
         </header>
+
+        <div    class="container" style="padding:80px 160px"  id="work">
+            <h1 class="center"><b>    SEUS PROBLEMAS RESOLVIDOS COM O OUTSOURCING DA GHG   </b></h1><br>
+            <div    class="row-padding">
+                <div    class="center">
+                    
+                    <h2>Nós encontramos o melhor profissional de TI 
+                        para sua necessidade e te isentamos das <br>
+                        responsabilidades trabalhistas e na infraestrutura.</h2>
+
+                </div>
+            </div>
+        </div>
+
+        <div    class="container" style="padding:10px 160px"  id="work">
+            <h1 class="center"><b>    ELIMINE A BUROCRACIA</b></h1><br>
+            <div    class="row-padding">
+                <div    class="center">
+                    
+                    <h3>Não gaste tempo à toa com burocracias desnecessárias.</h3>
+                    <h3>Contratar um TI interno significa ter que lidar com todos 
+                        os trâmites, como procura do candidato, avaliação técnica, 
+                        testes de competência e mais, além de ficar responsável 
+                        por todos os encargos e vínculos trabalhistas.</h3>
+                    <h3> você delega essa atividade e tem a certeza 
+                        de que terá um ótimo profissional, 
+                        sem ter dor de cabeça.</h3>
+
+                </div>
+            </div>
+        </div>
+
+        <div    class="container" style="padding:10px 160px"  id="work">
+            <h1 class="center"><b>    DIMINUA OS GASTOS</b></h1><br>
+            <div    class="row-padding">
+                <div    class="center">
+                    
+                    <h3>Não gaste tempo à toa com burocracias desnecessárias.</h3>
+                    <h3>É sabido que, terceirizando o TI com uma empresa especialista 
+                        na área, você consegue se livrar de diversos impostos e 
+                        cobranças além do salário.</h3>
+                    <h3>Portanto, terceirizar significa um profissional melhor, pagando menos.</h3>
+
+                </div>
+            </div>
+        </div>
+
+        <div style="background-color: rgb(37,37,37); color: rgb(1, 157, 172);" id="orcamento">
+            <div    class="container" style="padding:10px 160px" id="orcamento">
+                <h1 class="center"><b>    Proporcione maior disponibilidade de recursos para sua empresa!</b></h1><br>
+                <div    class="row-padding">
+                    <div    class="center">
+                        
+                        <h2>Projetada para empresas com 50-2000 funcionários, 
+                            nossa solução de terceirização de TI permite que <br>
+                            você entregue a responsabilidade total por seus 
+                            usuários finais e sua infraestrutura.</h2>
+
+                    </div>
+                    <h3 class="center">
+                        <a  href="#Contato" class="button   large">
+                            SOLICITE UM ORÇAMENTO
+                        </a>    
+                </h3>
+                </div>
+            </div>
+        </div>
+
+        
+        
+
 
         <!-- 05.1 - Nosso Modelo de trabalho  -->
         <div    class="container" style="padding:80px 160px"  id="work">
@@ -129,10 +199,10 @@
                     <div    class="col  l3  m6  margin-bottom" id="img">
                         <div    id="box1"   class="card">
                             <a href="Templates/ArchitectTemplate/index.html" target="_blank">
-                                <img    src="DevOps.png" alt="Advogado" class="hover-opacity" style="width:100%"></a>
+                                <img    src="outsourcing/relogio.png" alt="Advogado" class="hover-opacity" style="width:100%"></a>
                             <div    class="container">
                                 <div class="icon_wrapper"><i class="fas fa-headset"></i></div>
-                                <h3>SUPORTE 24/7/365</h3>           
+                                <h3 class="center">SUPORTE 24/7/365</h3>           
                                 <p> </p>
                                 <br>
                             </div>
@@ -143,9 +213,9 @@
                     <div    class="col  l3  m6  margin-bottom" id="img">
                         <div    id="box1"   class="card">
                             <a href="Templates/ArchitectTemplate/index.html" target="_blank">
-                                <img    src="DevOps.png" alt="Advogado" class="hover-opacity" style="width:100%"></a>
+                                <img    src="outsourcing/medal.png" alt="Advogado" class="hover-opacity" style="width:100%"></a>
                             <div    class="container">
-                                <h3>Profissionais de excelência</h3>           
+                                <h3 class="center">PROFISSIONAIS DE EXCELÊNCIA</h3>           
                                 <p> </p>
                                 <br>
                             </div>
@@ -155,9 +225,9 @@
                     <div    class="col  l3  m6  margin-bottom">
                         <div    id="box1"    class="card">
                             
-                            <img    src="DevOps.png" alt="Advogado" class="hover-opacity" style="width:100%"></a>
+                            <img    src="outsourcing/investimento.png" alt="Advogado" class="hover-opacity" style="width:100%"></a>
                             <div    class="container">
-                                <h3>Investimento em inovação</h3>           
+                                <h3 class="center">INVESTIMENTO EM INOVAÇÃO</h3>           
                                 <p> </p>
                                 <br>
                             </div>
@@ -167,18 +237,19 @@
                     <div    class="col  l3  m6  margin-bottom">
                         <div    id="box1"    class="card">
                             
-                            <img    src="DevOps.png" alt="Advogado" class="hover-opacity" style="width:100%"></a>
+                            <img    src="outsourcing/manutencao.png" alt="Advogado" class="hover-opacity" style="width:100%"></a>
                             <div    class="container">
-                                <h3>Manutenções preventivas</h3>           
+                                <h3 class="center">MANUTENÇÕES PREVENTIVAS</h3>           
                                 <p> </p>
                                 <br>
                             </div>
                         </div>
                     </div>
 
-                    <a  href="#Contato" class="button   white   padding-large   large   margin-top  opacity hover-opacity-on">
-                        <h3 class=" center"> QUERO MINHA TI NA MÃO DE ESPECIALISTAS</h3>
-                    </a>
+                    <h3 class="center">
+                    <a  href="#Contato" class="button   padding-large   large   margin-top border">
+                        QUERO MINHA TI NA MÃO DE ESPECIALISTAS
+                    </a></h3>
 
                 </div>
         </div>
@@ -210,7 +281,7 @@
         
         <div    class="container black"   >
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.038152404833!2d-49.16817898498699!3d-25.370037783816063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce9fa6cf03153%3A0x29b11f8c4baa0367!2sGHG%20Consultoria%20em%20TI!5e0!3m2!1spt-BR!2sbr!4v1638303290522!5m2!1spt-BR!2sbr" 
-                width="750"    height="600"    style="border:  1px"   allowfullscreen=""   loading="lazy"> </iframe>            
+                width="300"    height="300"    style="border:  1px"   allowfullscreen=""   loading="lazy"> </iframe>            
         </div>
         
 
@@ -230,9 +301,6 @@
                     <p>Powered by <a href="https://www.ghgconsultoriaemti.com/" target="_blank">GHG Consultoria em Ti</a></p>
         </footer>
 
-        
-
-    
         <!-- 13 - JavaScript -->
         <script>
 
@@ -262,6 +330,7 @@
             }
 
         </script>
+
         
     </body>
 
