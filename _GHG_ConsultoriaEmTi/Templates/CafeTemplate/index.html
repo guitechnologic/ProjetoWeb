@@ -21,6 +21,7 @@
 		.menu {
 		display: none;
 		}
+
 	</style>
 	<body>
 		
@@ -165,23 +166,7 @@
                     <p>Powered by <a href="https://www.ghgconsultoriaemti.com/" target="_blank">GHG Consultoria em Ti</a></p>
 		</footer>
 		
-		<script>
-			// Tabbed Menu
-			function openMenu(evt, menuName) {
-				var i, x, tablinks;
-				x = document.getElementsByClassName("menu");
-				for (i = 0; i < x.length; i++) {
-					x[i].style.display = "none";
-				}
-				tablinks = document.getElementsByClassName("tablink");
-				for (i = 0; i < x.length; i++) {
-					tablinks[i].className = tablinks[i].className.replace(" dark-grey", "");
-				}
-				document.getElementById(menuName).style.display = "block";
-				evt.currentTarget.firstElementChild.className += " dark-grey";
-			}
-			document.getElementById("myLink").click();
-		</script>
+		<script src="script.js"></script>
 		
 	</body>
 </html>

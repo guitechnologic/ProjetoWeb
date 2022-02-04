@@ -40,6 +40,8 @@
         </style>
 
     <body>
+
+        
         <div    class="top">
             <div    class="bar  white card" id="myNavbar">
                 <a  href="#Home"    class="bar-item button  wide">  GHG </a>
@@ -48,7 +50,7 @@
                 <div    class="center    hide-small">
                     <a  href="#Home"                    class="bar-item button">        <i class="fa fa-home">      </i> HOME           </a>
                     <a  href="#servicos"                class="bar-item button">        <i class="fa fa-th">        </i> SERVIÇOS       </a>
-                    <a  href="../SobreNos/index.html"   class="bar-item button">        <i class="fa fa-user">      </i> SOBRE NÓS      </a>
+                    <a  href="SobreNos/index.html"      class="bar-item button">        <i class="fa fa-user">      </i> SOBRE NÓS      </a>
                     <a  href="#Contato"                 class="bar-item button">        <i class="fa fa-envelope">  </i> CONTATO        </a>
                     <a  href="indexEnglish.html"        class="bar-item button right">  <i class="fa fa-globe">     </i> ENGLISH        </a>
                 </div>
@@ -64,14 +66,10 @@
             <a  href="javascript:void(0)"       onclick="botaoFechar()"    class="bar-item button  large   padding-16"> FECHAR</a>
             <a  href="#Home"                    onclick="botaoFechar()"    class="bar-item button">    HOME         </a>
             <a  href="#servicos"                onclick="botaoFechar()"    class="bar-item button">    SERVIÇOS     </a>
-            <a  href="../SobreNos/index.html"   onclick="botaoFechar()"    class="bar-item button">    SOBRE NÓS    </a>
+            <a  href="SobreNos/index.html"      onclick="botaoFechar()"    class="bar-item button">    SOBRE NÓS    </a>
             <a  href="#Contato"                 onclick="botaoFechar()"    class="bar-item button">    CONTATO      </a>
             <a  href="indexEnglish.html"        onclick="botaoFechar()"    class="bar-item button">    ENGLISH      </a>
         </nav>
-        
-            <nav>
-                
-            </nav>
 
         <!-- 02 - Tela de apresentação -->
         <header class="bgimg-1  display-container   grayscale-min"  id="Home"> 
@@ -200,34 +198,7 @@
 
     
         <!-- 13 - JavaScript -->
-        <script>
-
-        // Modal Image Gallery
-            function    onClick(element)    {
-                document.getElementById("img01").src    =   element.src;
-                    document.getElementById("modal01").style.display    =   "block";
-                var captionText =   document.getElementById("caption");
-                    captionText.innerHTML   =   element.alt;
-            }
-
-
-            // 13.1 - Alternancia entre mostrar e ocultar a barra lateral ao clicar no icone de menu
-            var mySidebar   =   document.getElementById(    "mySidebar" );
-
-            function    botaoAbre() {
-                if  (   mySidebar.style.display    ===  'block' )   {
-                    mySidebar.style.display =   'none'  ;
-                }   else    {
-                    mySidebar.style.display =   'block';
-                }
-            }
-
-            // 13.2 - Feche a barra lateral com o botão Fechar
-            function    botaoFechar()   {
-                mySidebar.style.display =   "none"  ;
-            }
-
-        </script>
+        <script src="js/script.js"></script>
         
     </body>
 
