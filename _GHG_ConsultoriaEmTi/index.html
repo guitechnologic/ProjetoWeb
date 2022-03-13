@@ -41,10 +41,10 @@
 
     <body>
 
-        <!-- 01 - Barra de navegação com os botoes -->
+        
         <div    class="top">
             <div    class="bar  white card" id="myNavbar">
-                <a  href="#Home"    class="bar-item button  wide">  GHG </a>    <!-- Inserir logo -->
+                <a  href="#Home"    class="bar-item button  wide">  GHG </a>
 
                 <!-- 01.1 - Botoes de navegação -->
                 <div    class="center    hide-small">
@@ -62,16 +62,14 @@
             </div>
         </div>
 
-        <!-- 01.3 - Configuração dos icones superiores, presentes na barra de navegação mobile -->
         <nav    class="sidebar  bar-block   black   card    animate-left    hide-medium hide-large" style="display:none"    id="mySidebar">
             <a  href="javascript:void(0)"       onclick="botaoFechar()"    class="bar-item button  large   padding-16"> FECHAR</a>
             <a  href="#Home"                    onclick="botaoFechar()"    class="bar-item button">    HOME         </a>
             <a  href="#servicos"                onclick="botaoFechar()"    class="bar-item button">    SERVIÇOS     </a>
-            <a  href="../SobreNos/index.html"   onclick="botaoFechar()"    class="bar-item button">    SOBRE NÓS    </a>
+            <a  href="SobreNos/index.html"      onclick="botaoFechar()"    class="bar-item button">    SOBRE NÓS    </a>
             <a  href="#Contato"                 onclick="botaoFechar()"    class="bar-item button">    CONTATO      </a>
             <a  href="indexEnglish.html"        onclick="botaoFechar()"    class="bar-item button">    ENGLISH      </a>
         </nav>
-
 
         <!-- 02 - Tela de apresentação -->
         <header class="bgimg-1  display-container   grayscale-min"  id="Home"> 
@@ -109,7 +107,6 @@
                             </a>    
                         </div>
                     </div>
-                    
 
                 </div>
             </div>
@@ -139,19 +136,6 @@
                 </div>
             </div>
         </div>
-
-        
-
-        <!-- 07 - Nossos parceiros 
-        <div    class="modal"  onclick="this.style.display='none'">
-            <span   class="button   xxlarge black   padding-large   display-topright"   title="Close    Modal   Image"> X   </span>
-
-            <div    class="modal-content    animate-zoom    center  transparent padding-64">
-                <img id="img01" class="image">
-                <p id="caption" class="opacity large"></p>
-            </div>
-
-        </div>-->
 
         <!-- 07.1 - Nossos parceiros -->
         <div style="background-color: rgb(37,37,37); color: rgb(1, 157, 172); padding: 28px 28px;" id="orcamento">
@@ -214,34 +198,7 @@
 
     
         <!-- 13 - JavaScript -->
-        <script>
-
-        // Modal Image Gallery
-            function    onClick(element)    {
-                document.getElementById("img01").src    =   element.src;
-                    document.getElementById("modal01").style.display    =   "block";
-                var captionText =   document.getElementById("caption");
-                    captionText.innerHTML   =   element.alt;
-            }
-
-
-            // 13.1 - Alternancia entre mostrar e ocultar a barra lateral ao clicar no icone de menu
-            var mySidebar   =   document.getElementById(    "mySidebar" );
-
-            function    botaoAbre() {
-                if  (   mySidebar.style.display    ===  'block' )   {
-                    mySidebar.style.display =   'none'  ;
-                }   else    {
-                    mySidebar.style.display =   'block';
-                }
-            }
-
-            // 13.2 - Feche a barra lateral com o botão Fechar
-            function    botaoFechar()   {
-                mySidebar.style.display =   "none"  ;
-            }
-
-        </script>
+        <script src="js/script.js"></script>
         
     </body>
 

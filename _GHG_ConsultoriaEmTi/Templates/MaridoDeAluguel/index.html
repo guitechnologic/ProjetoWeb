@@ -8,11 +8,13 @@
 	<meta	name="geo.placement"	content="Itajaí">
 	<meta	name="geo.position"		content="-25.36997746782584,	-49.16598553283551">
 	<meta	name="ICBM"				content="-25.36997746782584,	-49.16598553283551">
-	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<meta	name='viewport' content='width=device-width, initial-scale=1'>
 	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	<link   rel="icon"                      href="Imagens/Icone.JPG" sizes="10x10" type="image/png">
 	<link	rel="stylesheet"	href="estilo.css">
 	<link	rel="stylesheet"	href="https://fonts.googleapis.com/css?family=Raleway">
 	<link	rel="stylesheet"	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<style>
 		body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 		
@@ -25,6 +27,7 @@
 		.bgimg-1 {
 		background-position: center;
 		background-size: cover;
+		background-image: url(Imagens/a2solucoes_.JPG);
 		background-color: black;
 		min-height: 100%;
 		}
@@ -34,6 +37,7 @@
 		border-radius: 12px;
 		}
 	</style>
+	
 	<body>
 		
 		<!-- Navbar (sit on top) -->
@@ -63,7 +67,7 @@
 
 					<a  href="#contact"	onclick="botaoFechar()"		class="button fa fa-mobile-phone">	CONTATO  </a>
 
-					<a  href="indexEnglish.html"	onclick="document.getElementById('english')"		class="button fa fa-globe">	ENGLISH  </a>
+					<!--<a  href="indexEnglish.html"	onclick="document.getElementById('english')"		class="button fa fa-globe">	ENGLISH  </a>-->
 				</div>
 
 				
@@ -87,19 +91,20 @@
 			<a href="#manutencao"	onclick="document.getElementById('manutencao')	.style.display='block'"	class="bar-item button">	MANUTENÇÃO	</a>
 			<a href="#civil"		onclick="document.getElementById('civil')		.style.display='block'"	class="bar-item button">	ENGENHARIA CIVIL	</a>
 			<a href="#contact"		onclick="_close()" class="bar-item button"	class="bar-item button">	CONTATO	</a>
-			<a href="indexEnglish.html"		onclick="_close()" class="bar-item button"	class="bar-item button">	ENGLISH	</a>
+			<!--<a href="indexEnglish.html"		onclick="_close()" class="bar-item button"	class="bar-item button">	ENGLISH	</a>-->
 		</nav>
 		
 		<!-- Header with full-height image -->
 		<header class="bgimg-1 display-container grayscale-min" id="home">
-			<div class="display-left text-white" style="padding:48px">
-				<span class="jumbo hide-small ">A² s REFORMAS E CONSTRUÇÕES</span><br>
-				<span class="xxlarge hide-large hide-medium">A² s REFORMAS E CONSTRUÇÕES</span><br>
-				<span class="large"></span><br>
-				<span class="large"></span><br>
-				<span class="large">CONTRUÇÃO CIVIL, MANUTENÇÕES & ALOCAÇÂO DE RECURSOS</span><br>
-				<span class="large"><i class="fa fa-phone">	( 43 ) 9 xxxx - xxxx </i><br>
-				<span class="large"><i class="fa fa-phone">	( 41 ) 9 xxxx - xxxx </i><br>
+			
+				<div class="display-left text-white" style="padding:48px">
+					<span class="jumbo hide-small ">A² SOLUÇÕES</span><br>
+					<span class="xxlarge hide-large hide-medium">A² SOLUÇÕES</span><br>
+					<span class="large"></span><br>
+					<span class="large"></span><br>
+					<span class="large">	CONSTRUÇÃO	|	TERCEIRIZAÇÃO	|	PINTURAS ESPECIAIS	</span><br>
+				<span class="large"><i class="fa fa-phone"><a href="tel:047992276683">	( 47 ) 9 9227-6683</a>	Allison		</i><br>
+				<span class="large"><i class="fa fa-phone"><a href="tel:041996452636">	( 47 ) 9 9711-7889</a> 	Ari			</i><br>
 				</span>
 
 			</div> 
@@ -302,28 +307,28 @@
 		
 		
 		<!-- Promo Section "Statistics" -->
-		<div class="container row center light-grey padding-64">
+		<div class="container row center light-grey padding-64" >
 			<div class="quarter">
-				<span class="xxlarge">+20</span>
+				<span class="xxlarge">+25</span>
 				<br>Anos de experiência
 			</div>
 			<div class="quarter">
-				<span class="xxlarge">+500</span>
+				<span class="xxlarge">+2500</span>
 				<br>Projetos Realizados
 			</div>
 			<div class="quarter">
-				<span class="xxlarge">+100</span>
+				<span class="xxlarge">+500</span>
 				<br>Clientes Fidelizados
 			</div>
 			<div class="quarter">
 				<span class="xxlarge">10+</span>
-				<br>Requisitados profissionais da região
+				<br>Estamos entre os 10+ requisitados profissionais da região
 			</div>
 		</div>
 
 		<!-- Modal for full size images on click-->
 		<div id="modal01" class="modal black" onclick="this.style.display='none'">
-			<span class="button xxlarge black padding-large display-topright" title="Close Modal Image">×</span>
+			<span class="button xxlarge black padding-large display-topright" title="Close Modal Image">X</span>
 			<div class="modal-content animate-zoom center transparent padding-64">
 				<img id="img01" class="image">
 				<p id="caption" class="opacity large"></p>
@@ -331,80 +336,60 @@
 		</div>
 
 		<!-- 07.1 - Nossos clientes -->
-        <div    class="container "   style="padding:128px    16px"   >
-            <h1 class="center"> </h1>
-                <h1  class="center   large"> Nossos Clientes: </h1>
+        <div style="background-color: #F7BD63; color: #592529; padding: 28px 28px;" id="parceiros">
+            <h1  class="center "><b> NOSSOS CLIENTES: </b></h1>
 
             <!-- 07.2- Nossos parceiros -->
             <div    class="row-padding" style="margin-top:64px">
 
-                <div    class="col  l3  m6">
-                    <a href="https://www.globofiat.com.br/" target="_blank">
-                    <img    src="Imagens/fiat.png"        style="width:100%"  class="hover-opacity"   alt="fiat">
-                </a>
-                </div>
-
 				<div    class="col  l3  m6">
-                    <a href="https://www.globoford.com.br/" target="_blank">
-                    <img    src="Imagens/ford.png"        style="width:100%"  class="hover-opacity"   alt="ford">
+                    <a href="https://www.solidpower.com.br/" target="_blank">
+                    <img    src="Imagens/solid.png"        style="width:100%"  class="hover-opacity"   alt="solid">
                 </a>
                 </div>
-
+				
 				<div    class="col  l3  m6">
-                    <a href="https://www.globojeep.com.br/" target="_blank">
-                    <img    src="Imagens/jeep.jpg"        style="width:100%"  class="hover-opacity"   alt="jeep">
+                    <a href="https://www.redragon.com.br/" target="_blank">
+                    <img    src="Imagens/redragon.jpg"        style="width:100%"  class="hover-opacity"   alt="Redragon">
                 </a>
                 </div>
-
-				<div    class="col  l3  m6">
-                    <a href="https://www.globonissan.com.br/" target="_blank">
-                    <img    src="Imagens/nissan.png"        style="width:100%"  class="hover-opacity"   alt="nissan">
-                </a>
-                </div>
-
-				<div    class="col  l3  m6">
-                    <a href="https://www.globorenault.com.br/" target="_blank">
-                    <img    src="Imagens/renaultGlobo.png"        style="width:100%"  class="hover-opacity"   alt="renaultGlobo">
-                </a>
-                </div>
-
-				<div    class="col  l3  m6">
-                    <a href="https://www.grupoglobo.com.br/" target="_blank">
-                    <img    src="Imagens/grupoblogo.png"        style="width:100%"  class="hover-opacity"   alt="grupoblogo">
-                </a>
-                </div>
+                
             </div>
 
         </div>
 
-		<!-- 07.1 - Nossos parceiros -->
-        <div    class="container black"   style="padding:128px    16px"   >
-            <h1 class="center"> </h1>
-                <h1  class="center   large"> Nossos Parceiros: </h1>
 
+		<!-- 07.1 - Nossos parceiros -->
+        <div style="background-color: #592529; color: #F7BD63; padding: 28px 28px;" id="parceiros">
+            <h1 class="center"> <b> NOSSOS PARCEIROS:   </b></h1><br>
+			
             <!-- 07.2- Nossos parceiros -->
             <div    class="row-padding" style="margin-top:64px">
-
                 <div    class="col  l3  m6">
                     <a href="https://www.votorantimcimentos.com.br/" target="_blank">
                     <img    src="Imagens/votoran.png"        style="width:100%"  class="hover-opacity"   alt="votoran">
                 </a>
                 </div>
-
+				
 				<div    class="col  l3  m6">
                     <a href="https://www.suvinil.com.br/" target="_blank">
                     <img    src="Imagens/suvinil.png"        style="width:100%"  class="hover-opacity"   alt="suvinil">
                 </a>
                 </div>
-
+				
 				<div    class="col  l3  m6">
                     <a href="https://www.tigre.com.br/" target="_blank">
                     <img    src="Imagens/tigre.png"        style="width:100%"  class="hover-opacity"   alt="tigre">
                 </a>
                 </div>
+
+
             </div>
 
+			
         </div>
+
+		
 		
 		<!-- Contato -->
 		<div class="container black" style="padding:128px 16px" id="contact">
@@ -413,13 +398,14 @@
 			<div style="margin-top:48px">
 				<p><i class="fa fa-map-marker fa-fw xxlarge margin-right"></i> Itajaí	-	SC</p>
 				<p><i class="fa fa-map-marker fa-fw xxlarge margin-right"></i> Camboriú	-	SC</p>
-				<p> <i  class="fa   fa-whatsapp     fa-fw   xxlarge margin-right">  <a href="https://wa.me/55xx9xxxxxxxx" target="_blank"> </i> WhatsApp (xx) 9 xxxx xxxx </i></a></p>
-				<p><i class="fa fa-envelope fa-fw xxlarge margin-right"> </i> Email: mail@mail.com</p>
+				<p> <i  class="fa   fa-whatsapp     fa-fw   xxlarge margin-right">  <a href="https://wa.me/5547992276683" target="_blank"> </i> WhatsApp ( 47 ) 9 9227-6683 </i></a></p>
+				<p> <i  class="fa   fa-whatsapp     fa-fw   xxlarge margin-right">  <a href="https://wa.me/5541999381260" target="_blank"> </i> WhatsApp ( 47 ) 9 9711-7889 </i></a></p>
+				<p><i class="fa fa-envelope fa-fw xxlarge margin-right"> </i> Email: contato@a2solucoesemobras.com.br</p>
 				<br>
 
 				<!-- WhatsApp Flutuante -->
 				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-				<a href="https://wa.me/55SeuNumeroDeWhatsApp?text=A%20GHG%20Consultoria%20em%20TI%20agradece%20o%20seu%20contato.%20O%20que%20podemos%20fazer%20por%20você%20hoje%20?" 
+				<a href="https://wa.me/554792276683?text=A²%20Soluções%20agradece%20o%20seu%20contato.%20O%20que%20podemos%20fazer%20por%20você%20hoje?" 
 					style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
 						z-index:1000;" 
 					target="_blank">
